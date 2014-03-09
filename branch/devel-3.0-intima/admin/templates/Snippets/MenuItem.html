@@ -1,0 +1,12 @@
+<li id="{{ MenuTabId|safe }}" class="{{ MenuActive|safe }}">
+<a class="TopMenuItem" href="{{ MenuURL|safe }}">
+<span class="CornerLeft"></span>
+<span class="MenuImage {{ MenuTabId|safe }}"></span>
+<span class="MenuText">{{ MenuName|safe }}</span>
+<span class="Arrow"></span>
+<span class="CornerRight"></span>
+</a>
+
+{{ SubMenuList|safe }}
+
+</li>

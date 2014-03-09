@@ -1,0 +1,108 @@
+<form id="OptimizerConfigForm" onsubmit="Optimizer.SaveConfigForm('{{ ModuleId|safe }}'); return false;" action="">
+	<div class="ModalTitle">
+		{% lang 'TestConfigHeadline' %}{{ ModuleName|safe }}
+	</div>
+
+	<div class="ModalContent" style="height:350px; overflow: auto;">
+			
+		<div class="InfoTip">
+			{{ Help|safe }}
+		</div>
+			<div class="clear" style="margin-bottom:10px; border-bottom:1px #999999 solid;">
+				<dl>
+					<dt>{% lang 'TestType' %}:</dt>
+					<dd>
+						{{ TestType|safe }}
+					</dd>
+
+					<dt style="padding-top:12px;">{{ TestPageURLLabel|safe }}:</dt>
+					<dd style="padding-top:8px;">
+						<input onclick="this.select();" readonly class="Field300" value="{{ ValidateTestPageUrl|safe }}" />
+					</dd>
+				
+					<dt style="padding-top:12px;{{ HideVariationPageUrl|safe }}">{% lang 'VariationPageUrl' %}:</dt>
+					<dd style="padding-top:8px;{{ HideVariationPageUrl|safe }}">
+						<input onclick="this.select();" readonly class="Field300" value="{{ ValidateVariationPageUrl|safe }}" />
+					</dd>
+
+
+					<dt style="padding-top:12px;">{% lang 'ConversionPageUrl' %}:</dt>
+					<dd style="padding-top:8px;">
+						<input onclick="this.select();" readonly class="Field300" value="{{ ValidateConversionPageUrl|safe }}" />
+					</dd>
+				</dl>
+		
+			</div>
+
+			<div>
+				<dl>
+					<dt style="padding-top:15px;">&nbsp; &nbsp;{% lang 'ScriptInstallURL' %}:</dt>
+					<dd>
+						<input name="InstallUrl" style='width:210px' value="" />
+						&nbsp; <input name="SaveManual" type="button" onclick="Optimizer.InstallAutoScripts();" value="{% lang 'InstallScript' %}">
+						&nbsp; <img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('d1', '{% lang 'ScriptInstallURL' %}', '{% lang 'InstallUrlHelp' %}')" onmouseout="HideHelp('d1');"/>
+						<div id="d1" style="display: none;"></div>
+						<div class="GrayHelpText">{% lang 'InstallUrlIntro' %}</div>
+					</dd>
+
+					<dt style="padding-top:12px;"><span class='Required'>*</span> {% lang 'ConversionPage' %}:</dt>
+					<dd>
+						<select id="ConversionPage" name="ConversionPage" onchange="Optimizer.ChangeConversionPage('{{ ModuleId|safe }}');">
+							<option value='' >{% lang 'ChooseAnOption' %}</option>
+							{{ ConversionPageOptions|safe }}
+						</select>
+						&nbsp; <img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('d2', '{% lang 'ConversionPage' %}', '{% lang 'ConversionPageHelp' %}')" onmouseout="HideHelp('d2');"/>
+						<div id="d2" style="display: none;"></div>
+						<div id="CustomConversionHelp" style="{{ HideCustomConversionHelp|safe }}">
+
+							<img class="FloatLeft" alt="" src="images/nodejoin.gif"/>
+							<input value="{{ ConversionPageURL|safe }}" name='ConversionPageUrl' id='ConversionPageUrl' class='Field200' />
+
+							<img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('d3', '{% lang 'CustomConversionPage' %}', '{% lang 'CustomConversionHelp' %}')" onmouseout="HideHelp('d3');"/>
+							<div id="d3" style="display: none;"></div>
+						</div>
+					</dd>
+					<dt><span class='Required'>*</span> {% lang 'ControlScript' %}:</dt>
+					<dd>
+						<textarea rows="5" id="ControlScript" name="ControlScript" class="Field300">{{ ControlScript|safe }}</textarea>
+						<img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('d4', '{% lang 'ControlScript' %}', '{% lang 'ControlScriptHelp' %}')" onmouseout="HideHelp('d4');"/>
+						<div id="d4" style="display: none;"></div>
+					</dd>
+
+					<dt><span class='Required'>*</span> {% lang 'TrackingScript' %}:</dt>
+					<dd>
+						<textarea rows="5" id="TrackingScript" name="TrackingScript" class="Field300">{{ TrackingScript|safe }}</textarea>
+						<img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('d5', '{% lang 'TrackingScript' %}', '{% lang 'TrackingScriptHelp' %}')" onmouseout="HideHelp('d5');"/>
+						<div id="d5" style="display: none;"></div>
+					</dd>
+
+					<dt><span class='Required'>*</span> {% lang 'ConversionScript' %}:</dt>
+					<dd>
+						<textarea rows="5" id="ConversionScript" name="ConversionScript" class="Field300">{{ ConversionScript|safe }}</textarea>
+						<img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('d6', '{% lang 'ConversionScript' %}', '{% lang 'ConversionScriptHelp' %}')" onmouseout="HideHelp('d6');"/>
+						<div id="d6" style="display: none;"></div>
+					</dd>
+
+				</dl>
+			</div>
+	</div>
+	<div style="height:30px;" class="ModalButtonRow">
+		<div class="FloatLeft" style="margin-left:10px;">
+			<img class="LoadingIndicator" style="vertical-align: middle; display: none;" alt="" src="images/loading.gif"/>
+			<input type="button" onclick="$.modal.close();" value="Cancel" class="CloseButton FormButton"/>
+		
+		</div>
+		<div class="FloatRight" style="font-weight:bold;margin-right:10px;">
+			<input name='Save' type="submit" value="{% lang 'SaveAndLaunch' %}" class="Submit"/>
+		</div>
+	</div>
+</form>
+<script type="text/javascript">
+lang.ChooseConvertionpage = "{% lang 'ChooseConvertionpage' %}";
+lang.EnterInstallUrl = "{% lang 'EnterInstallUrl' %}";
+lang.EnterConversionScript = "{% lang 'EnterConversionScript' %}";
+lang.EnterControlScript = "{% lang 'EnterControlScript' %}";
+lang.EnterTrackingScript = "{% lang 'EnterTrackingScript' %}";
+lang.ProblemDuringRequest = "{% lang 'ProblemDuringRequest' %}";
+lang.EnterValidConversionUrl = "{% lang 'EnterValidConversionUrl' %}";
+</script>

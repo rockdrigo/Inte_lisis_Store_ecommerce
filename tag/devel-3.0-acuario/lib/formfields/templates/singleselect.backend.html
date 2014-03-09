@@ -1,0 +1,43 @@
+
+<div id="div0" class="FormFieldTabs">
+	<dl>
+		<dt><span class="Required">*</span> {% lang 'FormFieldSetupName' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldName" name="name" value="{{ FormFieldName|safe }}" class="Field300" />
+		</dd>
+
+		<dt><span class="Required">*</span>  {% lang 'FormFieldSetupChoosePrefix' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldChoosePrefix" name="chooseprefix" value="{{ FormFieldChoosePrefix|safe }}" class="extraInfo Field300" />
+		</dd>
+
+		<dt>{{ FormFieldImmutableRequired|safe }}  {% lang 'FormFieldSetupSelectOptions' %}:</dt>
+		<dd>
+			<textarea id="FormFieldOptions" rows="7" class="Field300" {{ FormFieldImmutableFlag|safe }}>{{ FormFieldOptions|safe }}</textarea>
+			<div id="FormFieldOptionsSort">{% lang 'FormFieldSetupSelectOptionsIntro' %}<br /><a href="#" onclick="FormFieldAdmin.SortOptions(); return false;">({% lang 'FormFieldSetupSelectOptionsSort' %})</a></div>
+		</dd>
+
+		<dt>&nbsp;&nbsp; {% lang 'FormFieldSetupIsRequired' %}:</dt>
+		<dd>
+			<label for="FormFieldIsRequired"><input type="checkbox" id="FormFieldIsRequired" name="isRequired" {{ FormFieldIsRequiredChecked|safe }} {{ FormFieldImmutableFlag|safe }} /> {% lang 'FormFieldSetupIsRequiredYes' %}</label>
+		</dd>
+	</dl>
+</div>
+
+<div id="div1" class="FormFieldTabs">
+	<dl>
+		<dt>&nbsp;&nbsp; {% lang 'FormFieldSetupClass' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldClass" name="class" value="{{ FormFieldClass|safe }}" class="extraInfo Field300" />
+			<img onmouseout="HideHelp('dclass');" onmouseover="ShowHelp('dclass', '{% lang 'FormFieldSetupClass' %}', '{% lang 'FormFieldSetupClassHelp' %}')" src="images/help.gif" width="24" height="16" border="0" />
+			<div style="display:none" id="dclass"></div>
+		</dd>
+
+		<dt>&nbsp;&nbsp; {% lang 'FormFieldSetupStyle' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldStyle" name="style" value="{{ FormFieldStyle|safe }}" class="extraInfo Field300" />
+			<img onmouseout="HideHelp('dstyle');" onmouseover="ShowHelp('dstyle', '{% lang 'FormFieldSetupStyle' %}', '{% lang 'FormFieldSetupStyleHelp' %}')" src="images/help.gif" width="24" height="16" border="0" />
+			<div style="display:none" id="dstyle"></div>
+		</dd>
+	</dl>
+</div>

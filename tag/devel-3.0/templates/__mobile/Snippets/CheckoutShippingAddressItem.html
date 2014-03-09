@@ -1,0 +1,21 @@
+<li>
+	<fieldset>
+		<legend>
+			%%GLOBAL_ShipFullName%%
+			(<a href="%%GLOBAL_ShopPath%%/account.php?action=edit_shipping_address&amp;address_id=%%GLOBAL_ShippingAddressId%%&amp;from=%%GLOBAL_FromURL%%">%%LNG_Edit%%</a> / <a href="%%GLOBAL_ShopPath%%/account.php?action=delete_shipping_address&amp;address_id=%%GLOBAL_ShippingAddressId%%&amp;from=%%GLOBAL_FromURL%%" onclick="confirm_delete_shipping_address(%%GLOBAL_ShippingAddressId%%, '%%GLOBAL_FromURL%%'); return false;">%%LNG_Delete%%</a>)
+		</legend>
+		<p class="NoMarginBottom">
+			%%GLOBAL_ShipCompany%%
+			<div>%%GLOBAL_ShipAddressLine1%%</div>
+			<div>%%GLOBAL_ShipAddressLine2%%</div>
+			%%GLOBAL_ShipSuburb%%, %%GLOBAL_ShipState%% %%GLOBAL_ShipZip%%<br/>
+			%%GLOBAL_ShipCountry%%<br />
+			%%GLOBAL_ShipPhone%%
+		</p>
+		<form style="display: %%GLOBAL_HideAddressButton%%" action="%%GLOBAL_ShopPath%%/checkout.php" method="get">
+			<input type="hidden" name="action" value="%%GLOBAL_ShippingFormAction%%" />
+			<input type="hidden" name="address_id" value="%%GLOBAL_ShippingAddressId%%" />
+			<input type="submit" value="%%GLOBAL_ShipAddressButtonText%%" />
+		</form>
+	</fieldset>
+</li>

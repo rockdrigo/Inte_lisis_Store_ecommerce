@@ -1,0 +1,95 @@
+<div class="Heading1">{% lang 'Home' %}</div>
+{{ Messages|safe }}
+<div class="DashboardRightColumn">
+	<div class="DashboardPanel DashboardPanelCurrentNotifications" style="{{ HideNotificationsList|safe }}">
+		<div class="DashboardPanelContent">
+			<h3>{% lang 'PendingItems' %}</h3>
+			<ul>
+				{{ NotificationsList|safe }}
+			</ul>
+		</div>
+	</div>
+	
+	<div class="DashboardPanel DashboardPanelVideoWalkthrough" style="{{ HideVideoWalkthrough|safe }}">
+		<div class="DashboardPanelContent">
+			<h3>{% lang 'VideoWalkthroughIntro' %}</h3>
+			<div class="VideoList">
+				<ul>
+					<li></li>
+				</ul>
+				<br class="Clear" />
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		lang.VideosUnavailable = "{% lang 'VideosUnavailable' %}";
+		lang.VideosUnavailableLater = "{% lang 'VideosUnavailableLater' %}";
+	</script>
+</div>
+<div class="DashboardLeftColumn">
+	<div class="DashboardPanel DashboardPanelFeatured DashboardPanelGettingStarted">
+		<div class="DashboardPanelContent">
+			<a href="#" class="ToggleLink GettingStartedToggleLink" style="{{ HideToggleGettingStartedAtGlance|safe }}">{% lang 'SwitchToCommonTasks' %}</a>
+			<h3>{% lang 'GettingStartedIntro' %}</h3>
+			<table class="WizardContent">
+				<tr>
+					<td class="ConfigureStoreSettings {{ CompletedStepSettingsClass|safe }}">
+						<a href="index.php?ToDo=viewSettings&wizard=1">{% lang 'GettingStartedStoreSettings' %}</a>
+						<div>{% lang 'GettingStartedStoreSettingsDesc' %}</div>
+						<div style="{{ HideCompletedStepSettings|safe }}" class="Completed">{% lang 'StepCompleted' %}</div>
+					</td>
+					<td class="DesignYourStore {{ CompletedStepDesignClass|safe }}">
+						<a href="index.php?ToDo=viewTemplates&wizard=1">{% lang 'GettingStartedDesignStore' %}</a>
+						<div>{% lang 'GettingStartedDesignStoreDesc' %}</div>
+						<div style="{{ HideCompletedStepDesign|safe }}" class="Completed">{% lang 'StepCompleted' %}</div>
+					</td>
+					<td class="AddProducts {{ CompletedStepProductsClass|safe }} Last">
+						<a href="index.php?ToDo=addProduct&wizard=1">{% lang 'GettingStartedAddProducts' %}</a>
+						<div>{% lang 'GettingStartedAddProductsDesc' %}</div>
+						<div style="{{ HideCompletedStepProducts|safe }}" class="Completed">{% lang 'StepCompleted' %}</div>
+					</td>
+				</tr>
+				<tr class="Last">
+					<td class="PaymentMethods {{ CompletedStepPaymentMethodsClass|safe }}">
+						<a href="index.php?ToDo=viewCheckoutSettings&wizard=1">{% lang 'GettingStartedPaymentMethods' %}</a>
+						<div>{% lang 'GettingStartedPaymentMethodsDesc' %}</div>
+						<div style="{{ HideCompletedStepPaymentMethods|safe }}" class="Completed">{% lang 'StepCompleted' %}</div>
+					</td>
+					<td class="TaxSettings  {{ CompletedStepTaxSettingsClass|safe }}">
+						<a href="index.php?ToDo=viewTaxSettings&wizard=1">{% lang 'GettingStartedTaxSettings' %}</a>
+						<div>{% lang 'GettingStartedTaxSettingsDesc' %}</div>
+						<div style="{{ HideCompletedStepTaxSettings|safe }}" class="Completed">{% lang 'StepCompleted' %}</div>
+					</td>
+					<td class="ShippingOptions  {{ CompletedStepShippingOptionsClass|safe }} Last">
+						<a href="index.php?ToDo=viewShippingSettings&wizard=1">{% lang 'GettingStartedShippingOptions' %}</a>
+						<div>{% lang 'GettingStartedShippingOptionsDesc' %}</div>
+						<div style="{{ HideCompletedStepShippingOptions|safe }}" class="Completed">{% lang 'StepCompleted' %}</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="DashboardPanel DashboardPanelHelpArticles" style="{{ HidePopularHelpArticles|safe }}">
+		<div class="DashboardPanelContent" style="overflow: auto">
+			<form action="{{ SearchKnowledgeBaseUrl|safe }}" method="post" class="DashboardHelpArticlesSearchForm" style="{{ HideSearchKnowledgeBase|safe }}">
+				<input type="text" name="q" class="DashboardHelpSearchQuery DashboardHelpSearchHasImage" />
+				<span class="DashboardActionButton">
+					<a href="#">
+						<span class="ButtonText">{% lang 'Go' %}</span>
+					</a>
+				</span>
+			</form>
+			<h3>{% lang 'PopularHelpArticles' %}</h3>
+			<div class="HelpArticlesList">
+				<img src="images/ajax-loader.gif" alt="" />
+			</div>
+			<span class="DashboardActionButton DashboardBrowseAllHelpArticlesButton">
+				<a href="{{ ViewKnowledgeBaseLink|safe }}">
+					<span class="ButtonArrow"></span>
+					<span class="ButtonText ButtonTextWithArrow">{% lang 'ViewKnowledgeBase' %}</span>
+				</a>
+			</span>
+		</div>
+	</div>
+</div>

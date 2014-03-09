@@ -1,0 +1,69 @@
+<div class="Block Moveable Panel ProductMiscDetails" id="ProductMiscDetails" >
+	<h3>%%LNG_OtherDetails%%</h3>
+	<div class="ProductDetailsGrid">
+		<div class="DetailRow" style="display: %%GLOBAL_HideRRP%%">
+			<div class="Label">%%LNG_RRP%%:</div>
+			<div class="Value">
+				%%GLOBAL_RetailPrice%%
+			</div>
+		</div>
+
+		<div class="DetailRow ProductSKU" style="display: %%GLOBAL_HideSKU%%">
+			<div class="Label">%%LNG_SKU%%:</div>
+			<div class="Value">
+				<span class="VariationProductSKU">
+					%%GLOBAL_SKU%%
+				</span>
+			</div>
+		</div>
+
+		<div class="DetailRow" style="%%GLOBAL_HideVendorDetails%%">
+			<div class="Label">%%LNG_Vendor%%:</div>
+			<div class="Value">
+				%%GLOBAL_VendorName%%
+			</div>
+		</div>
+
+		<div class="DetailRow" style="display: %%GLOBAL_HideBrandLink%%">
+			<div class="Label">%%LNG_Brand%%:</div>
+			<div class="Value">
+				<a href="%%GLOBAL_BrandLink%%">%%GLOBAL_BrandName%%</a>
+			</div>
+		</div>
+
+		<div class="DetailRow" style="display: %%GLOBAL_HideCondition%%">
+			<div class="Label">%%LNG_Condition%%:</div>
+			<div class="Value">
+				%%GLOBAL_ProductCondition%%
+			</div>
+		</div>
+
+		<div class="DetailRow" style="display: %%GLOBAL_HideWeight%%">
+			<div class="Label">%%LNG_Weight%%:</div>
+			<div class="Value">
+				<span class="VariationProductWeight">
+					%%GLOBAL_ProductWeight%%
+				</span>
+			</div>
+		</div>
+
+		<div class="DetailRow" style="display: %%GLOBAL_HideRating%%">
+			<div class="Label">%%LNG_Rating%%:</div>
+			<div class="Value">
+				<img src="%%GLOBAL_IMG_PATH%%/IcoRating%%GLOBAL_Rating%%.gif" alt="" />
+				<span style="display:%%GLOBAL_HideReviewLink%%">(<a href="#reviews" onclick="%%GLOBAL_ReviewLinkOnClick%%">%%GLOBAL_ReviewLinkText%%</a>)</span>
+			</div>
+		</div>
+
+		<div class="DetailRow InventoryLevel" style="%%GLOBAL_HideCurrentStock%%">
+			<div class="Label">%%LNG_CurrentStock%%:</div>
+			<div class="Value">
+				<span class="VariationProductInventory">
+					%%GLOBAL_InventoryList%%
+				</span>
+			</div>
+		</div>
+		%%Panel.ProductOtherDetails%%
+	</div>
+	<hr class="Clear ProductSectionSeparator" />
+</div>

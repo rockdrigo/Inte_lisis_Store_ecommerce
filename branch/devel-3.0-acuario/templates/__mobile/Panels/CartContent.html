@@ -1,0 +1,88 @@
+<script type="text/javascript">
+lang.InvalidQuantity = "%%LNG_InvalidQuantity%%";
+lang.Calculating = "%%LNG_Calculating%%"
+lang.CalculateShipping = "%%LNG_CalculateShipping%%"
+lang.ChooseShippingMethod = "%%LNG_ChooseShippingMethod%%"
+lang.CartRemoveConfirm = '%%LNG_CartRemoveConfirm%%';
+lang.ConfirmRemoveGiftWrapping = '%%LNG_ConfirmRemoveGiftWrapping%%';
+lang.SelectCountry = '%%LNG_ChooseShippingCountry%%';
+lang.SelectState = '%%LNG_ChooseShippingState%%';
+lang.EnterZip = '%%LNG_EnterShippingZip%%';
+$(document).ready(function() {
+	$('#UpdateQuantitiesLink').click(function() {
+		if(!Cart.ValidateQuantityForm($('#cartForm').get(0))) {
+			return false;
+		}
+		$('#cartForm').submit()
+	});
+});
+</script>
+<script src="%%GLOBAL_ShopPath%%/javascript/jquery/plugins/imodal/imodal.js?%%GLOBAL_JSCacheToken%%" type="text/javascript"></script>
+
+<div class="Block Moveable Panel" id="CartContent">
+	<div class="BlockContent">
+		<div style="display: %%GLOBAL_HideShoppingCartGrid%%">
+			<form enctype="multipart/form-data" onsubmit="return Cart.ValidateQuantityForm(this);" action="cart.php" name="cartForm" id="cartForm" method="post">
+			<input type="hidden" name="action" value="update" />
+
+			<ul class="CartList">
+				%%SNIPPET_CartItems%%
+			</ul>
+
+			<div class="CartSummary">
+
+				%%LNG_Subtotal%%: <em class="ProductPrice">%%GLOBAL_CartItemTotal%%</em>
+				<hr />
+
+				<div style="%%GLOBAL_HideGiftWrappingTotal%%">
+					%%LNG_GiftWrapping%%: <em class="ProductPrice">%%GLOBAL_GiftWrappingTotal%%</em>
+					<hr />
+				</div>
+
+				<div style="display:%%GLOBAL_HideShoppingCartShippingCost%%" class="SubTotal">
+					%%LNG_Shipping%% (%%GLOBAL_ShippingProvider%%): <em class="ProductPrice">%%GLOBAL_ShippingCost%%</em>
+					<hr />
+				</div>
+
+				<div style="display: %%GLOBAL_HideShoppingCartHandlingCost%%" class="SubTotal">
+					%%LNG_Handling%%: <em class="ProductPrice">%%GLOBAL_HandlingCost%%</em>
+					<hr />
+				</div>
+
+				%%SNIPPET_Coupons%%
+
+				<div class="SubTotal" style="%%GLOBAL_HideDiscountAmount%%">
+					%%LNG_Discount%%: <em class="ProductPrice">%%GLOBAL_DiscountAmount%%</em>
+					<hr />
+				</div>
+
+				%%GLOBAL_Taxes%%
+
+				%%SNIPPET_GiftCertificates%%
+
+				<div class="SubTotal">
+					%%LNG_GrandTotal%%: <em class="ProductPrice">%%GLOBAL_CartTotal%%</em>
+					<hr />
+				</div>
+			</div>
+
+			<div class="UpdateQuantity FloatLeft" style="display: %%GLOBAL_HideCartQuantityTextBox%%">
+				<a href="#" id="UpdateQuantitiesLink">%%LNG_UpdateQuantities%%</a>
+			</div>
+			</form>
+			<div class="ProceedToCheckout">
+				<div class="CheckoutButton" style="%%GLOBAL_HideCheckoutButton%%">
+					<a href="%%GLOBAL_CheckoutLink%%" title="%%LNG_CheckoutButtonTitle%%" class="Button">
+						%%LNG_Checkout%%
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: %%GLOBAL_HideShoppingCartEmptyMessage%%">
+			%%LNG_NoItemsInCart%%
+			<br /><br />
+			<a href="%%GLOBAL_ShopPath%%/">%%LNG_ContinueShopping%%</a>
+		</div>
+	</div>
+</div>

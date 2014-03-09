@@ -1,0 +1,8 @@
+body.iframe {
+	background: transparent;
+}
+
+body.iframe #content {
+	padding: 0;
+	margin: 0;
+}

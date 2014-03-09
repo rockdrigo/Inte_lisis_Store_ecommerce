@@ -1,0 +1,45 @@
+%%SNIPPET_ProductExpectedReleaseDate%%
+
+<div class="OutOfStockMessage">
+	%%SNIPPET_SideAddItemSoldOut%%
+</div>
+
+<form method="post" action="%%GLOBAL_CartLink%%" onsubmit="return check_add_to_cart(this, %%GLOBAL_ProductOptionRequired%%)"  enctype="multipart/form-data">
+	<input type="hidden" name="action" value="add" />
+	<input type="hidden" name="product_id" value="%%GLOBAL_ProductId%%" />
+	<input type="hidden" name="variation_id" class="CartVariationId" value="" />
+	<input type="hidden" name="currency_id" value="" />
+	<div class="ProductDetailsGrid ProductAddToCart %%GLOBAL_ConfigurableProductClass%%">
+		%%SNIPPET_ProductFieldsList%%
+		<div class="ProductOptionList">
+			%%SNIPPET_VariationList%%
+		</div>
+		%%SNIPPET_EventDate%%
+		<div class="DetailRow PriceDetailRow" style="%%GLOBAL_HidePrice%%">
+			<div class="Label">%%GLOBAL_PriceLabel%%:</div>
+			<div class="Value">
+				<em class="ProductPrice VariationProductPrice">%%GLOBAL_ProductPrice%%</em>
+				%%GLOBAL_IncludingExcludingTax%% %%GLOBAL_YouSave%%
+			</div>
+		</div>
+		<div class="DetailRow" style="display: %%GLOBAL_DisplayAdd%%">
+			<div class="Value AddCartButton">
+				<input type="image" style="vertical-align: middle" src="%%GLOBAL_IMG_PATH%%/%%GLOBAL_SiteColor%%/AddCartButton.png" alt="" />
+				%%Panel.SideProductAddToWishList%%
+			</div>
+		</div>
+	</div>
+</form>
+
+%%GLOBAL_ProductBulkDiscountThickBox%%
+
+<script language="javascript" type="text/javascript">//<![CDATA[
+lang.OptionMessage = "%%GLOBAL_OptionMessage%%";
+lang.VariationSoldOutMessage = "%%LNG_VariationSoldOutMessage%%";
+lang.InvalidQuantity = "%%LNG_InvalidQuantity%%";
+lang.EnterRequiredField = "%%LNG_EnterRequiredField%%";
+lang.InvalidFileTypeJS = "%%LNG_InvalidFileTypeJS%%";
+var ShowAddToCartQtyBox = "%%GLOBAL_ShowAddToCartQtyBox%%";
+%%GLOBAL_ProductMinMaxQtyJavascript%%
+//]]></script>
+%%GLOBAL_EventDateJavascript%%

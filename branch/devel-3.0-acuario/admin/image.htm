@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="robots" content="noindex, nofollow" />
+	<style type="text/css">
+		body, img {
+			margin: 0;
+			padding: 0;
+		}
+
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+
+		#loading {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.loadingbg {
+			background: url(images/ajax-loader.gif) center center no-repeat;
+		}
+
+		#loading > img {
+			cursor: pointer;
+		}
+	</style>
+	<link rel="SHORTCUT ICON" href="favicon.ico" />
+	<script type="text/javascript" src="../javascript/jquery.js"></script>
+	<script type="text/javascript">/*<![CDATA[*/
+
+		var addToHeightAndWidth = 0;
+
+		$(function(){
+			// parse query parameters
+			var query = window.location.href.split('?')[1].split('&');
+			var params = {};
+
+
+			for (var i = query.length; i--;) {
+				var param = query[i].split('=');
+
+				if (param.length == 2) {
+					params[param[0]] = decodeURIComponent(param[1]);
+				} else {
+					params[param[0]] = '';
+				}
+			}
+
+			// set window title
+			document.title = params.title;
+			
+			// allow for a blank margin to be set around the image
+		
+			if(typeof params.margin != 'undefined') {
+				$('body').css('margin', params.margin + 'px');
+				addToHeightAndWidth = (parseInt(params.margin) * 2);
+			}
+
+			// load the image
+			var image = new Image();
+			image.src = params.image;
+
+			$(image).bind('load', function(){
+
+				$(this).bind('click', function(){
+					window.close();
+					try {
+						window.opener.focus();
+					} catch (e) { }
+				});
+
+				$('#loading').append(this);
+				$('#loading').removeClass('loadingbg');
+
+				if($.browser.msie) {
+					window.resizeTo(($(this).width() + addToHeightAndWidth), ($(this).height() + addToHeightAndWidth));
+				} else {
+					window.resizeTo(($(this).width() + addToHeightAndWidth), ($(this).height() + (addToHeightAndWidth *2)));
+				}
+
+				window.setTimeout(function(){
+					var wwidth = $(window).width();
+					var wheight = $(window).height();
+
+					var image = $('#loading > img');
+					var iwidth = image.width();
+					var iheight = image.height();
+
+					var resize = false;
+
+					if (iwidth != wwidth) {
+						resize = true;
+						wwidth = iwidth + (iwidth - wwidth);
+					}
+
+					if (iheight != wheight) {
+						resize = true;
+						wheight = iheight + (iheight - wheight);
+					}
+
+					if (resize) {
+						if($.browser.msie) {
+							window.resizeTo(($(image).width() + addToHeightAndWidth), ($(image).height() + addToHeightAndWidth));
+						} else {
+							window.resizeTo(($(image).width() + addToHeightAndWidth), ($(image).height() + (addToHeightAndWidth *2)));
+						}
+					}
+				}, 100)
+			});
+		});
+	/*]]>*/</script>
+</head>
+
+<body>
+
+<div id="loading" class="loadingbg"></div>
+
+</body>
+</html>

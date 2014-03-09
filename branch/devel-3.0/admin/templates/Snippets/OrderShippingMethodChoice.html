@@ -1,0 +1,6 @@
+<li>
+	<label>
+		<input type="radio" name="shippingMethod" value="{{ MethodId|safe }}" onclick="OrderManager.ToggleShippingMethod($(this).val());" {{ MethodChecked|safe }} />
+		{{ MethodName|safe }} - {{ MethodCost|safe }}
+	</label>
+</li>

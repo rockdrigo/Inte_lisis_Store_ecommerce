@@ -1,0 +1,24 @@
+<script type="text/javascript">
+$(document).ready(function() {
+	$.iModal({
+		type: 'inline',
+		inline: '#GettingStarted',
+		width: 450
+	});
+});
+</script>
+<div id="GettingStarted" style="display: none">
+	<div class="ModalTitle">
+		<img src="images/notifications.gif" style="vertical-align: bottom; padding-right: 5px;" alt="" />
+		{{ GettingStartedTitle|safe }}
+	</div>
+	<div class="ModalContent">
+		<p>
+			{{ GettingStartedContent|safe }}
+		</p>
+	</div>
+	<div class="ModalButtonRow">
+		<input type="button" value="{% lang 'Cancel' %}" style="{{ HideGettingStartedCancel|safe }}" onclick="window.location='index.php';" />
+		<input type="button" value="{% lang 'OKGetStarted' %}" class="Submit" onclick="$.iModal.close();" />
+	</div>
+</div>

@@ -1,0 +1,10 @@
+<dl style='margin-left:0; margin-bottom:5px;'>
+<dt>{% lang 'TestPageUrl' %}</dt>
+<dd style='margin-left:130px;'><input class='Field300' onclick='this.select();' readonly value='{{ TestPageUrl|safe }}' /></dd>
+
+<dt style='{{ HideVariationPageUrl|safe }}'>{% lang 'VariationPageUrl' %}</dt>
+<dd style='margin-left:130px; {{ HideVariationPageUrl|safe }}'><input class='Field300' onclick='this.select();' readonly value='{{ VariationPageUrl|safe }}' /></dd>
+
+<dt>{% lang 'ConversionPageUrl' %}</dt>
+<dd style='margin-left:130px;'><input class='Field300' onclick='this.select();' readonly value='{{ ConversionPageUrl|safe }}' /></dd>
+</dl>

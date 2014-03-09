@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%%Panel.HTMLHead%%
+<body>
+	<script type="text/javascript" src="%%GLOBAL_AppPath%%/javascript/product.functions.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_AppPath%%/javascript/jquery/plugins/ui.core.js?%%GLOBAL_JSCacheToken%%"></script>
+	<link rel="stylesheet" type="text/css" href="javascript/jquery/themes/cupertino/ui.all.css" />
+	%%Panel.QuotationDatePickerJS%%
+	<div id="Container">
+	%%Panel.Header%%
+
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%
+		<div class="Content Wide" id="LayoutColumn1">
+			%%Panel.GlobalStatusMessage%%
+			<form name="showQuotationsForm" method="POST" action="%%GLOBAL_ShopPath%%/quotation.php?ToDo=">
+				<div class="fromtodates">
+					Desde<input id="quotationfromdate" type="text" class="Field80" name="quotationfromdate" value=""></input>
+					&nbsp Hasta<input id="quotationtodate" type="text" class="Field80" name="quotationtodate" value=""></input>
+					<input type="submit" value="Buscar"></input>
+				</div>
+			</form>
+				<table id="showQuotationsTable" class="Stylize General" cellspacing="0" cellpadding="0" width=100%>
+				<thead>
+					<tr class="First Last Odd Even">
+						<th style="width: 15%;">Nombre</th>
+						<th style="width: 8%;">Fecha</th>
+						<th style="width: 5%;"></th>
+						<th style="width: 5%;"></th>
+						<th style="width: 10%;"></th>
+					</tr>
+				</thead>
+				%%GLOBAL_QuotationList%%
+				</table>
+
+		</div>
+		<br class="Clear" />
+	</div>
+	%%Panel.Footer%%
+</div>
+</body>
+</html>

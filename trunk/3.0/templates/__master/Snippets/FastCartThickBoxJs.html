@@ -1,0 +1,38 @@
+<script type="text/javascript">
+$(document).ready(function() {
+	// attach fast cart event to all 'add to cart' link
+	$(".ProductActionAdd a[href*='cart.php?action=add']").click(function(event) {
+		fastCartAction($(this).attr('href'));
+		return false;
+	});
+	
+	/*  REQ11022 JIB:
+	*	Se crea el evento para que al dar click en el link de "product.html" se llame a la funcion de 
+	*	ProductShowStockDetail, enviando como parametro el ID del producto que se quiere ver
+	*/
+	$(".ProductShowStockDetail a").click(function(event) {
+		//serialize the options of the variation selects
+		var optionIds = '';
+		var index = $('.VariationSelect').size();
+		$('.VariationSelect:lt(' + (index + 1) + ')').each(function() {
+			if (optionIds != '') {
+				optionIds += ',';
+			}
+
+			optionIds += $(this).val();
+		});
+		
+		if (optionIds == "") {
+			optionIds = $('.ProductOptionList input:checked[type=radio] ').val();
+		}
+		
+		if(!optionIds) {
+			optionIds = '';
+		}
+		
+		ProductShowStockDetail(productId, optionIds);
+		return false;
+	});
+	
+});
+</script>

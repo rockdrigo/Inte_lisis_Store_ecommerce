@@ -1,0 +1,20 @@
+<div id="productRule{{ ProductId|safe }}" class="prodRules">
+	{% lang 'ForThisProduct1' %}
+	<a href="#" onclick="ShowProductSelector('productRuleName{{ ProductId|safe }}', 'productRuleValue{{ ProductId|safe }}', 'productRuleDiscount{{ ProductId|safe }}'); return false;" id="productRuleName{{ ProductId|safe }}">{% lang 'ForThisProduct2' %} ({{ SelectedItemName|safe }})</a>
+
+	<input class="prodRulesProductId" type="hidden" id="productRuleValue{{ ProductId|safe }}" value="{{ CatOrProdId|safe }}" onchange="remapHiddenDiscounts('product', {{ ProductId|safe }});" />
+	{% lang 'CustomersReceiveA' %}
+
+	<span id="productDiscountRulesAmountPrefix{{ ProductId|safe }}">{{ AmountPrefix|safe }}</span>
+	<input class="prodRulesDiscount Field50" id="productRuleDiscount{{ ProductId|safe }}" type="text" value="{{ DiscountAmount|safe }}" class="Field50" style="width:30px" onchange="remapHiddenDiscounts('product', {{ ProductId|safe }});" />
+	<span id="productDiscountRulesAmountPostfix{{ ProductId|safe }}">{{ AmountPostfix|safe }}</span>
+
+	<select id="productDiscountMethod{{ ProductId|safe }}" class="Field120" onchange="ToggleDiscountRateValueType({{ ProductId|safe }}, 'product');">
+		<option value="price" {{ DiscountMethodPrice|safe }}>{% lang 'PriceDiscount' %}</option>
+		<option value="percent" {{ DiscountMethodPercent|safe }}>{% lang 'PercentageDiscount' %}</option>
+		<option value="fixed" {{ DiscountMethodFixed|safe }}>{% lang 'FixedPrice' %}</option>
+	</select>
+
+	<img title="{% lang 'AddAnotherProdDiscount' %}" style="cursor:pointer" src="images/addicon.gif" width="16" height="16" onclick="addDiscountRule('product')" />
+	<img title="{% lang 'RemoveThisProdDiscount' %}" style="cursor:pointer" src="images/delicon.gif" width="16" height="16" onclick="removeDiscountRule('product', {{ ProductId|safe }})" />
+</div>

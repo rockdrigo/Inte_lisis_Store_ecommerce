@@ -1,0 +1,46 @@
+<p class="ErrorMessage" style="display:%%GLOBAL_HideFirstDataError%%">
+        %%LNG_FirstDataProcessingError%%<br />
+        <strong>%%GLOBAL_FirstDataErrorMessage%%</strong>
+</p>
+<form action="%%GLOBAL_ShopPathSSL%%/checkout.php?action=process_payment" method="post" onsubmit="return check_FirstData_payment_form()">
+        <div class="FormContainer HorizontalFormContainer">
+                <dl>
+                        <dt><span class="Required">*</span> %%LNG_FirstDataCardHoldersName%%:</dt>
+                        <dd><input type="text" name="FirstData_name" id="FirstData_name" value="%%GLOBAL_FirstDataName%%" size="30" /></dd>
+
+                        <dt><span class="Required">*</span> %%LNG_FirstDataCreditCardNo%%:</dt>
+                        <dd>
+                                <input type="text" name="FirstData_ccno" id="FirstData_ccno" value="%%GLOBAL_FirstDataNum%%" size="30" />
+                                <br />
+                                <small>%%LNG_FirstDataCreditCardNoHelp%%</small>
+                        </dd>
+
+                        <dt><span class="Required">*</span> %%LNG_FirstDataExpirationDate%%:</dt>
+                        <dd>
+                                <select name="FirstData_ccexpm" id="FirstData_ccexpm">
+                                        <option value=""></option>
+                                        %%GLOBAL_FirstDataMonths%%
+                                </select>
+                                <select name="FirstData_ccexpy" id="FirstData_ccexpy">
+                                        <option value=""></option>
+                                        %%GLOBAL_FirstDataYears%%
+                                </select>
+                        </dd>
+
+                        <dt style="display: %%GLOBAL_FirstDataHideCVV2%%"><span class="Required">*</span> %%LNG_FirstDataCreditCardCCV2%%:</dt>
+                        <dd id="CVV2Input" style="display: %%GLOBAL_FirstDataHideCVV2%%">
+                                <input type="text" class="Textbox" name="FirstData_cccode" id="cc_cvv2" value="%%GLOBAL_FirstDataCCV2%%" size="4" />
+                                &nbsp;<small><a href="#" id="CVV2Help">%%LNG_WhatsThis%%</a></small>
+                        </dd>
+
+                        <dt>&nbsp;&nbsp; %%LNG_FirstDataTotalAmount%%:</dt>
+                        <dd>
+                                <em class="ProductPrice">%%GLOBAL_OrderAmount%%</em>
+                        </dd>
+                </dl>
+                <p class="Submit">
+                        <input type="submit" value="%%LNG_FirstDataPayForOrder%%" />
+                </p>
+        </div>
+</form>
+%%Panel.FirstDataPaymentJavaScript%%

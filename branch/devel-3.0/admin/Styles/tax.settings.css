@@ -1,0 +1,47 @@
+#taxClassesTab a.addButton,
+#taxClassesTab a.removeButton {
+	width: 16px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: top left;
+	display: inline-block;
+	text-indent: -9000px;
+	cursor: pointer;
+}
+
+#taxClassesTab a.addButton {
+	background-image: url('../images/addicon.gif');
+}
+
+#taxClassesTab a.removeButton {
+	background-image: url('../images/delicon.gif');
+}
+
+.zoneTypeCountry, .zoneTypeState, .zoneTypeZip, .zoneGroupSelect {
+	padding-left: 25px;
+	background: url('../images/nodejoin.gif') no-repeat;
+}
+
+#content div.zoneTypeState div.formRow,
+#content div.zoneTypeZip div.formRow {
+	padding-left: 100px;
+}
+
+#content div.zoneTypeState div.formRow label.label,
+#content div.zoneTypeZip div.formRow label.label {
+	width: 100px;
+	margin-left: -100px;
+}
+
+.stateSelectNone {
+	font-size: 20px;
+	background: #fff;
+	border: 1px solid #7F9DB9;
+	font-weight: bold;
+	color: #aaa;
+	text-align: center;
+}
+
+.stateSelectNone div {
+	padding-top: 40px;
+}

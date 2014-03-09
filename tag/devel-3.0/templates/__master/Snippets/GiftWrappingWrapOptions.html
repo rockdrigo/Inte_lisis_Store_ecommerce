@@ -1,0 +1,21 @@
+<div style="margin-top: 10px;">
+	<div style="margin-left: 25px; margin-bottom: 6px; %%GLOBAL_HideWrappingTitle%%"><strong>%%LNG_Item%%: 1 x %%GLOBAL_ProductName%%</strong></div>
+	<div class="HorizontalFormContainer %%GLOBAL_ExtraClass%% WrappingOption">
+		<dl>
+			<dt>%%LNG_GiftWrapping%%:</dt>
+			<dd>
+				<select class="Field300" name="giftwrapping[%%GLOBAL_GiftWrappingId%%]" id="giftwrapping_%%GLOBAL_GiftWrappingId%%" onchange="Cart.ToggleGiftWrappingType(this.options[this.selectedIndex])">
+					<option value="">%%LNG_ChooseGiftWrappingOption%%</option>
+					%%GLOBAL_WrappingOptions%%
+				</select>
+				<small>&nbsp;%%GLOBAL_GiftWrapPreviewLinks%%</small>
+			</dd>
+
+			<dt class="WrapComments" style="%%GLOBAL_HideGiftWrapMessage%%">%%LNG_GiftMessage%%:</dt>
+			<dd class="WrapComments" style="%%GLOBAL_HideGiftWrapMessage%%">
+				<textarea class="Field300" rows="5" name="giftmessage[%%GLOBAL_GiftWrappingId%%]" id="giftmessage_%%GLOBAL_GiftWrappingId%%">%%GLOBAL_GiftWrapMessage%%</textarea>
+			</dd>
+		</dl>
+		<hr style="width: 475px; %%GLOBAL_HideWrappingSeparator%%"/>
+	</div>
+</div>

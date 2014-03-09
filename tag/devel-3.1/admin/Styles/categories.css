@@ -1,0 +1,27 @@
+.CategoriesContainer {
+	border: 1px solid #ccc;
+	padding: 5px;
+	padding-left: 0;
+	width: 870px;
+	overflow-x: auto;
+}
+
+.CategoriesContainer td {
+	padding: 0;
+	padding-left: 5px;
+}
+
+.CategoryBox {
+    width: 280px;
+}
+
+.CategoryBox li {
+    padding: 0;
+}
+
+.CategoryBox li label {
+    display: block;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

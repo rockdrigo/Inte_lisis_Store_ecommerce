@@ -1,0 +1,173 @@
+<script type="text/javascript">
+	var PaymentValidation_{{ PaymentMethodId|safe }} = {
+		cc_name: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_name]']"),
+		cc_cctype: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_cctype]']"),
+		cc_ccno: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_ccno]']"),
+		cc_cccvd: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_cccvd]']"),
+		cc_ccexpm: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_ccexpm]']"),
+		cc_ccexpy: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_ccexpy]']"),
+		cc_ccissueno: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_issueno]']"),
+		cc_ccissuedatem: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_issuedatem]']"),
+		cc_ccissuedatey: $(":input[name='paymentField[{{ PaymentMethodId|safe }}][creditcard_issuedatey]']"),
+
+		payment_form: $("#paymentMethodForm_{{ PaymentMethodId|safe }}"),
+
+		checkForm: function() {
+			var obj = PaymentValidation_{{ PaymentMethodId|safe }};
+
+			if(obj.cc_name.val() == "") {
+				alert("{% lang 'CCManualEnterName' %}");
+				obj.cc_name.focus();
+				return false;
+			}
+
+			if(obj.cc_cctype.val() == "") {
+				alert("{% lang 'CCManualChooseCardType' %}");
+				obj.cc_cctype.focus();
+				return false;
+			}
+
+			if(isNaN(obj.cc_ccno.val()) || obj.cc_ccno.val() == "" || !obj.validateCreditCard()) {
+				alert("{% lang 'CCManualEnterCardNumber' %}");
+				obj.cc_ccno.focus();
+				obj.cc_ccno.select();
+				return false;
+			}
+
+			if(obj.requiresCVV2() && (obj.cc_cccvd.val() == "" || isNaN(obj.cc_cccvd.val()) || obj.cc_cccvd.val().length > 4)) {
+				alert("{% lang 'CCManualEnterCVV2Number' %}");
+				obj.cc_cccvd.focus();
+				obj.cc_cccvd.select();
+				return false;
+			}
+
+			if(obj.cc_ccexpm.selectedIndex == 0) {
+				alert("{% lang 'CCManualEnterCreditCardMonth' %}");
+				obj.cc_ccexpm.focus();
+				return false;
+			}
+
+			if(obj.cc_ccexpy.selectedIndex == 0) {
+				alert("{% lang 'CCManualEnterCreditCardYear' %}");
+				obj.cc_ccexpy.focus();
+				return false;
+			}
+
+			if(obj.hasIssueNo() && (obj.cc_ccissueno.val() == "" || isNaN(obj.cc_ccissueno.val())) ) {
+				if(obj.hasIssueDate() && (obj.cc_ccissuedatem.val() == ""  || obj.cc_ccissuedatem.val() == "")) {
+					alert("{% lang 'CCManualEnterIssueDetails' %}");
+					obj.cc_ccissueno.focus();
+					return false;
+				}
+			}
+
+			return true;
+		},
+
+		validateCreditCard: function() {
+			var number = PaymentValidation_{{ PaymentMethodId|safe }}.cc_ccno.val();
+
+			// Strip any non-digits (useful for credit card numbers with spaces and hyphens)
+			number=number.replace(/\D/g, '');
+
+			// Set the string length and parity
+			var number_length=number.length;
+			var parity=number_length % 2;
+
+			// Loop through each digit and do the maths
+			var total=0;
+			for (i=0; i < number_length; i++) {
+				var digit=number.charAt(i);
+				// Multiply alternate digits by two
+				if (i % 2 == parity) {
+					digit=digit * 2;
+					// If the sum is two digits, add them together (in effect)
+					if (digit > 9) {
+						digit=digit - 9;
+					}
+				}
+				// Total up the digits
+				total = total + parseInt(digit);
+			}
+
+			// If the total mod 10 equals 0, the number is valid
+			if (total % 10 == 0) {
+				return true;
+			} else {
+				return false;
+			}
+		},
+
+		requiresCVV2: function() {
+			var type = PaymentValidation_{{ PaymentMethodId|safe }}.cc_cctype;
+			if(type.val()) {
+				if (type.find('option:selected').hasClass('requiresCVV2')) {
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+			else {
+				return false;
+			}
+		},
+
+		hasIssueDate: function() {
+			var type = PaymentValidation_{{ PaymentMethodId|safe }}.cc_cctype;
+			if(type.val()) {
+				if (type.find('option:selected').hasClass('hasIssueDate')) {
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+			else {
+				return false;
+			}
+		},
+
+		hasIssueNo: function() {
+			var type = PaymentValidation_{{ PaymentMethodId|safe }}.cc_cctype;
+			if(type.val()) {
+				if (type.find('option:selected').hasClass('hasIssueNo')) {
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+			else {
+				return false;
+			}
+		},
+
+		updateCreditCardType: function() {
+			var obj = PaymentValidation_{{ PaymentMethodId|safe }};
+
+			if(obj.requiresCVV2()) {
+				obj.payment_form.find('.Field_creditcard_cccvd').show();
+			}
+			else {
+				obj.payment_form.find('.Field_creditcard_cccvd').hide();
+			}
+			if(obj.hasIssueNo()) {
+				obj.payment_form.find('.Field_creditcard_issueno').show();
+			}
+			else {
+				obj.payment_form.find('.Field_creditcard_issueno').hide();
+			}
+			if(obj.hasIssueDate()) {
+				obj.payment_form.find('.Field_creditcard_issuedate').show();
+			}
+			else {
+				obj.payment_form.find('.Field_creditcard_issuedate').hide();
+			}
+		}
+	};
+
+	$(document).ready(function() {
+		PaymentValidation_{{ PaymentMethodId|safe }}.updateCreditCardType();
+	});
+</script>

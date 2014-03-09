@@ -1,0 +1,15 @@
+<tr class="GridRow" style="height:30px;">
+<td>{{ ModuleName|safe }}</td>
+<td>
+	<div class="ConfiguredIcon_{{ ModuleId|safe }}">
+		<img border="0" src="images/{{ ConfiguredIcon|safe }}.gif"/>
+	</div>
+</td>
+<td><span  id="ConfigDate_{{ ModuleId|safe }}">{{ ConfiguredDate|safe }}</span></td>
+<td>
+	<a id="OptimizerConfig_{{ ModuleId|safe }}" onclick="Optimizer.LoadConfigForm('{{ ModuleId|safe }}'); return false" href = "#">{% lang 'Configure' %}</a>
+
+	<a id="OptimizerReset_{{ ModuleId|safe }}" class="{{ ActiveReset|safe }}" onclick="Optimizer.ResetModule('{{ ModuleId|safe }}');">{% lang 'Reset' %}</a>
+
+</td>
+</tr>

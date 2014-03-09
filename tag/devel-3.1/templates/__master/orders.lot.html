@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%%Panel.HTMLHead%%
+<body>
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/cart.js?%%GLOBAL_JSCacheToken%%"></script>
+	<div id="Container">
+	%%Panel.Header%%
+
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%
+		<div class="Left" id="LayoutColumn1">
+			%%Panel.SideCategoryList%%
+			%%Panel.SideNewProducts%%
+			%%Panel.SideNewsletterBox%%
+		</div>
+		<div class="Content" id="LayoutColumn2">
+			<form name="OrdersLotForm" method="POST" action="%%GLOBAL_ShopPath%%/orders.php">
+			<div style="margin-right: 400px;">
+				<table class="Stylize General" cellspacing="0" cellpadding="0" width=50%>
+				<thead>
+					<tr class="First Last Odd Even">
+						<th style="white-space: nowrap;">Nombre</th>
+						<th style="white-space: nowrap;">SKU</th>
+						<th style="white-space: nowrap;">Precio</th>
+						<th style="white-space: nowrap;">Cantidad</th>
+						<th style="white-space: nowrap;">Observaciones</th>
+					</tr>
+				</thead>
+				%%GLOBAL_ProductListForm%%
+				</table>
+			<input type="reset" value="Reiniciar Forma" />
+			<input type="submit" name="SubmitOrdersLotForm" value="Enviar Pedido" />
+			</form>
+			</div>
+		</div>
+		<br class="Clear" />
+	</div>
+	%%Panel.Footer%%
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%%Panel.HTMLHead%%
+<body>
+	<script type="text/javascript" src="%%GLOBAL_AppPath%%/javascript/product.functions.js?%%GLOBAL_JSCacheToken%%"></script>
+	<!-- DatePicker --><script type="text/javascript" src="%%GLOBAL_AppPath%%/javascript/jquery/plugins/ui.core.js?%%GLOBAL_JSCacheToken%%"></script>
+	<!-- DatePicker --><link rel="stylesheet" type="text/css" href="javascript/jquery/themes/cupertino/ui.all.css" />
+	<!-- DatePicker -->%%Panel.DatePicker%%
+	
+	<div id="Container">
+	%%Panel.Header%%
+
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%		
+		<div class="Content Wide" id="LayoutColumn1">
+			%%Panel.DatePickerFormReport%%<!-- DatePicker, Para usarlo crear un panel, lo demas es igual -->
+			%%GLOBAL_ReportContent%%
+		</div>
+		<br class="Clear" />
+	</div>
+	%%Panel.Footer%%
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<li style="width: {{ GraphItemWidth|safe }}%" title="{{ GraphDateTitle|safe }}" class="{{ GraphRangeLabelClass|safe }}">
+	<div style="{{ HideInsideRangeLabels|safe }}" class="InsideRangeLabel">
+		<em>{{ GraphDataRevenue|safe }} ({{ GraphDataNumOrders|safe }})</em>
+		<span>
+			{{ GraphDateLabel|safe }}
+		</span>
+	</div>
+	<div style="{{ HideOutsideRangeLabels|safe }}" class="OutsideRangeLabel">
+		<span>
+			{{ GraphDateLabel|safe }}
+		</span>
+		<em>{{ GraphDataRevenue|safe }} ({{ GraphDataNumOrders|safe }})</em>
+	</div>
+</li>

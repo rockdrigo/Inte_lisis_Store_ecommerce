@@ -1,0 +1,3 @@
+<?php
+
+class Interspire_EmailIntegration_EmailMarketer_Field_Textarea extends Interspire_EmailIntegration_EmailMarketer_Field_Text { }

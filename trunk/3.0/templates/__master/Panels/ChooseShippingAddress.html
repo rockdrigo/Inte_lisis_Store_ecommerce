@@ -1,0 +1,50 @@
+	<div class="Block Moveable Panel" id="ChooseShippingAddress">
+		<h2>%%GLOBAL_CheckoutShippingTitle%%</h2>
+		%%Discount.FreeShippingEligibility%%
+		<div class="BlockContent">
+			<div class="TabContainer">
+				<ul class="TabNav" style="%%GLOBAL_HideShippingTabs%%">
+					<li id="AddressSingle" class="%%GLOBAL_ActiveTabSingle%%"><a href="%%GLOBAL_ShopPathSSL%%/checkout.php?action=choose_shipping_address&amp;type=single">%%LNG_ShipAllItemsToOneAddress%%</a></li>
+					<li id="AddressMultiple" class="%%GLOBAL_ActiveTabMultiple%%"><a href="%%GLOBAL_ShopPathSSL%%/checkout.php?action=choose_shipping_address&amp;type=multiple">%%LNG_ShipAllItemsToDifferentAddresses%%</a></li>
+				</ul>
+
+				<div class="TabContent" id="TabContentAddressSingle" style="%%GLOBAL_HideTabSingle%%">
+		    		<p class="InfoMessage">
+	    			    %%GLOBAL_CheckoutShippingIntro%%
+		    		</p>
+
+					<div class="PL20">
+						<ul class="ShippingAddressList">
+							%%SNIPPET_ShippingAddressList%%
+						</ul>
+					</div>
+ 				</div>
+
+				<div class="TabContent" id="TabContentAddressMultiple" style="%%GLOBAL_HideTabMultiple%%">
+					<p class="InfoMessage">
+	    			    %%GLOBAL_CheckoutMultiShippingIntro%%
+		    		</p>
+					<form method="post" action="%%GLOBAL_ShopPathSSL%%/checkout.php?action=save_multiple_shipping_addresses" id="multiAddressForm">
+						<table class="General Stylize" cellspacing="0" cellpadding="0" border="0">
+							<thead>
+								<tr>
+									<th>%%LNG_Item%%</th>
+									<th width="60%">%%LNG_ShippingAddress%%</th>
+								</tr>
+							</thead>
+							<tbody>
+								%%SNIPPET_MultiShippingItem%%
+							</tbody>
+						</table>
+
+
+						<p class="Submit" style="text-align: right;">
+							<input type="submit" value="%%LNG_ShipToTheseAddresses%%" />
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	%%Panel.ChooseShippingAddressJavaScript%%

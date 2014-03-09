@@ -1,0 +1,18 @@
+<tr class="GridRow {{ ParentClass|safe }}">
+	<td style="{{ NestingIndent|safe }}">
+		<img src="images/emailtemplate.gif" style="vertical-align: bottom; padding-left: 4px; padding-right: 8px" />
+		{{ FileName|safe }}
+	</td>
+	<td>{{ FileSize|safe }}</td>
+	<td>{{ FileDate|safe }}</td>
+	<td><a href="#" onclick="edit_template('{{ RowId|safe }}', '{{ RelativePath|safe }}'); return false">{% lang 'Edit' %}</a></td>
+</tr>
+<tr id="edit_{{ RowId|safe }}" style="display:none">
+	<td colspan="3" style="{{ NestingIndent|safe }}">
+		<div id="edit_box_{{ RowId|safe }}"></div>
+		<div style="padding-bottom:10px; padding-left: 10px;">
+			<input type="button" value="{% lang 'Save' %}" class="FormButton" onclick="save_edit('{{ RowId|safe }}', '{{ RelativePath|safe }}')" /> <input type="button" value="{% lang 'Cancel' %}" class="FormButton" onclick="edit_hide('{{ RowId|safe }}');" />
+		</div>
+	</td>
+	<td>&nbsp;</td>
+</tr>

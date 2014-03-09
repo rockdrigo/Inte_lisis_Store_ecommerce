@@ -1,0 +1,18 @@
+<li>
+	<div class="ProductImage">
+		%%GLOBAL_ProductImage%%
+	</div>
+	<div class="ProductDetails">
+		<strong>%%GLOBAL_GiftCertificateName%%</strong> (<a href="giftcertificates.php?action=purchase&amp;itemid=%%GLOBAL_CartItemId%%">%%LNG_Edit%%</a>)
+		<br />%%LNG_CapitalFor%%: %%GLOBAL_GiftCertificateTo%%
+		<div class="CartQuantity">
+			%%LNG_Qty%%: 1 <a href="cart.php?action=remove&amp;item=%%GLOBAL_CartItemId%%" onclick="Cart.RemoveItem('%%GLOBAL_CartItemId%%'); return false;" class="CartRemoveLink">%%LNG_Remove%%</a>
+		</div>
+		<div class="CartItemPrice">
+			%%LNG_ItemPrice%%: <em class="ProductPrice">%%GLOBAL_ProductPrice%%</em>
+		</div>
+		<div class="CartItemTotal">
+			%%LNG_ItemTotal%%: <em class="ProductPrice">%%GLOBAL_ProductTotal%%</em>
+		</div>
+	</div>
+</li>

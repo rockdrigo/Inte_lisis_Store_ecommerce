@@ -1,0 +1,115 @@
+/* Gobal Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* General */
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	text-align: center;
+	margin: 10px;
+}
+
+p {
+	line-height: 1.3;
+	margin-bottom: 8px;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #034285;
+	margin: 10px 0;
+}
+
+a {
+	color: #075899;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+a.disabled {
+	color: black;
+	text-decoration: none;
+	cursor: auto;
+}
+img, a img {
+	border:none;
+}
+
+/* Page Breadcrumbs */
+.Nav {
+	font-size: 0.9em;
+	padding-bottom: 4px;
+	clear:both;
+	padding-top:15px;
+}
+
+.Nav .PrevLink { font-size:16px; }
+.Nav .NextLink { font-size:16px; }
+.ImageCount { color:gray; font-size:12px;}
+
+.Title {
+	padding-bottom: 10px;
+}
+.ProductTinyImageList ul li {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	float: left;
+	border: 1px solid gray;
+	margin-left:3px;
+
+}
+
+
+.ProductTinyImageList ul li div {
+	display: table-cell;
+	text-align: center;
+}
+
+.ProductTinyImageList ul li .TinyOuterDiv {
+	border: 2px solid white;
+	display: block;
+
+}
+
+.ProductZoomImageBox {
+	display:table-cell;
+}
+
+.ProductZoomImageBox, .ProductZoomImageBox *{
+	margin:auto;
+	vertical-align: middle;
+
+}
+
+
+.ProductTinyImageList ul {
+	margin: 0pt;
+	padding: 0pt;
+	position: relative;
+	list-style-type: none;
+	white-space:nowrap;
+	width: 2500px;
+}
+
+#ImageScrollPrev,
+#ImageScrollNext {
+	float: left;
+	background:none;
+	border:none;
+	margin-top:15px;
+	cursor:pointer;
+	display: none;
+}
+
+.ProductTinyImageList {
+	float: left;
+	margin-top:10px;
+	white-space:nowrap;
+	width: 80%;
+	overflow: hidden;
+}

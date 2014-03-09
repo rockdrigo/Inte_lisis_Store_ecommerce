@@ -1,0 +1,79 @@
+<script type="text/javascript">//<![CDATA[
+$(document).ready(function() {
+
+	$('#quotationfromdate').datepicker({
+		showOn: 'both',
+		buttonImage: 'admin/images/calendar.gif',
+		buttonImageOnly: true,
+		minDate: "-5y",
+		maxDate: "+3d",
+		defaultDate: new Date(),
+		firstDay: 1,
+		duration: '',
+		dateFormat: 'mm/dd/yy'
+	});
+
+	$('#quotationfromdate').bind('keydown keyup keypress', function(event){
+		switch (event.keyCode) {
+			case 8: // backspace
+			case 16: // shift
+			case 17: // control
+			case 18: // alt
+			case 35: // end
+			case 36: // home
+			case 37: // left
+			case 38: // up
+			case 39: // right
+			case 40: // down
+			case 46: // delete
+				return;
+				break;
+		}
+
+		if ((event.shiftKey || event.metaKey) && event.keyCode == 88) {
+			// cut
+			return;
+		}
+
+		event.preventDefault();
+	});
+	
+	$('#quotationtodate').datepicker({
+		showOn: 'both',
+		buttonImage: 'admin/images/calendar.gif',
+		buttonImageOnly: true,
+		minDate: "-5y",
+		maxDate: "+3d",
+		defaultDate: new Date(),
+		firstDay: 1,
+		duration: '',
+		dateFormat: 'mm/dd/yy'
+	});
+
+	$('#quotationtodate').bind('keydown keyup keypress', function(event){
+		switch (event.keyCode) {
+			case 8: // backspace
+			case 16: // shift
+			case 17: // control
+			case 18: // alt
+			case 35: // end
+			case 36: // home
+			case 37: // left
+			case 38: // up
+			case 39: // right
+			case 40: // down
+			case 46: // delete
+				return;
+				break;
+		}
+
+		if ((event.shiftKey || event.metaKey) && event.keyCode == 88) {
+			// cut
+			return;
+		}
+
+		event.preventDefault();
+	});
+	
+});
+//]]></script>

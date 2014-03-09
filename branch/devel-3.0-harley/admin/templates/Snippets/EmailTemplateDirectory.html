@@ -1,0 +1,18 @@
+<tr class="GridRow {{ ParentClass|safe }}" id="{{ RowId|safe }}">
+	<td style="{{ NestingIndent|safe }}">
+		<a href="#" style="outline: none" onclick="this.blur(); EmailTemplates.ExpandDirectory('{{ RowId|safe }}', '{{ RelativePath|safe }}'); return false">
+			<img src="images/plus.gif" class="ExpandImg" style="vertical-align: bottom" border="0" alt="" />
+		</a>
+		<img src="images/folder.gif" style="vertical-align: bottom; padding-right: 4px" alt="" />
+		{{ FileName|safe }}
+	</td>
+	<td>{{ FileSize|safe }}</td>
+	<td>{{ FileDate|safe }}</td>
+	<td>&nbsp;</td>
+</tr>
+<tr class="GridRow" id="Indicator_{{ RowId|safe }}" style="display: none;">
+	<td style="height: 20px; {{ NestingIndent|safe }}" colspan="4">
+		<img src="images/ajax-loader.gif" alt="" style="padding-left: 25px; vertical-align: bottom; padding-right: 4px;" />
+		{% lang 'LoadingPleaseWait' %}
+	</td>
+</tr>

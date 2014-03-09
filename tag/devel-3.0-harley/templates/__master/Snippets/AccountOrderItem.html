@@ -1,0 +1,17 @@
+<li>
+	<form action="%%GLOBAL_ShopPath%%/account.php" method="get" class="FloatRight">
+		<input type="hidden" name="action" value="view_order">
+		<input type="hidden" name="order_id" value="%%GLOBAL_OrderId%%">
+		<input type="image" src="%%GLOBAL_IMG_PATH%%/%%GLOBAL_SiteColor%%/OrderDetailsButton.gif" alt="%%LNG_ViewOrder%%" style="display:%%GLOBAL_DisableViewButton%%" /><br />
+		<div style="margin-top: 4px; text-align: right;"><a href="account.php?action=new_return&amp;order_id=%%GLOBAL_OrderId%%" class="ReturnLink" style="display: %%GLOBAL_DisableReturnButton%%;"><img src="%%GLOBAL_IMG_PATH%%/%%GLOBAL_SiteColor%%/ReturnItemsButton.gif" alt="%%LNG_ReturnOrderItems%%" /></a></div>
+	</form>
+	<h3>%%LNG_Order%% #%%GLOBAL_OrderId%%</h3>
+	<p class="Meta">
+		%%LNG_OrderDate%%: %%GLOBAL_OrderDate%%<br />
+	</p>
+	<strong>%%LNG_YourOrderContainsTheFollowingItems2%%</strong>
+	<ul class="OrderItemList">
+		%%GLOBAL_AccountOrderItemList%%
+	</ul>
+	<hr />
+</li>

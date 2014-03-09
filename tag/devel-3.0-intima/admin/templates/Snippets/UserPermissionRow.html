@@ -1,0 +1,12 @@
+<tr class="PermissionSelects">
+	<td class="FieldLabel">
+		&nbsp;&nbsp;&nbsp;{{ GroupTitle|safe }}:
+		<br />&nbsp;&nbsp;&nbsp;
+		(<a onclick="SetupPermissions('{{ GroupCode|safe }}', true); return false;" href="#">{% lang 'SelectAll' %}</a> / <a onclick="SetupPermissions('{{ GroupCode|safe }}', false); return false;" href="#">{% lang 'UnselectAll' %}</a>)
+	</td>
+	<td>
+		<select name="permissions[{{ GroupCode|safe }}][]" id="permissions_{{ GroupCode|safe }}" multiple="multiple" size="13" class="Field250 ISSelectReplacement permission_select" {{ DisablePermissions|safe }}>
+			{{ GroupPermissions|safe }}
+		</select>
+	</td>
+</tr>

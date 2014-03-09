@@ -1,0 +1,4 @@
+<?php
+
+class Interspire_EmailIntegration_EmailMarketer_Exception extends Interspire_EmailIntegration_Exception
+{}

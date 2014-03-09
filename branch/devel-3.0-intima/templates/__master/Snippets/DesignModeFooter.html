@@ -1,0 +1,28 @@
+<script src="%%GLOBAL_AppPath%%/javascript/jquery/plugins/ui.core.js?%%GLOBAL_JSCacheToken%%" type="text/javascript"></script>
+<script src="%%GLOBAL_AppPath%%/lib/designmode/designmode.js?%%GLOBAL_JSCacheToken%%F" type="text/javascript"></script>
+<script src="%%GLOBAL_AppPath%%/javascript/jquery/plugins/idletimer/cookie.js?%%GLOBAL_JSCacheToken%%" type="text/javascript"></script>
+<script src="%%GLOBAL_AppPath%%/javascript/jquery/plugins/idletimer/idletimer.js?%%GLOBAL_JSCacheToken%%" type="text/javascript"></script>
+<script type="text/javascript">
+	DesignMode.currentTemplate = '%%GLOBAL_DesignModeCurrentTemplate%%';
+	DesignMode.url = '%%GLOBAL_DesignModeUpdateUrl%%';
+	DesignMode.remoteUrl = '%%GLOBAL_AppPath%%/remote.php';
+	lang.DesignModeSave = "%%LNG_DesignModeSave%%";
+	lang.DesignModeUndo = "%%LNG_DesignModeUndo%%";
+	lang.DesignModeToggle = "%%LNG_DesignModeToggle%%";
+	lang.DesignModeDisable = "%%LNG_DesignModeDisable%%";
+	lang.DesignModeChangesSaved = "%%LNG_DesignModeChangesSaved%%";
+	lang.DesignModeRemoveLastPanel = "%%LNG_DesignModeRemoveLastPanel%%";
+	lang.DesignModeConfirmPanelRemove = "%%LNG_DesignModeConfirmPanelRemove%%";
+	lang.DesignModeConfirmUndo = "%%LNG_DesignModeConfirmUndo%%";
+	lang.DesignModeConfirmDisable = "%%LNG_DesignModeConfirmDisable%%";
+	lang.DesignModeMenuEditPanel = "%%LNG_DesignModeMenuEditPanel%%";
+	lang.DesignModeMenuRemovePanel = "%%LNG_DesignModeMenuRemovePanel%%";
+	lang.DesignModeMenuEditLayout = "%%LNG_DesignModeMenuEditLayout%%";
+	lang.DesignModeMenuEditStylesheet = "%%LNG_DesignModeMenuEditStylesheet%%";
+	lang.DesignModeOr = "%%LNG_Or%%";
+	lang.DesignModeLangSaving = "%%LNG_DesignModeLangSaving%%";
+	lang.DesignModeCancel = "%%LNG_DesignModeCancel%%";
+	(function($){
+		$.idleTimer(%%GLOBAL_DesignModeIdleTime%%, {path: '%%GLOBAL_AppPath%%/admin/'});
+	})(jQuery);
+</script>

@@ -1,0 +1,30 @@
+<div id="exportBox">
+	<div class="ModalTitle">
+		{% lang 'Refund' %}
+	</div>
+	<form action="index.php?ToDo=refundOrder&orderid={{ OrderId|safe }}" method="Post" onsubmit="return Order.ValidateRefundForm();">
+		<div class="ModalContent">
+				<table border="0" cellpadding="0" cellspacing="5" width="100%">
+					<tr>
+						<td width="10px" align="right" valign="top"><input type='radio' value='full' name="refundType" id="refundType_full" /></td>
+						<td class="FieldLabel" align="left"  valign="top">
+							<label for="refundType_full">{% lang 'RefundFullAmount' %}</label>
+						</td>
+					</tr>
+
+					<tr>
+						<td align="right" valign="top"><input type='radio' value='partial' name="refundType" id="refundType_partial" /></td>
+						<td class="FieldLabel" align="left" valign="top">
+							<label for="refundType_partial">{% lang 'RefundPartialAmount' %}</label><br />
+							{{ CurrencyToken|safe }}<input style = 'magin-left:50px'  name="refundAmt"  class="Field80" />
+						</td>
+					</tr>
+				</table>
+		</div>
+		<div id="ModalButtonRow">
+			<div class="FloatLeft"><input class="CloseButton" value="Close" onclick="$.modal.close();" type="button"></div>
+			<img src="images/loading.gif" alt="" style="display: none;" class="LoadingIndicator">
+			<input class="Submit SubmitButton" value="{% lang 'Refund' %}" type="submit">
+		</div>
+	</form>
+</div>

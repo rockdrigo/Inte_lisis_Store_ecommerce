@@ -1,0 +1,17 @@
+<li class="SearchBoxRecord">
+	<div class="RecordContent">
+		<input type="hidden" class="SearchResultProductId" value="{{ ProductId|safe }}" />
+		<input type="hidden" class="SearchResultProductName" value="{{ ProductName|safe }}" />
+		<input type="hidden" class="SearchResultProductCode" value="{{ ProductCode|safe }}" />
+		<input type="hidden" class="SearchResultProductConfigurable" value="{{ ProductConfigurable|safe }}" />
+		<input type="hidden" class="SearchResultProductPrice" value="{{ RawProductPrice|safe }}" />
+		<img src="images/product.gif" width="16" height="16" alt="" />
+		<div class="History">
+			<a href="{{ ProductLink|safe }}" target="_blank">{% lang 'ViewProduct' %}</a>
+		</div>
+		<strong>{{ ProductName|safe }}</strong>
+		<div class="Details">
+			{{ ProductCode|safe }} / {{ ProductPrice|safe }}
+		</div>
+	</div>
+</li>

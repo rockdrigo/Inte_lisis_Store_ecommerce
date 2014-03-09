@@ -1,0 +1,400 @@
+#Menu {
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	height: 28px;
+}
+
+#Menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#Menu ul li {
+	float: left;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-right: 2px;
+	position: relative;
+	z-index: 5;
+}
+
+#Menu li a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+	background: url('../images/menu.gif') repeat-x 0 -28px;
+	outline: none;
+}
+
+#Menu ul li a:hover {
+	cursor: pointer;
+}
+
+#Menu li a.TopMenuItem {
+	height: 28px;
+}
+
+#Menu ul ul {
+	list-style-type: none;
+	border: 1px solid #dbe0e2;
+	display: none;
+	z-index: 250;
+	position: absolute;
+	clear: both;
+	top: 28px;
+}
+
+#Menu li.Open ul {
+	display: block;
+}
+
+#Menu li.Open a {
+	z-index: 400;
+}
+
+#Menu li li {
+	clear: left;
+	margin-right: 0;
+}
+
+#Menu li.Active a.TopMenuItem {
+	background-image: url('../images/menu.gif');
+	background-position: 0 -112px;
+	background-repeat: repeat-x;
+}
+
+#Menu li.Active ul {
+	border: 1px solid #05386d;
+}
+
+#Menu li li a {
+	background: #fff;
+	color: #000;
+	margin: 0;
+	font-weight: normal;
+	border: 0;
+	display: block;
+	padding-right: 8px;
+	text-decoration: none;
+	width: 240px;
+	background-repeat: no-repeat;
+}
+
+#Menu li li strong, #Menu li li span {
+	display: block;
+	line-height: 1.2;
+}
+
+#Menu li li span {
+	padding: 5px 0 5px 0;
+}
+
+#Menu li li strong {
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+#Menu li.Active li a {
+	background-color: #05386d;
+	color: #fff;
+}
+
+#Menu li.Active li:last-child a, #Menu li.Active li.Last a {
+	border-bottom: 0;
+}
+
+#Menu li li a:hover {
+	background-color: #f5f5f5;
+	color: #005fa3;
+}
+
+#Menu li.Active li a:hover {
+	background-color: #dfedfc;
+	color: #000;
+}
+
+#Menu li a .CornerLeft {
+	background: url('../images/menu.gif') no-repeat 0 0;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 28px;
+	width: 12px;
+}
+
+#Menu li a .MenuText {
+	display: block;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-left: 22px;
+	padding-right: 14px;
+	height: 28px;
+	font-family: Tahoma;
+	font-size: 13px;
+	padding-top: 5px;
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	color: #000;
+}
+
+#Menu li a .CornerRight {
+	background: url('../images/menu.gif') no-repeat 0 -56px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 28px;
+	width: 12px;
+}
+
+#Menu li a .Arrow {
+	background: url('../images/menu_arrow.gif') no-repeat;
+	height: 4px;
+	width: 20px;
+	position: absolute;
+	right: 0px;
+	top: 15px;
+}
+
+#Menu li.Active a .CornerLeft {
+	background-image: url('../images/menu.gif');
+	background-repeat: no-repeat;
+	background-position: 0 -84px;
+}
+
+#Menu li.Active a .CornerRight {
+	background-image: url('../images/menu.gif')  0 -140px;
+	background-repeat: no-repeat;
+	background-position: 0 -140px;
+}
+
+#Menu li.Active a .MenuText {
+	color: #fff;
+}
+
+#Menu li.Active a .Arrow {
+	background-image: url('../images/menu_on_arrow.gif');
+	color: #fff;
+}
+
+#Menu .MenuImage {
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	background-image: url('../images/MenuIcons.png');
+	background-repeat: no-repeat;
+	left: 12px;
+	top: 6px;
+}
+
+#Menu li a .mnuOrders {
+	background-position: 0 0;
+}
+
+#Menu li a .mnuCustomers {
+	background-position: 0 -16px;
+}
+
+#Menu li a .mnuProducts {
+	background-position: 0 -32px;
+}
+
+#Menu li a .mnuContent {
+	background-position: -96px -48px;
+}
+
+#Menu li a .mnuMarketing {
+	background-position: -80px -48px;
+}
+
+#Menu li a .mnuStatistics {
+	background-position: 0 -80px;
+}
+
+#Menu ul li ul li .SubMenuText {
+	margin-left: 32px;
+}
+
+#Menu ul li ul li a .SubMenuImage {
+	background-image: url('../images/MenuIcons.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	padding: 0;
+}
+
+#Menu ul li ul li a .SubMenuViewOrders {
+	background-position: 0 0;
+}
+
+#Menu ul li ul li a .SubMenuAddAnOrder {
+	background-position: -16px 0;
+}
+
+#Menu ul li ul li a .SubMenuSearchOrders,
+#Menu ul li ul li a .SubMenuSearchCustomers,
+#Menu ul li ul li a .SubMenuSearchProducts {
+	background-position: -32px 0;
+}
+
+#Menu ul li ul li a .SubMenuExportOrders,
+#Menu ul li ul li a .SubMenuExportCustomers,
+#Menu ul li ul li a .SubMenuExportProducts,
+#Menu ul li ul li a .addon_orderxml_orders {
+	background-position: -48px 0;
+}
+
+#Menu ul li ul li a .SubMenuViewShipments {
+	background-position: -64px 0;
+}
+
+#Menu ul li ul li a .SubMenuViewReturns {
+	background-position: -80px 0;
+}
+
+#Menu ul li ul li a .SubMenuImportTrackingNum,
+#Menu ul li ul li a .SubMenuImportProducts,
+#Menu ul li ul li a .SubMenuImportCustomers,
+#Menu ul li ul li a .SubMenuImportProductVariations {
+	background-position: -96px 0;
+}
+
+#Menu ul li ul li a .SubMenuViewCustomers {
+	background-position: 0 -16px;
+}
+
+#Menu ul li ul li a .SubMenuAddCustomers {
+	background-position: -16px -16px;
+}
+
+#Menu ul li ul li a .SubMenuCustomerGroups {
+	background-position: -32px -16px;
+}
+
+#Menu ul li ul li a .SubMenuViewProducts {
+	background-position: 0 -32px;
+}
+
+#Menu ul li ul li a .SubMenuAddProduct {
+	background-position: -16px -32px;
+}
+
+#Menu ul li ul li a .SubMenuViewCategories {
+	background-position: -32px -32px;
+}
+
+#Menu ul li ul li a .SubMenuProductVariations {
+	background-position: -48px -32px;
+}
+
+#Menu ul li ul li a .SubMenuManageReviews {
+	background-position: -64px -32px;
+}
+
+#Menu ul li ul li a .SubMenuViewBrands {
+	background-position: -80px -32px;
+}
+
+#Menu ul li ul li a .SubMenuViewNews {
+	background-position: -96px -48px;
+}
+
+#Menu ul li ul li a .SubMenuAddNews {
+	background-position: -112px -48px;
+}
+
+#Menu ul li ul li a .SubMenuViewWebPages {
+	background-position: -32px -48px;
+}
+
+#Menu ul li ul li a .SubMenuCreateAWebPage {
+	background-position: -48px -48px;
+}
+
+#Menu ul li ul li a .SubMenuImageManager {
+	background-position: -64px -48px;
+}
+
+#Menu ul li ul li a .SubMenuEmailIntegration {
+	background-position: -112px -80px;
+}
+
+#Menu ul li ul li a .SubMenuShoppingComparison {
+	background-position: -96px -80px;
+}
+
+#Menu ul li ul li a .SubMenuViewEbay {
+	background-position: -80px -80px;
+}
+
+#Menu ul li ul li a .SubMenuViewBanners {
+	background-position: 0 -64px;
+}
+
+#Menu ul li ul li a .SubMenuViewCoupons {
+	background-position: -16px -64px;
+}
+
+#Menu ul li ul li a .SubMenuViewDiscounts {
+	background-position: -80px -48px;
+}
+
+#Menu ul li ul li a .SubMenuViewGiftCertificates {
+	background-position: -48px -64px;
+}
+
+#Menu ul li ul li a .SubMenuNewsletterSubscribers,
+#Menu ul li ul li a .addon_emailchange {
+	background-position: -64px -64px;
+}
+
+#Menu ul li ul li a .SubMenuCreateFroogleFeed {
+	background-position: -80px -64px;
+}
+
+#Menu ul li ul li a .SubMenuGoogleWebsiteOptimizer {
+	background-position: -96px -64px;
+}
+
+#Menu ul li ul li a .SubMenuGoogleSitemap {
+	background-position: -112px -64px;
+}
+
+#Menu ul li ul li a .addon_googleadwords {
+	background-position: -130px -64px;
+}
+
+#Menu ul li ul li a .addon_ysm {
+	background-position: -148px -64px;
+}
+
+#Menu ul li ul li a .SubMenuStoreOverview {
+	background-position: 0 -80px;
+}
+
+#Menu ul li ul li a .SubMenuOrderStatistics {
+	background-position: -16px -80px;
+}
+
+#Menu ul li ul li a .SubMenuProductStatistics {
+	background-position: -32px -80px;
+}
+
+#Menu ul li ul li a .SubMenuCustomerStatistics {
+	background-position: -48px -80px;
+}
+
+#Menu ul li ul li a .SubMenuSearchStatistics {
+	background-position: -64px -80px;
+}
+

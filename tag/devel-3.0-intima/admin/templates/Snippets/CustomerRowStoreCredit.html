@@ -1,0 +1,2 @@
+{{ CurrencyTokenLeft|safe }} <input type="text" name="storecredit_{{ CustomerId|safe }}" id="storecredit_{{ CustomerId|safe }}" value="{{ StoreCreditAmount|safe }}" onkeypress="if(event.keyCode == 13) { updateStoreCredit({{ CustomerId|safe }}); }" class="Field50" /> {{ CurrencyTokenRight|safe }}
+<input type="button" value="{% lang 'Save' %}" class="Field50" onclick="updateStoreCredit({{ CustomerId|safe }});" id="save_storecredit_{{ CustomerId|safe }}" />

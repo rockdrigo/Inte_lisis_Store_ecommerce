@@ -1,0 +1,44 @@
+<form method="post" action="#" onsubmit="OrderManager.SaveShippingMethod(); return false;" id="ShippingMethodForm">
+	<div class="ModalTitle">
+		{% lang 'OrderShippingAndHandling' %}
+	</div>
+	<div class="ModalContent">
+		<p>{% lang 'OrderShippingAndHandlingIntro' %}</p>
+		<p class="MessageBox MessageBoxInfo" style="{{ HideNoShippingMethods|safe }}">{% lang 'OrderShippingAndHandlingNoMethods' %}</p>
+
+		<ul class="OrderManagerShippingMethods">
+			{{ ShippingMethods|safe }}
+
+			<li>
+				<label>
+					<input type="radio" name="shippingMethod" value="custom" onclick="OrderManager.ToggleShippingMethod($(this).val());" {{ CustomChecked|safe }} />
+					{% lang 'UseCustomShippingMethod' %}
+				</label>
+				<div id="shippingMethodCustom" style="margin-top: 4px; margin-left: 2px; padding-left: 20px; background: url('images/nodejoin.gif') no-repeat; {{ HideCustom|safe }}">
+					<table width="100%">
+						<tr>
+							<td class="FieldLabel" style="padding-top: 3px;"><span class="Required">*</span> {% lang 'ShippingMethod' %}:</td>
+							<td style="padding-top: 3px;">
+								<input type="text" name="customName" value="{{ CustomName|safe }}" class="Field250" />
+							</td>
+						</tr>
+						<tr>
+							<td class="FieldLabel" style="padding-top: 3px;"><span class="Required">*</span> {% lang 'ShippingCost' %}:</td>
+							<td style="padding-top: 3px;">
+								{{ CurrencyTokenLeft|safe }}
+								<input type="text" name="customPrice" value="{{ CustomPrice|safe }}" class="Field50" />
+								{{ CurrencyTokenRight|safe }}
+							</td>
+						</tr>
+					</table>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="ModalButtonRow">
+		<div class="FloatLeft">
+			<input type="button" class="Button" value="Cancel" onclick="$.modal.close();" />
+		</div>
+		<input class="Submit" class="Submit" type="submit" value="{% lang 'UseSelectedShippingMethod' %}" />
+	</div>
+</form>

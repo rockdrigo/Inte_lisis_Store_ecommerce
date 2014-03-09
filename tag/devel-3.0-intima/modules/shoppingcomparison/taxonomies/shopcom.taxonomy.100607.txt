@@ -1,0 +1,327 @@
+96451	Cars
+96477	Cars > Auto Parts and Accessories
+96621	Cars > Automotive Security Systems 
+96478	Cars > Motorcycle Parts and Accessories
+96456	Cars > New Cars
+96457	Cars > Used Cars
+2010	Clothing and Accessories
+31515	Clothing and Accessories > Clothing
+96668	Clothing and Accessories > Handbags and Wallets
+68185	Clothing and Accessories > Luggage
+96602	Clothing and Accessories > Shoes
+72	Computers
+1714	Computers > Components
+1722	Computers > Components > Graphics Cards
+1725	Computers > Components > Input Adapters
+1717	Computers > Components > Motherboards
+1718	Computers > Components > PC Cases
+1719	Computers > Components > Processors
+1724	Computers > Components > Sound Cards
+96448	Computers > Components > System Cooling
+96452	Computers > Components > System Power Supplies
+96409	Computers > Computer Accessories
+1627	Computers > Computer Accessories > Cables and Connectors
+352	Computers > Computer Accessories > Cartridges and Toners
+1721	Computers > Computer Accessories > Computer Speakers
+96603	Computers > Computer Accessories > KVM Switches
+1633	Computers > Computer Accessories > Laptop Accessories
+1632	Computers > Computer Accessories > Monitor Accessories
+1635	Computers > Computer Accessories > Printer Accessories
+96436	Computers > Computer Accessories > Scanner Accessories
+1646	Computers > Computer Accessories > Surge Suppressors
+96453	Computers > Computer Accessories > UPS Accessories
+1647	Computers > Computer Accessories > UPS Systems Devices
+96613	Computers > Computer Accessories > USB and Firewire Hubs
+96262	Computers > Computer Memory
+96258	Computers > Computer Memory > Cache Memory
+96261	Computers > Computer Memory > Memory Adapters
+96259	Computers > Computer Memory > Memory Cards
+96256	Computers > Computer Memory > Random Access Memory (RAM)
+96260	Computers > Computer Memory > Read Only Memory (ROM)
+96257	Computers > Computer Memory > Video Memory
+85721	Computers > Hardware
+96500	Computers > Hardware > Barcode Scanners
+96600	Computers > Hardware > Barebone Systems
+9007	Computers > Hardware > Laptops
+96297	Computers > Hardware > Mac Desktops
+460	Computers > Hardware > Mac Laptops
+9006	Computers > Hardware > Monitors
+96438	Computers > Hardware > Network Terminals
+451	Computers > Hardware > PC Desktops
+6	Computers > Hardware > Printers
+7	Computers > Hardware > Scanners
+96263	Computers > Hardware > Servers
+96601	Computers > Hardware > Tablet PCs
+456	Computers > Input Devices
+1694	Computers > Input Devices > Graphic Tablets
+1696	Computers > Input Devices > Keyboards and Mice
+1693	Computers > Input Devices > PC Gaming Devices
+1697	Computers > Input Devices > Web Cameras
+461	Computers > Modems
+455	Computers > Networking
+96267	Computers > Networking > Bridges
+96286	Computers > Networking > Concentrators and Multiplexers
+96283	Computers > Networking > Expansion Modules
+96288	Computers > Networking > Firewalls
+96405	Computers > Networking > IP Phones
+96623	Computers > Networking > Media Streamers
+96291	Computers > Networking > Network Accessories
+1683	Computers > Networking > Network Adapters
+96287	Computers > Networking > Network Cables
+1684	Computers > Networking > Networking Hubs and Switches
+1687	Computers > Networking > Networking Repeaters
+96292	Computers > Networking > Other Network Devices
+96285	Computers > Networking > Print Servers
+96289	Computers > Networking > Remote Access Servers
+96268	Computers > Networking > Routers
+96284	Computers > Networking > Serial Adapters
+96270	Computers > Networking > Transceivers
+96290	Computers > Networking > Wireless Access Points
+96619	Computers > Networking > Wireless Adapters
+90187	Computers > PDAs and Portable Hardware
+1637	Computers > PDAs and Portable Hardware > PDA Accessories
+9	Computers > PDAs and Portable Hardware > PDAs
+96394	Computers > Software
+462	Computers > Storage and Media
+94757	Computers > Storage and Media > CD and DVD Burners
+1699	Computers > Storage and Media > CD ROM Drives
+96269	Computers > Storage and Media > Drive Cases
+94758	Computers > Storage and Media > DVD Drives
+1702	Computers > Storage and Media > Floppy Drives
+1701	Computers > Storage and Media > Hard Drives
+1707	Computers > Storage and Media > Network Storage
+63686	Computers > Storage and Media > Removable Media
+96437	Computers > Storage and Media > Storage Controllers
+1708	Computers > Storage and Media > Tape Drives
+1705	Computers > Storage and Media > Zip and Other Drives
+3	Electronics
+449	Electronics > Cameras and Photography
+87213	Electronics > Cameras and Photography > Camcorder Accessories
+410	Electronics > Cameras and Photography > Camcorders
+96323	Electronics > Cameras and Photography > Camera Lenses
+87204	Electronics > Cameras and Photography > Digital Camera Accessories
+7185	Electronics > Cameras and Photography > Digital Cameras
+448	Electronics > Cameras and Photography > Film
+442	Electronics > Cameras and Photography > Film Cameras
+96460	Electronics > Cameras and Photography > Flashes
+96461	Electronics > Cameras and Photography > Lens Converters
+1385	Electronics > Cameras and Photography > Photography Accessories
+96463	Electronics > Cameras and Photography > Tripods
+411	Electronics > Car Audio and Electronics
+420	Electronics > Car Audio and Electronics > Car Amplifiers
+96455	Electronics > Car Audio and Electronics > Car Audio and Video Accessories
+423	Electronics > Car Audio and Electronics > Car CD Changers
+1390	Electronics > Car Audio and Electronics > Car Equalizers
+96609	Electronics > Car Audio and Electronics > Car Monitors
+422	Electronics > Car Audio and Electronics > Car Speakers and Subwoofers
+96608	Electronics > Car Audio and Electronics > Car Video Players
+87212	Electronics > Car Audio and Electronics > CB Radios
+421	Electronics > Car Audio and Electronics > In Dash Receivers
+1394	Electronics > Car Audio and Electronics > Radar Detectors
+96449	Electronics > Car Audio and Electronics > Radio Scanners
+85746	Electronics > Communications
+409	Electronics > Communications > 2 Way Radios
+96264	Electronics > Communications > Answering Machines
+93768	Electronics > Communications > Cellular Accessories
+93767	Electronics > Communications > Cellular Phones
+96618	Electronics > Communications > Conferencing Stations
+419	Electronics > Communications > Phones
+96454	Electronics > Communications > Telephone Accessories
+96410	Electronics > Handheld Electronics
+93207	Electronics > Handheld Electronics > GPS Accessories
+1398	Electronics > Handheld Electronics > GPS Devices
+412	Electronics > Home Audio
+437	Electronics > Home Audio > Amplifiers and Preamps
+96445	Electronics > Home Audio > Audio and Video Media
+414	Electronics > Home Audio > Audio Shelf Systems
+434	Electronics > Home Audio > CD Players
+428	Electronics > Home Audio > Equalizers
+87215	Electronics > Home Audio > Home Audio Accessories
+1510	Electronics > Home Audio > Home Theater Speakers and Subwoofers
+1401	Electronics > Home Audio > Home Theater Systems
+92217	Electronics > Home Audio > Microphones
+430	Electronics > Home Audio > Mini Disc Players
+439	Electronics > Home Audio > Receivers
+426	Electronics > Home Audio > Tape Decks
+441	Electronics > Home Audio > Turntables
+96338	Electronics > Optics
+96321	Electronics > Optics > Binoculars
+96611	Electronics > Optics > Microscopes
+96493	Electronics > Optics > Night Vision
+96400	Electronics > Optics > Optics Accessories
+96322	Electronics > Optics > Rangefinders
+96612	Electronics > Optics > Rifle Scopes
+96490	Electronics > Optics > Spotting Scopes
+415	Electronics > Optics > Telescopes
+85745	Electronics > Personal Audio
+87207	Electronics > Personal Audio > Boomboxes
+417	Electronics > Personal Audio > Clock Radios
+418	Electronics > Personal Audio > Headphones
+96442	Electronics > Personal Audio > Headsets
+87208	Electronics > Personal Audio > MP3 Accessories
+89	Electronics > Personal Audio > MP3 Players
+19700	Electronics > Personal Audio > Personal Audio   Mini Disc Player
+87211	Electronics > Personal Audio > Personal Radios
+19699	Electronics > Personal Audio > Portable Cassette Players
+19698	Electronics > Personal Audio > Portable CD Players
+96637	Electronics > Satellite Radio Accessories
+96636	Electronics > Satellite Radio Receivers
+85747	Electronics > TV and Video
+87	Electronics > TV and Video > DVD Players
+96252	Electronics > TV and Video > Flat Panel Televisions
+96250	Electronics > TV and Video > Portable Televisions
+96620	Electronics > TV and Video > Projection Televisions
+96341	Electronics > TV and Video > Remote Controls
+96459	Electronics > TV and Video > Security Systems and Surveillance
+86	Electronics > TV and Video > Standard Televisions
+87214	Electronics > TV and Video > TV Accessories
+1399	Electronics > TV and Video > TV Receivers and DVRs
+88	Electronics > TV and Video > VCRs
+96654	Electronics > Warranties and Service Agreements
+96605	Electronics > Weather Stations
+96472	Event Tickets
+38687	Flowers and Gifts
+96626	Flowers and Gifts > Cigars and Tobacco Accessories
+41187	Flowers and Gifts > Flowers and Plants
+96675	Flowers and Gifts > Gift Cards
+41186	Flowers and Gifts > Gifts and Collectibles
+196	Health and Beauty
+197	Health and Beauty > Cosmetics
+199	Health and Beauty > Health Aids
+205	Health and Beauty > Nutrition
+92	Health and Beauty > Perfumes and Colognes
+206	Health and Beauty > Personal Care
+1424	Health and Beauty > Shavers
+80	Home and Garden
+96492	Home and Garden > Appliance Accessories
+96482	Home and Garden > Appliance Accessories > Air Conditioner Accessories
+96483	Home and Garden > Appliance Accessories > Dishwasher Accessories
+96491	Home and Garden > Appliance Accessories > Grill and Smoker Accessories
+96484	Home and Garden > Appliance Accessories > Humidifier, Dehumidifier and Air Purifier Accessories
+96485	Home and Garden > Appliance Accessories > Microwave Oven Accessories
+96486	Home and Garden > Appliance Accessories > Range and Oven Accessories
+96487	Home and Garden > Appliance Accessories > Refrigerator and Freezer Accessories
+96488	Home and Garden > Appliance Accessories > Sewing Machine Accessories
+96324	Home and Garden > Appliance Accessories > Vacuum Cleaner Accessories
+96489	Home and Garden > Appliance Accessories > Washer and Dryer Accessories
+554	Home and Garden > Building Supplies
+96464	Home and Garden > Craft Supplies
+1144	Home and Garden > Food and Wine
+96446	Home and Garden > Food and Wine > Food and Drink
+390	Home and Garden > Food and Wine > Spirits and Beers
+391	Home and Garden > Food and Wine > Wine
+73188	Home and Garden > Furniture
+113	Home and Garden > Garden
+96648	Home and Garden > Home Appliances
+1888	Home and Garden > Home Appliances > Air Conditioners
+96335	Home and Garden > Home Appliances > Air Purifiers
+96334	Home and Garden > Home Appliances > Dehumidifiers
+1893	Home and Garden > Home Appliances > Dryers
+96502	Home and Garden > Home Appliances > Electric Fans
+1524	Home and Garden > Home Appliances > Grills and Smokers
+96501	Home and Garden > Home Appliances > Heaters
+96333	Home and Garden > Home Appliances > Humidifiers
+96319	Home and Garden > Home Appliances > Irons
+96329	Home and Garden > Home Appliances > Sewing Machines
+1898	Home and Garden > Home Appliances > Vacuums
+1897	Home and Garden > Home Appliances > Washing Machines
+96441	Home and Garden > Home Furnishings
+69	Home and Garden > Kitchen
+1728	Home and Garden > Large Kitchen Appliances
+1894	Home and Garden > Large Kitchen Appliances > Dishwashers
+1890	Home and Garden > Large Kitchen Appliances > Freezers
+1895	Home and Garden > Large Kitchen Appliances > Kitchen Cooktops
+96458	Home and Garden > Large Kitchen Appliances > Kitchen Hoods
+1896	Home and Garden > Large Kitchen Appliances > Kitchen Ranges
+1891	Home and Garden > Large Kitchen Appliances > Ovens
+1889	Home and Garden > Large Kitchen Appliances > Refrigerators
+96650	Home and Garden > Lighting
+96443	Home and Garden > Pets
+96651	Home and Garden > Plumbing Supplies
+2128	Home and Garden > Small Kitchen Appliances
+96301	Home and Garden > Small Kitchen Appliances > Blenders
+96302	Home and Garden > Small Kitchen Appliances > Bread Machines
+96349	Home and Garden > Small Kitchen Appliances > Coffee and Espresso Makers
+96604	Home and Garden > Small Kitchen Appliances > Coffee Grinders
+96311	Home and Garden > Small Kitchen Appliances > Crock Pots and Slow Cookers
+96313	Home and Garden > Small Kitchen Appliances > Deep Fryers
+96494	Home and Garden > Small Kitchen Appliances > Electric Kettles
+96316	Home and Garden > Small Kitchen Appliances > Electric Skillets and Woks
+96303	Home and Garden > Small Kitchen Appliances > Food Processors
+96304	Home and Garden > Small Kitchen Appliances > Ice Cream Makers
+96312	Home and Garden > Small Kitchen Appliances > Indoor Grills and Sandwich Makers
+96305	Home and Garden > Small Kitchen Appliances > Juicers
+96318	Home and Garden > Small Kitchen Appliances > Kitchen Electrics Accessories
+1892	Home and Garden > Small Kitchen Appliances > Microwave Ovens
+96306	Home and Garden > Small Kitchen Appliances > Mixers
+96315	Home and Garden > Small Kitchen Appliances > Pasta Makers
+96314	Home and Garden > Small Kitchen Appliances > Popcorn Makers
+96307	Home and Garden > Small Kitchen Appliances > Rice Cookers and Steamers
+96310	Home and Garden > Small Kitchen Appliances > Specialty Kitchen Appliances
+96317	Home and Garden > Small Kitchen Appliances > Toaster Ovens
+96308	Home and Garden > Small Kitchen Appliances > Toasters
+96309	Home and Garden > Small Kitchen Appliances > Waffle Makers
+96669	Home and Garden > Tools and Accessories
+96653	Home and Garden > Wall Art
+275	Jewelry and Watches
+276	Jewelry and Watches > Jewelry
+22686	Jewelry and Watches > Sunglasses
+277	Jewelry and Watches > Watches
+253	Kids and Family
+85708	Kids and Family > Baby Care
+61193	Kids and Family > Baby Carriers
+61192	Kids and Family > Car Seats
+96393	Kids and Family > Cribs and Bassinets
+61194	Kids and Family > Strollers
+96425	Kids and Family > Toys
+96450	Magazine and Subscriptions
+96444	Magazine and Subscriptions > Magazine and Newspaper Subscriptions
+96447	Magazine and Subscriptions > Magazines
+96649	Media
+63715	Media > Books
+63716	Media > Movies
+63717	Media > Music
+96392	Miscellaneous
+96631	Musical Instruments & Accessories
+91705	Musical Instruments & Accessories > Musical Instruments
+96629	Musical Instruments & Accessories > Sheet Music
+279	Office
+85728	Office > Office Machines
+96295	Office > Office Machines > Calculators
+318	Office > Office Machines > Copiers
+96296	Office > Office Machines > Electronic Dictionaries and Translators
+367	Office > Office Machines > Fax Machines
+96624	Office > Office Machines > Multimedia Projector Replacement Lamps
+96253	Office > Office Machines > Multimedia Projectors
+96617	Office > Office Machines > Overhead Projectors
+96643	Office > Office Machines > Projection Screens
+323	Office > Office Machines > Shredders
+96496	Office > Office Machines > Slide Projectors
+321	Office > Office Machines > Typewriters
+327	Office > Office Machines > Voice Recorders and Transcribers
+95263	Office > Office Supplies
+81	Sports and Outdoors
+96467	Sports and Outdoors > Boating and Sailing Accessories
+96625	Sports and Outdoors > Flashlights
+96474	Sports and Outdoors > Marine Electronics
+96424	Sports and Outdoors > Sport and Outdoor
+95	Video Games
+96481	Video Games > Classic Console Games
+54214	Video Games > Computer Games
+1602	Video Games > Dreamcast Games
+96607	Video Games > DS Games
+66187	Video Games > Game Boy Advance Games
+1599	Video Games > Game Boy Color Games
+91199	Video Games > GameCube Games
+96325	Video Games > N Gage Games
+1600	Video Games > Nintendo 64 Games
+96658	Video Games > Nintendo Wii Games
+1606	Video Games > PlayStation 1 Games
+5187	Video Games > PlayStation 2 Games
+96639	Video Games > PlayStation 3 Games
+96606	Video Games > PSP Games
+96343	Video Games > Video Game Accessories
+96339	Video Games > Video Game Consoles
+96640	Video Games > Xbox 360 Games
+91202	Video Games > Xbox Games
+96666	Sports Memorabilia and Fan Shop

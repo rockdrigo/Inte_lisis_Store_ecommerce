@@ -1,0 +1,31 @@
+<div class="Block Moveable Panel" id="CreateAccountForm">
+	<h2>%%GLOBAL_CreateAccountHeading%%</h2>
+	<div class="BlockContent">
+		<p style="display: %%GLOBAL_HideCreateAccountIntroMessage%%">
+			%%LNG_CreateAccountIntro4%% <em>%%GLOBAL_StoreName%%</em> %%LNG_CreateAccountIntro5%%
+		</p>
+
+		<p class="ErrorMessage" style="display:%%GLOBAL_HideCreateAccountErrorMessage%%">
+			%%GLOBAL_ErrorMessage%%
+		</p>
+
+		<form action="%%GLOBAL_ShopPath%%/login.php?action=save_new_account" method="post" onsubmit="return check_create_account_form()" class="PL20">
+			<div class="FormContainer HorizontalFormContainer">
+				<h3>%%LNG_PersonalDetails%%</h3><p />
+				<p>%%LNG_CreateAccountPersonalIntro%%</p>
+				<dl style="padding-bottom:10px;">
+					%%GLOBAL_CreateAccountEmailPassword%%
+				</dl>
+				<h3>%%LNG_ShippingDetails%%</h3><p />
+				<p>%%LNG_CreateAccountShippingIntro%%</p>
+				<dl>
+					%%GLOBAL_CreateAccountDetails%%
+				</dl>
+				<p class="Submit">
+					<br /><input type="submit" value="%%GLOBAL_CreateAccountButtonText%%" style="padding:2px 10px 2px 10px;" />
+				</p>
+			</div>
+		</form>
+		%%Panel.CreateAccountJavaScript%%
+	</div>
+</div>

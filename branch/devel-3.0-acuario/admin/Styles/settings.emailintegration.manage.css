@@ -1,0 +1,111 @@
+table.emailIntegrationRuleBuilder
+{
+	border-collapse: collapse;
+}
+
+table.emailIntegrationRuleBuilder img
+{
+	border: 0;
+	vertical-align: bottom;
+}
+
+table.emailIntegrationRuleBuilder th,
+table.emailIntegrationRuleBuilder td
+{
+	vertical-align: top;
+	padding: 0;
+}
+
+table.emailIntegrationRuleBuilder th
+{
+	font-weight: normal;
+	text-align: left;
+}
+
+table.emailIntegrationRuleBuilder .ruleBuilderActions
+{
+	vertical-align: middle;
+}
+
+table.emailIntegrationRuleBuilder thead th
+{
+	padding: 6px 0 4px 0;
+}
+
+table.emailIntegrationRuleBuilder tfoot
+{
+	display: none;
+}
+
+.newsletterSubscriptionRuleBuilder .rule .action,
+.newCustomerSubscriptionRuleBuilder .rule .order
+{
+	width: 165px;
+}
+
+.newsletterSubscriptionRuleBuilder .rule .list,
+.newCustomerSubscriptionRuleBuilder .rule .orderCriteria
+{
+	width: 185px;
+}
+
+.newCustomerSubscriptionRuleBuilder .rule .list
+{
+	width: 175px;
+}
+
+.newsletterSubscriptionRuleBuilder .rule .map,
+.newCustomerSubscriptionRuleBuilder .rule .action
+{
+	width: 165px;
+}
+
+.emailIntegrationRuleBuilder .invalidRule select,
+.emailIntegrationRuleBuilder .invalidRule input[type="text"]
+{
+	color: red;
+}
+
+.ruleListMapDisabledContainer .Disabled
+{
+	text-decoration: none;
+}
+
+.emailIntegrationFieldSyncForm
+{
+	height: 300px;
+	overflow: auto;
+}
+
+.emailIntegrationFieldSyncForm img
+{
+	border: 0;
+	vertical-align: bottom;
+}
+
+.emailIntegrationFieldSyncForm table
+{
+	border-collapse: collapse;
+}
+
+.emailIntegrationFieldSyncForm th,
+.emailIntegrationFieldSyncForm td
+{
+	vertical-align: top;
+	padding: 0;
+}
+
+.emailIntegrationFieldSyncForm th
+{
+	padding-bottom: 1px;
+}
+
+.emailIntegrationFieldSyncForm td
+{
+	padding-top: 2px;
+}
+
+.emailIntegrationFieldSyncForm .mapActions
+{
+	padding-top: 5px;
+}

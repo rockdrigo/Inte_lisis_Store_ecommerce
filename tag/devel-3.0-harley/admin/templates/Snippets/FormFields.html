@@ -1,0 +1,24 @@
+	<li id="FormFieldRow{{ FormFieldId|safe }}" class="SortableRow" style="width:100%;">
+		<table class="GridPanel" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
+			<tr class="GridRow" onmouseover="this.className='GridRowOver'" onmouseout="this.className='GridRow'">
+				<td style="width:18px;" align="center">
+					<input type="checkbox" name="formfields[]" class="FormFieldsIdx" value="{{ FormFieldId|safe }}" {{ DeleteStatus|safe }}/>
+				</td>
+				<td class="{{ FormFieldSortRow|safe }}">
+					{{ FormFieldName|safe }}
+				</td>
+				<td style="width:17%;" class="HideOnDrag">
+					{{ FormFieldData|safe }}
+				</td>
+				<td style="width:17%;" class="HideOnDrag">
+					{{ FormFieldLastModified|safe }}
+				</td>
+				<td style="width:17%;" class="HideOnDrag">
+					{{ FormFieldType|safe }}
+				</td>
+				<td style="width:17%;" class="HideOnDrag">
+					{{ FormFieldAction|safe }}
+				</td>
+			</tr>
+		</table>
+	</li>

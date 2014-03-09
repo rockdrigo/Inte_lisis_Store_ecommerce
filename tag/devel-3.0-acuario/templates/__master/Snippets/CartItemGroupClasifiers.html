@@ -1,0 +1,35 @@
+			<table class="CartContents Stylize General" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th colspan="2">%%GLOBAL_CartItemsClasifier%%</th>
+						<th style="text-align: center; white-space: nowrap;">%%LNG_Qty%%</th>
+						<th style="text-align: center; white-space: nowrap;">%%LNG_ItemPrice%%</th>
+						<th style="text-align: right; white-space: nowrap;">%%LNG_ItemTotal%%</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr class="SubTotal">
+						<td colspan="4">%%LNG_Subtotal%%:</td>
+						<td><em class="ProductPrice">%%GLOBAL_CartItemTotal%%</em></td>
+					</tr>
+					<tr class="SubTotal" style="%%GLOBAL_HideGiftWrappingTotal%%">
+						<td colspan="4">%%LNG_GiftWrapping%%:</td>
+						<td><em class="ProductPrice">%%GLOBAL_GiftWrappingTotal%%</em></td>
+					</tr>
+					%%SNIPPET_NormalCoupons%%
+					<tr class="SubTotal" style="%%GLOBAL_HideDiscountAmount%%">
+						<td colspan="4">%%LNG_Discount%%:</td>
+						<td><em class="ProductPrice">%%GLOBAL_DiscountAmount%%</em></td>
+					</tr>
+					%%GLOBAL_Taxes%%
+					%%SNIPPET_GiftCertificates%%
+					<tr class="SubTotal">
+						<td colspan="4">%%LNG_GrandTotal%%:</td>
+						<td><em class="ProductPrice">%%GLOBAL_CartTotal%%</em></td>
+					</tr>
+					%%GLOBAL_InclusiveTaxes%%
+				</tfoot>
+				<tbody>
+					%%GLOBAL_CartGroupItems%%
+				</tbody>
+			</table>

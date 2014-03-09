@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#linker_dlg.title}</title>
+
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+
+	<script type="text/javascript">
+		var config = {};
+		config.ShopPath = tinyMCEPopup.getParam('shop_path');
+		//alert(config.ShopPath);
+		//alert(tinyMCEPopup.getParam('shop_path'));
+	</script>
+
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	<script type="text/javascript" src="../../../jquery.js"></script>
+	<script type='text/javascript' src="../../../../admin/script/linker.js"></script>
+	<link href="css/insertlink.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<form onsubmit="StoreLinker.insertLink();return false;" action="#">
+	<div class="tabs">
+		<ul>
+			<li id="product_tab" class="current"><span><a href="javascript:mcTabs.displayTab('product_tab','product_panel');" onmousedown="return false;">{#linker_dlg.product_tab}</a></span></li>
+			<li id="category_tab"><span><a href="javascript:mcTabs.displayTab('category_tab','category_panel');StoreLinker.load_list('CategoryList', 'categories');" onmousedown="return false;">{#linker_dlg.category_tab}</a></span></li>
+			<li id="brand_tab"><span><a href="javascript:mcTabs.displayTab('brand_tab','brand_panel');StoreLinker.load_list('BrandList', 'brands');" onmousedown="return false;">{#linker_dlg.brand_tab}</a></span></li>
+			<li id="page_tab"><span><a href="javascript:mcTabs.displayTab('page_tab','page_panel');StoreLinker.load_list('PageList', 'pages');" onmousedown="return false;">{#linker_dlg.page_tab}</a></span></li>
+		</ul>
+	</div>
+
+	<div class="panel_wrapper" style="height: 460px;">
+		<div id="product_panel" class="panel current">
+			<h3>{#linker_dlg.link_product}</h3>
+			<p>{#linker_dlg.link_product_intro}</p>
+
+			<fieldset>
+				<legend>{#linker_dlg.search_by_category}</legend>
+
+				<div class="LinkList" id="ProductByCategoryList"></div>
+			</fieldset>
+
+			<fieldset>
+				<legend>{#linker_dlg.search_by_product}</legend>
+
+				<input type="text" style="width: 100%;" id="productName" name="productName" onkeypress="setSearchTimeout();"/>
+
+				<div class="LinkList" id="ProductByKeywordList">{#linker_dlg.enter_terms}</div>
+			</fieldset>
+		</div>
+
+		<div id="category_panel" class="panel">
+			<h3>{#linker_dlg.link_category}</h3>
+			<p>{#linker_dlg.link_category_intro}</p>
+
+			<div class="LinkList" id="CategoryList" style="height: 400px;"></div>
+		</div>
+
+		<div id="brand_panel" class="panel">
+			<h3>{#linker_dlg.link_brand}</h3>
+			<p>{#linker_dlg.link_brand_intro}</p>
+
+			<div class="LinkList" id="BrandList" style="height: 400px;"></div>
+		</div>
+
+		<div id="page_panel" class="panel">
+			<h3>{#linker_dlg.link_page}</h3>
+			<p>{#linker_dlg.link_page_intro}</p>
+
+			<div class="LinkList" id="PageList" style="height: 400px;"></div>
+		</div>
+	</div>
+
+	<div class="mceActionPanel">
+		<div style="float: left">
+			<input type="submit" id="insert" name="insert" value="{#insert}" />
+		</div>
+
+		<div style="float: right">
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+	</div>
+</form>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		StoreLinker.load_list("ProductByCategoryList", "categories", "");
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+input {	margin-bottom: 5px; }
+
+.LinkList {	height: 150px; border: 1px solid #777; overflow: auto; margin-bottom: 10px;}
+.LinkList ul, .LinkList li { list-style: none; padding: 0; margin: 0; }
+.LinkList li { padding: 4px; cursor: pointer; }
+.LinkList li:hover { background: #efefef; }
+.LinkList li a { color: #000; text-decoration: none; }
+.LinkList li.selected { background: #2e64ba; color: #fff; }

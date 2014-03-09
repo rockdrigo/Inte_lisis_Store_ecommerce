@@ -1,0 +1,172 @@
+.Moveable {
+	z-index: 999;
+}
+
+.MoveLayer {
+	border: dashed 2px red;
+	cursor: move;
+	height: 100px;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100px;
+	z-index: 1000;
+}
+
+.DropClass {
+	cursor: move;
+	background: url('images/dropbg.gif') repeat;
+}
+
+.DesignMode {
+	background-color: #FFEDAD;
+	border: solid 3px #F4BD00;
+	display: none;
+	float: left;
+	font-size: 11px;
+	left: 20px;
+	padding: 20px;
+	position: absolute;
+	text-align: left;
+	top: 20px;
+}
+
+.DesignMode h2 {
+	display: inline;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.DesignModeMenu {
+	background-image: url('images/DesignModeBarBg.gif');
+	border: solid 2px #3764A0;
+	font-family: Verdana;
+	left: 20px;
+	position: absolute;
+	top: 20px;
+}
+
+.DesignModeControls ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.DesignModeControls div {
+	float: left;
+}
+
+.DesignModeMenu {
+	width: 278px;
+	z-index: 10000;
+}
+
+.DesignModeMenuHeader {
+	background-color: #3764A0;
+	color: #FFFFFF;
+	cursor: move;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin: 1px;
+	padding: 3px 0px 3px 3px;
+}
+
+.DesignModeCloseButton {
+	float: right;
+	display: block;
+	margin-right: 5px;
+	color: #fff;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 10px;
+	text-decoration: none;
+	width: 14px;
+	height: 14px;
+	text-align: center;
+}
+
+.DesignModeCloseButton:hover {
+	background-color: #FFE7A2;
+	border: solid 1px #FFBD69;
+	color: #444;
+}
+
+.DesignModeButton a {
+	background: url('images/buttons.png') no-repeat;
+	border: solid 1px transparent;
+	color: #000;
+	cursor: pointer;
+	display: block;
+	font-size: 11px;
+	height: 22px;
+	line-height: 22px;
+	margin: 2px;
+	padding: 0 4px 0 25px;
+	text-decoration: none;
+	font-family: Verdana;
+}
+
+.DesignModeSaveButton a {
+	background-position: 3px -29px;
+}
+
+.DesignModeUndoButton a {
+	background-position: 3px 3px;
+}
+
+.DesignModeToggleButton a {
+	background-position: 3px -157px;
+}
+
+.DesignModeDisableButton a {
+	background-position: 3px -125px;
+}
+
+.DesignModeButton a:hover {
+	background-color: #FFE7A2;
+	border: solid 1px #FFBD69;
+}
+
+.DesignModeButtonEnabled a {
+	background-color: #FFE7A2;
+	border: 1px solid #FFBD69;
+}
+
+.DesignModeContextMenu {
+	background-color: #fff;
+	border: solid 1px #6593CF;
+	display: none;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 120px;
+	z-index: 2000;
+}
+
+.DesignModeContextMenu ul {
+	color: black;
+	font-family: "MS Sans Serif", Arial;
+	font-size: 11px;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.DesignModeContextMenu li {
+	border: solid 1px transparent;
+	cursor: default;
+	padding: 5px 0px 5px 10px;
+}
+
+.DesignModeContextMenuHover {
+	background-color: #FFE7A2;
+	border: solid 1px #FFBD69;
+}
+
+.DesignModeLangOver {
+	background: #FFFFCC;
+	color: black;
+	cursor: text;
+}

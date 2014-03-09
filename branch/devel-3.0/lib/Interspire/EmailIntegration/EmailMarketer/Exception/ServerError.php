@@ -1,0 +1,3 @@
+<?php
+
+class Interspire_EmailIntegration_EmailMarketer_Exception_ServerError extends Interspire_EmailIntegration_EmailMarketer_Exception {}

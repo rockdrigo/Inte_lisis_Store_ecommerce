@@ -1,0 +1,22 @@
+<div id="ShipmentSelect">
+	<script type="text/javascript">
+	function UpdatePackingSlip(slipId)
+	{
+		url = 'index.php?ToDo=printShipmentPackingSlips&orderId={{ ShipmentSelectOrderId|safe }}';
+		if(slipId != 0) {
+			url += '&shipmentId='+slipId;
+		}
+		window.location = url;
+	}
+	</script>
+	<div style="padding: 10px;">
+		<div style="float: right;">
+			<select name="shipmentSelect" id="shipmentSelect" onchange="UpdatePackingSlip($(this).val())">
+				<option value="0">{{ lang.PackingSlipForOrder }} #{{ ShipmentSelectOrderId }}</option>
+				<option value="-1" {{ AllShipmentsSelected }}>{{ lang.AllShipmentPackingSlipsForOrder }} #{{ ShipmentSelectOrderId }}</option>
+				{{ ShipmentSelectOptions|safe }}
+			</select>
+		</div>
+		{% lang 'PackingSlipsForOrder' %} #{{ ShipmentSelectOrderId|safe }}
+	</div>
+</div>

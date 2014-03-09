@@ -1,0 +1,18 @@
+<div class="Block" id="ProductImagePopup">
+	<h2>%%GLOBAL_ProductName%%</h2>
+	<div class="BlockContent">
+		<div class="ProductZoomImageBox" style="display:none;">
+			<div class="ProductZoomImage">
+			</div>
+		</div>
+	<div class="Nav">
+		<div style="%%GLOBAL_NavLinkDisplay%%">
+			<a class="PrevLink %%GLOBAL_DisablePrevLink%%" href="#" onclick="showProductZoomImage(parseInt(currentImageIndex)-1); return false">&laquo; %%LNG_PreviousImage%%</a>
+			|
+			<a class="NextLink %%GLOBAL_DisablePrevLink%%" href="#" onclick="showProductZoomImage(parseInt(currentImageIndex)+1); return false">%%LNG_NextImage%% &raquo;</a>
+		</div>
+	</div>
+	<div class="ImageCount">
+		(<span class="CurrentImageIndex"></span>&nbsp;%%LNG_Of%% %%GLOBAL_TotalImages%%)
+	</div>
+</div>

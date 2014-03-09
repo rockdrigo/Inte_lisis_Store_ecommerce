@@ -1,0 +1,1 @@
+<input name="credit_checkout_provider" id="credit_checkout_provider_checkout_paypalexpress" value="checkout_paypalexpress" onclick="checkout_provider_changed(this)" class="PAYMENT_PROVIDER_ONLINE" type="radio" checked="checked"> {% lang 'CheckoutWithPayPal' %}

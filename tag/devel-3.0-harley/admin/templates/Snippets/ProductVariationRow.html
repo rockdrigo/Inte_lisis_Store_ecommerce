@@ -1,0 +1,12 @@
+							<li class="VariationRow">
+								<div class="VariationColumn">
+									<div class="VariationValueDrag">&nbsp;</div>
+									<input type="textbox" id="variationOptionName_{{ VariationOptionRankId|safe }}" name="variationOptionName[{{ VariationOptionRankId|safe }}]" class="VariationOptionName" value="{{ VariationOptionName|safe }}" />
+									<a href="#" onclick="AddVariationRow(this);" class="VariationRowAdd" title="Click here to add a new attribute"><img src="images/addicon.gif" alt="Add" border="0" /></a>
+									<a href="#" onclick="DelVariationRow(this);" class="VariationRowDel" style="display: {{ HideRowDelete|safe }};"><img src="images/delicon.gif" alt="Del" border="0" /></a>
+								</div>
+								<ul class="VariationValues">
+									{{ ProductVariationValue|safe }}
+								</ul>
+								<br class="Clear" />
+							</li>

@@ -1,0 +1,27 @@
+<div class="Block" id="WishLists" style="%%GLOBAL_HideWishLists%%">
+	<div class="BlockContent">
+	<h2>%%LNG_WishLists%%</h2>
+		<div>
+			<p class="ErrorMessage" style="display: %%GLOBAL_HideErrorMessage%%">
+				%%GLOBAL_WishListMessage%%
+			</p>
+			<p class="SuccessMessage" style="display: %%GLOBAL_HideSuccessMessage%%">
+				%%GLOBAL_WishListMessage%%
+			</p>
+
+			<p style="%%GLOBAL_HideNoWishlistMessage%%">
+				%%LNG_NoWishListsMessageShort%%
+			</p>
+
+			<form name="wishlistsform" id="wishlistsform" style="%%GLOBAL_HideWishListsTable%%" action="%%GLOBAL_ShopPath%%/wishlist.php?action=deletewishlist" onsubmit="return ValidateDeleteWishlist(true);" method="post">
+				<ul class="WishlistList">
+					%%SNIPPET_WishList%%
+				</ul>
+				<br />
+			</form>
+			<p>
+				<input type="button" onclick="document.location.href='wishlist.php?action=addwishlist'" value="%%LNG_CreateANewWishList%%" />
+			</p>
+		</div>
+	</div>
+</div>

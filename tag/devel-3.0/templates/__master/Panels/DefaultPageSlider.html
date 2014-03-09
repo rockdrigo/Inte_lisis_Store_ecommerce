@@ -1,0 +1,44 @@
+<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/jquery/plugins/jqFancyTransitions/jqFancyTransitions.1.8.min.js?%%GLOBAL_JSCacheToken%%"></script>
+<script type="text/javascript">
+    $(function () {
+            // jQuery.FancyTransitions
+            $(document).ready(function(){
+                $('#SliderHome').jqFancyTransitions({
+                    effect: 'wave', // wave, zipper, curtain
+                    strips: 6, // number of strips
+                    delay: 10000, // delay between images in ms
+                    stripDelay: 50, // delay beetwen strips in ms
+                    titleOpacity: 0.7, // opacity of title
+                    titleSpeed: 1000, // speed of title appereance in ms
+                    position: 'alternate', // top, bottom, alternate, curtain
+                    direction: 'alternate', // left, right, alternate, random, fountain, fountainAlternate
+                    navigation: true, // prev and next navigation buttons
+                    links: true, // show images as links
+                    width: 615,
+                    height: 360
+                });
+            });
+        });
+</script>
+<style>
+/* Wrapper */
+#SliderHome{ margin-left: 0px;}
+
+
+/* Next / prev links */
+.ft-prev{background:url(%%GLOBAL_ShopPath%%/javascript/jquery/plugins/jqFancyTransitions/img/prev.png) no-repeat left center; position:absolute; left:0; z-index:1; opacity:0.7; text-indent:-999em; width:45px; height:80px; margin-top:-40px;}
+a:hover.ft-prev{opacity:1;}
+.ft-next{background:url(%%GLOBAL_ShopPath%%/javascript/jquery/plugins/jqFancyTransitions/img/next.png) no-repeat left center; position:absolute; right:0; z-index:1; opacity:0.7; text-indent:-999em; width:45px; height:80px; margin-top:-40px; margin-right:-5px;}
+a:hover.ft-next{opacity:1;}
+a.ft-prev{outline:0;}
+a.ft-next{outline:0;}
+
+/* Navigation*/ 
+.ft-nav{clear:right; height:50px; text-align:center; margin:0; padding:5px 0; font-size:90%; border:1px solid #CCC; width:100%;}
+.ft-nav a.ft-link{text-decoration:none; border:1px solid #9BA8A0; -moz-border-radius:10px; color:#9BA8A0; margin:20px 0 5px 3px; padding:20px 5px 2px 5px;}
+.ft-nav a:hover.ft-link{background-color:#009F38; color:#FFF; text-decoration:none;}
+/*.ft-button-SliderHome-active{background-color:#F7EB00; color:#009F38; text-decoration:none;}*/
+</style>
+<div id="SliderHome">
+%%SNIPPET_DefaultImagesSlider%%
+</div>

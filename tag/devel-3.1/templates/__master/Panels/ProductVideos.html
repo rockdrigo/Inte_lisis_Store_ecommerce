@@ -1,0 +1,42 @@
+<div class="Block Moveable Panel" id="ProductVideos">
+
+<script type="text/javascript">
+	lang.Close = '%%LNG_Close%%';
+	config.ProductImageMode = '%%GLOBAL_ProductImageMode%%';
+
+</script>
+	<div id="VideoMiddleContainer">
+		<h3 id="videos">%%LNG_ProductVideos%%</h3>
+		<div class="BlockContent">
+			<div id="VideoContainer">
+				<div id="FeaturedVideo">
+					<object width="320" height="265">
+						<param name="movie" value="http://www.youtube.com/v/%%GLOBAL_FeaturedVideo%%?fs=1"></param>
+						<param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+						<embed src="http://www.youtube.com/v/%%GLOBAL_FeaturedVideo%%?&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed>
+					</object>
+				</div>
+				<div id="VideoSingle" class="%%GLOBAL_HideSingleVideo%%">
+					<div class="VideoSingleTitle">%%GLOBAL_VideoTitleLong%% <span class="SingleVideoLength">(%%GLOBAL_VideoLength%%)</span></div>
+					<div class="VideoSingleDescription">%%GLOBAL_VideoDescriptionLong%%</div>
+				</div>
+				<div id="VideoList" class="%%GLOBAL_HideVideoList%%">
+					<ul>
+						%%SNIPPET_VideoList%%
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+		<script type="text/javascript">
+			selectCurrentVideo('%%GLOBAL_FeaturedVideo%%');
+		</script>
+		<hr style="%%GLOBAL_HideSectionSeparator%%" class="VideoSeparator" />
+	</div>
+
+	<div id="VideoSideContainer">
+		<h2 id="videos">%%LNG_ProductVideos%%</h2>
+		<ul>%%SNIPPET_VideoSideList%%</ul>
+	</div>
+</div>

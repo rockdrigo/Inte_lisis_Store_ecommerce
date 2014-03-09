@@ -1,0 +1,50 @@
+			<table class="CartContents Stylize General" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th colspan="2">%%GLOBAL_PreCartItemsForStoreOrigin%%</th>
+						<th style="text-align: center; white-space: nowrap;">%%LNG_Qty%%</th>
+						<th style="text-align: center; white-space: nowrap;">%%LNG_ItemPrice%%</th>
+						<th style="text-align: right; white-space: nowrap;">%%LNG_ItemTotal%%</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr class="SubTotal">
+						<td colspan="4">%%LNG_Subtotal%%:</td>
+						<td><em class="ProductPrice">%%GLOBAL_CartItemTotal%%</em></td>
+					</tr>
+					<tr class="SubTotal" style="%%GLOBAL_HideGiftWrappingTotal%%">
+						<td colspan="4">%%LNG_GiftWrapping%%:</td>
+						<td><em class="ProductPrice">%%GLOBAL_GiftWrappingTotal%%</em></td>
+					</tr>
+					%%SNIPPET_NormalCoupons%%
+					<tr class="SubTotal" style="%%GLOBAL_HideDiscountAmount%%">
+						<td colspan="4">%%LNG_Discount%%:</td>
+						<td><em class="ProductPrice">%%GLOBAL_DiscountAmount%%</em></td>
+					</tr>
+					%%GLOBAL_Taxes%%
+					%%SNIPPET_GiftCertificates%%
+					<tr class="SubTotal">
+						<td colspan="4">%%LNG_GrandTotal%%:</td>
+						<td><em class="ProductPrice">%%GLOBAL_CartTotal%%</em></td>
+					</tr>
+					%%GLOBAL_InclusiveTaxes%%
+				</tfoot>
+				<tbody>
+					%%GLOBAL_PreCartGroupItems%%
+				</tbody>
+			</table>
+			
+			<div class="ProceedToCheckout">
+				<div class="CheckoutButton" style="%%GLOBAL_HideCheckoutButton%%">
+					<a href="%%GLOBAL_CheckoutLink%%?storeorigin=%%GLOBAL_StoreOriginId%%" onclick="%%GLOBAL_OptimizerLinkFunction%%" title="%%LNG_CheckoutButtonTitle%%">
+					%%GLOBAL_CartCheckoutButtonOptimizerScriptTag%%
+					<img src="%%GLOBAL_IMG_PATH%%/%%GLOBAL_SiteColor%%/CheckoutButton.gif" alt="" />
+					%%GLOBAL_CartCheckoutButtonOptimizerNoScriptTag%%
+					</a>
+				</div>
+				<div class="FloatRight AlternativeCheckout" style="%%GLOBAL_HideMultipleAddressShipping%%">
+<p style="%%GLOBAL_HideMultipleAddressShippingOr%%">-- %%LNG_or%% --</p>
+<a href="%%GLOBAL_ShopPath%%/checkout.php?storeorigin=%%GLOBAL_StoreOriginId%%&action=multiple">%%LNG_CheckoutWithMultipleAddresses%%</a>
+				</div>
+				%%GLOBAL_AdditionalCheckoutButtons%%
+			</div>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%%Panel.HTMLHead%%
+<body>
+	<div id="Container">
+		%%Panel.Header%%
+
+		<div id="Wrapper">
+			%%Panel.WrapperBanner%%
+			<div class="Left" id="LayoutColumn1">
+				%%Panel.SideCategoryList%%
+				%%Panel.SideNewProducts%%
+				%%Panel.SideNewsletterBox%%
+			</div>
+			<div class="Content Wide WideWithLeft" id="LayoutColumn2">
+				<div class="Block">
+					<h2>%%LNG_ThanksForYourOrder%%</h2>
+					<div class="BlockContent">
+						<p class="ErrorMessage" style="display:%%GLOBAL_HideError%%">
+							%%GLOBAL_ErrorMessage%%
+						</p>
+
+						<div style="display:%%GLOBAL_HidePaidOrderConfirmation%%">
+							<p class="SuccessMessage" style="display:%%GLOBAL_HideSuccess%%">
+								%%LNG_JustSentAnEmailConfirmation%%
+							</p>
+
+							<p style="display:%%GLOBAL_HidePhysicalOrderConfirmation%%">
+								%%GLOBAL_PhysicalOrderConfirmation%%
+							</p>
+							<p style="display: %%GLOBAL_HidePhysicalViewOrderLink%%">
+								<br />
+								<a href="%%GLOBAL_ShopPath%%/orderstatus.php">%%LNG_ViewYourOrder%%</a>
+							</p>
+							<p style="display:%%GLOBAL_HideDigitalOrderConfirmation%%">
+								%%GLOBAL_DigitalOrderConfirmation%%
+							</p>
+							<p style="display:%%GLOBAL_HideDigitalOrderDownloadLink%%">
+								<br />
+								<a href="%%GLOBAL_ShopPath%%/orderstatus.php">%%LNG_DownloadTheItemsYouOrdered%%</a>
+							</p>
+						</div>
+
+						<div style="display: %%GLOBAL_HideAwaitingPayment%%">
+							<p class="SuccessMessage" style="display:%%GLOBAL_HideSuccess%%">
+								%%LNG_JustSentAnEmailConfirmation%%
+							</p>
+							%%LNG_OrderAwaitingPayment%%
+						</div>
+						%%GLOBAL_OrderConfirmationDetails%%
+						%%SNIPPET_OfflinePaymentMessage%%
+					</div>
+				</div>
+				%%Panel.SideTopSellers%%
+				%%Panel.SideNewProducts%%
+			</div>
+			<br class="Clear" />
+		</div>
+		%%Panel.Footer%%
+		<!-- Include the conversion tracking code for all analytics packages -->
+		%%GLOBAL_ConversionCode%%
+	</div>
+</body>
+</html>

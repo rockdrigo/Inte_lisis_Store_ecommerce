@@ -1,0 +1,2403 @@
+body, td, th, input, option, select, button {
+	font-size: 11px;
+	font-family: Tahoma, sans-serif;
+}
+
+body {
+	color: #676767;
+	margin: 0;
+	padding: 0;
+	background-color: #ececec;
+}
+
+.OuterContainer {
+	background-image: url(../images/gradient.jpg);
+	background-repeat: repeat-x;
+	background-position: top left;
+	margin: 0;
+	padding: 10px 30px 30px;
+	min-width: 940px;
+}
+
+textarea {
+	line-height: 1.4;
+	font: normal 11px Tahoma;
+	padding: 4px;
+}
+
+label {
+	cursor: pointer;
+}
+
+#logo {
+	margin: 15px 0 15px 3px;
+}
+
+a {
+	color: #005FA3;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #333;
+}
+
+.textlinks {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	color: #FBFBFC;
+	font: normal 11px Tahoma;
+}
+
+.Header {
+	position: relative;
+}
+
+.top {
+	color: #7CACDA;
+}
+
+.RightHeader {
+	font-weight: 700;
+	color: #fff;
+	background-color: #ADAAAD;
+	padding: 4px 4px 4px 10px;
+}
+
+ul {
+	margin-top: 5px;
+}
+
+ul li {
+	line-height: 170%;
+	list-style-type: disc;
+}
+
+.PageHeader {
+	width: 100%;
+	background-color: #F7F7F7;
+}
+
+.PageHeader .Menu {
+	text-align: right;
+	padding-right: 20px;
+	vertical-align: bottom;
+	padding-bottom: 5px;
+}
+
+.PageHeader .Menu a {
+	color: #000;
+	text-decoration: none;
+}
+
+.PageHeader .Menu a:hover {
+	text-decoration: underline;
+}
+
+.BodyContainer {
+	width: 97%;
+	margin: 10pt;
+}
+
+.ContentContainer {
+	background-color: #fff;
+	border: solid 1px #CFCFCF;
+	border-top: none;
+	min-height: 370px;
+	padding: 10px;
+}
+
+.PageFooter {
+	padding-top: 5px;
+	text-align: right;
+	color: gray;
+}
+
+.PageFooter a {
+	color: gray;
+	text-decoration: underline;
+}
+
+.OuterPanel {
+	border-collapse: collapse;
+	width: 100%;
+	padding: 0;
+}
+
+.Content {
+	color: #333;
+	padding: 5px;
+}
+
+.Intro {
+	color: #333;
+	padding: 0 0 3px 2px;
+}
+
+.Intro p, .Intro .IntroItem {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.Intro .Button {
+	width: 150px;
+}
+
+.SmallButton {
+	min-width: 135px;
+}
+
+.Panel {
+	border-collapse: collapse;
+	color: #4e4f4f;
+	background-color: #F9F9F9;
+	width: 100%;
+	margin-top: 5px;
+	padding: 4px;
+}
+
+.PanelBottom {
+	padding-bottom: 8px;
+}
+
+.GridPanel {
+	font-weight: 400;
+	color: #4e4f4f;
+	width: 100%;
+}
+
+.ClearPanel {
+	border-collapse: collapse;
+	font-weight: 400;
+	color: #4e4f4f;
+	width: 100%;
+	padding: 4px;
+}
+
+tr.GridRowNoOver td, tr.GridRow td, tr.GridRowSel td {
+	background-color: #F9F9F9;
+	border-bottom: solid 1px #EDECEC;
+	padding: 3px 3px 3px 5px;
+	vertical-align: bottom;
+}
+
+tr.GridRowOver td, tr.GridRowSelOver td {
+	background-color: #F3F3F3;
+	border-bottom: solid 1px #EDECEC;
+	padding: 3px 3px 3px 5px;
+	vertical-align: bottom;
+}
+
+tr.GridRow td.VariationSku,
+tr.GridRowOver td.VariationSku {
+	padding-left: 18px;
+}
+
+tr.GridRow td.VariationBackground,
+tr.GridRowOver td.VariationBackground {
+	background-image: url("../images/nodejoin.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	padding-left: 26px;
+}
+
+#ShowHideVariationsButtonContainer {
+	padding-left: 4px;
+}
+
+.Heading2, tr.Heading2 td {
+	font-weight: bold;
+	color: #000;
+	background-color: #EDECEC;
+	background-image: url('../images/table_bg.gif');
+	padding: 4px 4px 4px 10px;
+}
+
+.Summary {
+	background-color: #F7F7F7;
+	padding-left: 5px;
+}
+
+.Heading3 {
+	padding-left: 4pt;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+.Heading3 td {
+	vertical-align: middle;
+	background-image: url('../images/table_bg.gif');
+	background-repeat: repeat-x;
+	background-color: #e4e4e4;
+	color: #000;
+	border-bottom: 1px solid #ddd;
+	padding: 4px;
+}
+
+.Gap {
+	padding-top: 5px;
+}
+
+.Sep {
+	height: 15pt;
+	background-color: #FFF;
+}
+
+.Panel .Gap {
+	height: 5px;
+}
+
+.Panel .ClearGap {
+	height: 10px;
+	background-color: #FFF;
+}
+
+.SmallSearch {
+	width: 2%;
+	padding: 0 2px 3px 0;
+}
+
+.Error {
+	color: #333;
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 5px 0;
+}
+
+.FieldLabel {
+	font-weight: 400;
+	color: #4e4f4f;
+	font-family: Tahoma;
+	text-decoration: none;
+	vertical-align: top;
+	width: 170px;
+	padding: 6px 10px 0;
+}
+
+.MediumFieldLabel {
+	width: 100px;
+}
+
+.LargeFieldLabel {
+	width: 110px;
+}
+
+.SmallFieldLabel {
+	color: #4e4f4f;
+	font-family: Tahoma;
+	text-decoration: none;
+	vertical-align: top;
+	width: 60px;
+	padding: 6px 10px 0;
+}
+
+/*
+.FormButton {
+	width: 80px;
+}
+/*
+
+.Field, .Field20, .Field40, .Field50, .Field70, .Field80, .Field100, .Field110, .Field120, .Field150, .Field160, .Field170, .Field200, .Field250, .Field300, .Field350, .Field400, .Field500, .Field600, .Field650, .Field750, .Field100pct {
+	color: #333;
+	margin-top: 3px;
+	margin-right: 5px;
+}
+
+.Field20 {
+	width: 20px;
+}
+
+.Field40 {
+	width: 40px;
+}
+
+.Field50 {
+	width: 50px;
+}
+
+.Field70 {
+	width: 70px;
+}
+
+.Field80 {
+	width: 80px;
+}
+
+.Field100 {
+	width: 100px;
+}
+
+.Field110 {
+	width: 110px;
+}
+
+.Field120 {
+	width: 120px;
+}
+
+.Field150 {
+	width: 150px;
+}
+
+.Field160 {
+	width: 160px;
+}
+
+.Field170 {
+	width: 170px;
+}
+
+.Field200 {
+	width: 200px;
+}
+
+.Field500 {
+	width: 500px;
+}
+
+.Field250 {
+	width: 250px;
+}
+
+.Field300 {
+	width: 300px;
+}
+
+.Field350 {
+	width: 350px;
+}
+
+.Field400 {
+	width: 400px;
+}
+
+.Field600 {
+	width: 600px;
+}
+
+.Field650 {
+	width: 650px;
+}
+
+.Field750 {
+	width: 745px;
+}
+
+.Field100pct {
+	width: 99%;
+}
+
+select.Field20 {
+	width: 25px;
+}
+
+select.Field40 {
+	width: 45px;
+}
+
+select.Field50 {
+	width: 55px;
+}
+
+select.Field70 {
+	width: 75px;
+}
+
+select.Field80 {
+	width: 85px;
+}
+
+select.Field100 {
+	width: 105px;
+}
+
+select.Field110 {
+	width: 115px;
+}
+
+select.Field120 {
+	width: 125px;
+}
+
+select.Field150 {
+	width: 155px;
+}
+
+select.Field160 {
+	width: 165px;
+}
+
+select.Field170 {
+	width: 175px;
+}
+
+select.Field200 {
+	width: 205px;
+}
+
+select.Field250 {
+	width: 255px;
+}
+
+select.Field300 {
+	width: 305px;
+}
+
+select.Field350 {
+	width: 355px;
+}
+
+select.Field400 {
+	width: 405px;
+}
+
+select.Field500 {
+	width: 505px;
+}
+
+select.Field650 {
+	width: 655px;
+}
+
+select.Field750 {
+	width: 750px;
+}
+
+select.Field100pct {
+	width: 100%;
+}
+
+.Required {
+	color: Red;
+	visibility: visible;
+}
+
+.RequiredClear {
+	color: Red;
+	visibility: hidden;
+}
+
+.IconColumn {
+	text-align: center;
+	width: 18px;
+}
+
+.MenuText {
+	color: #666;
+	text-decoration: none;
+	margin: 0 2px 0 4px;
+	padding: 4px 6px;
+}
+
+div.MenuText {
+	padding-right: 0;
+}
+
+a.MenuText {
+	color: #005FA3;
+	text-decoration: underline;
+}
+
+a.MenuText:last-child, .MenuText a.Last {
+	padding-right: 0;
+}
+
+.body {
+	color: #333;
+}
+
+.IntroSearchContainer {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+.Disabled {
+	color: gray;
+	text-decoration: underline;
+}
+
+label.Disabled {
+	text-decoration: none; /* labels typically do not have an underline so cancel that out */
+	cursor: default; /* reset the cursor back */
+}
+
+.BigButton {
+	width: 170px;
+}
+
+.CategoryIcons {
+	border-top: solid 2px #000;
+	border-left: solid 2px #000;
+	border-bottom: solid 1px #D4D0C8;
+	background-color: #FFF;
+	width: 500px;
+	height: 60px;
+	overflow-y: auto;
+	padding: 5px;
+}
+
+.NoWrap {
+	white-space: nowrap;
+}
+
+.ShoppingComparisonIcon {
+	padding-right: 2px;
+}
+
+.Opacity-20 {
+	-moz-opacity:.20;
+	filter:alpha(opacity=20);
+	opacity:.20;
+}
+
+.SelectedCategoryIcon {
+	border: solid 1px #0A246A;
+	background-color: #D4D5D8;
+}
+
+.CategoryIcon {
+	border: solid 1px #FFF;
+}
+
+.HighRate {
+	color: #C00;
+	font-weight: 700;
+}
+
+.LowRate {
+	font-weight: 700;
+}
+
+td.QuickView {
+	background-color: #dbf3d1;
+	padding: 10pt;
+}
+
+tr.QuickView td {
+	background-color: #dbf3d1;
+}
+
+.QuickViewPanel {
+	border-right: solid 3px #b8e6a6;
+}
+
+.ProductQuickView {
+	background-color: #DBF3D1;
+	padding: 10px;
+}
+
+.LowInventory {
+	color: red;
+}
+
+.QuickTotal {
+	background-color: #b8e6a6;
+}
+
+.plain {
+	width: 50pt;
+	color: #333;
+}
+
+.SearchBox {
+	width: 100px;
+}
+
+.SmallHeading {
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+#debug {
+	float: left;
+	position: relative;
+	top: -30px;
+	left: 20px;
+}
+
+.menuBar {
+	border-bottom: solid 7px #05386D;
+}
+
+.LoggedInAs {
+	text-align: right;
+	position: absolute;
+	top: 37px;
+	right: 2px;
+	z-index: 10;
+	padding-top: 3px;
+	color: #7CACDA;
+}
+
+.LoggedInAs .Logout {
+	text-transform: lowercase;
+}
+
+.EmptyRow {
+	background-color: #fff;
+}
+
+.PanelPlain {
+	margin-top: 10px;
+}
+
+.SmallTip {
+	font-style: italic;
+	color: gray;
+}
+
+.StockBox {
+	width: 30px;
+}
+
+.Panel a.ExpandLink {
+	color: gray;
+}
+
+a.ExpandLink span {
+	color: gray;
+}
+
+form {
+	margin-bottom: 0;
+}
+
+.MidHeading {
+	color: #000;
+	font-weight: 700;
+	background-color: #F9F9F9;
+	width: 80%;
+	padding: 3px 1px 1px 6px;
+}
+
+.MidHeading img {
+	vertical-align: middle;
+}
+
+.Heading1 {
+	color: #000;
+	font-family: Verdana;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+
+.Heading1 a {
+	font-size: 18px;
+}
+
+td.Heading2, tr.Heading2 td {
+	font-weight: bold;
+	color: #000;
+	background-color: #EDECEC;
+	padding: 4px 4px 4px 10px;
+}
+
+.Message {
+	color: #333;
+	margin: 5px 0;
+}
+
+.QuickView {
+	background-color: #dbf3d1;
+	padding: 10pt;
+}
+
+#tabnav, ul.tabnav {
+	height: 20px;
+	padding-left: 10px;
+	background: url(../images/tab_bottom.gif) repeat-x bottom;
+	margin: 0;
+}
+
+#tabnav li, ul.tabnav li {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#tabnav a:link, #tabnav a:visited,
+.tabnav a:link, .tabnav a:visited {
+	float: left;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: 700;
+	margin-right: 3px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	color: #666;
+	background: url(../images/tab_bg.gif) repeat-x;
+	padding: 2px 5px;
+}
+
+#tabnav a:link.active, #tabnav a:visited.active,
+.tabnav a:link.active, .tabnav a:visited.active {
+	border-bottom: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+
+#tabnav a:hover, ul.tabnav a:hover {
+	background: #fff;
+}
+
+#ExportMenu {
+	border: 1px solid #000;
+	width: 160px;
+	background: #fff;
+	margin: 0;
+}
+
+#ExportMenu a {
+	display: block;
+	padding: 6px 4px 6px 27px;
+}
+
+#ExportMenu a.csv {
+	background: url('../images/exportCsv.gif') no-repeat 4px 4px;
+}
+
+#ExportMenu a.xml {
+	background: url('../images/exportXml.gif') no-repeat 4px 4px;
+}
+
+#ExportMenu a:hover {
+	background-color: #efefef;
+}
+
+.popupBody {
+	font-size: 12px;
+	color: #000;
+	line-height: 1.5;
+	background: #efefef;
+	margin: 20px;
+	padding: 0;
+}
+
+.popupContainer {
+	border: 1px #CAC7BD solid;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.popupBodySlim {
+	font-size: 12px;
+	color: #000;
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+}
+
+.popupBodySlim .Heading {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 8px;
+	background-color: #cecece;
+}
+
+.popupBodySlim .Intro {
+	margin: 10px;
+	margin-bottom: 0;
+	padding: 10px;
+	padding-left: 24px;
+	background: #e0ecff url('../images/infoballon.gif') no-repeat 5px 8px;
+}
+
+.popupBodySlim .Body {
+	padding: 10px;
+}
+
+.popupButtonsSlim {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.popupButtonsSlim a {
+	margin-left: 5px;
+	text-decoration: none;
+}
+
+.popupButtonsSlim a img {
+	border: 0;
+}
+
+.NoThumb {
+	text-align: center;
+	color: gray;
+	padding: 10px;
+}
+
+.CalendarSelectSmall {
+	width: 50px;
+}
+
+.HelpText {
+	cursor: help;
+	border-bottom: 1px dotted #28609B;
+}
+
+.helpTip {
+	text-align: left;
+	font: normal 11px Tahoma,  sans-serif;
+	color: #000;
+	width: 275px;
+}
+
+.TemplateBox {
+	color: #333;
+	font: normal 11px Tahoma;
+	margin-top: 5px;
+	text-align: center;
+	float: left;
+	height: 220px;
+	border: 5px solid #FFF;
+	padding: 5px;
+}
+
+.TemplateBox .TemplatePreviewThumb {
+	width: 200px;
+	border: 0;
+}
+
+.TemplateBoxOn {
+	color: #333;
+	font: normal 11px Tahoma;
+	margin-top: 5px;
+	text-align: center;
+	float: left;
+	display: inline;
+	height: 220px;
+	border: 5px solid #1A528A;
+	background-color: #F1F9FE;
+	padding: 5px;
+}
+
+.TemplateBoxOver {
+	color: #333;
+	font: normal 11px Tahoma;
+	margin-top: 5px;
+	text-align: center;
+	float: left;
+	display: inline;
+	height: 220px;
+	border: 5px solid #FC6;
+	background-color: #FFC;
+	padding: 5px;
+}
+
+.TemplateHeading {
+	font-weight: 700;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+#ExistingDownloadsGrid td {
+	padding: 3px 3px 3px 5px;
+}
+
+.AppNotice {
+	background-color: #F4F4F4;
+	padding: 10px;
+}
+
+.DropShadowContainer {
+	left: 3px;
+	top: 3px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	z-index: 1000000;
+	position: relative;
+}
+
+.DropShadowContainer .Shadow1, .DropShadowContainer .Shadow3, .DropShadowContainer .ItemContainer {
+	left: -1px;
+	top: -1px;
+	position: relative;
+}
+
+.DropShadowContainer .Shadow2 {
+	background: #efefef;
+}
+
+.DropShadowContainer .Shadow3 {
+	background: #dedede;
+}
+
+.DropShadowContainer .ItemContainer {
+	background: #fff;
+	border: 1px solid #cacaca;
+}
+
+.PopDownMenuContainer {
+	z-index: 1000;
+}
+
+.DropDownMenu ul, .DropDownMenu li {
+	text-align: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.DropDownMenu a {
+	display: block;
+	line-height: 1.7;
+	text-decoration: none;
+	padding: 4px 10px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+}
+
+.DropDownMenu a:hover, .DropDownMenu a:hover {
+	background-color: #efefef;
+}
+
+.DropDownMenu li.Break {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.DropDownMenu hr {
+	color: #cacaca;
+	background-color: #cacaca;
+	height: 1px;
+	border: 0;
+	line-height: 0;
+	font-size: 1px;
+	width: 90%;
+	margin: 2px auto;
+	padding: 0;
+}
+
+.textlinks .ActiveButton {
+	background: #fff;
+	border: 1px solid #cacaca;
+	border-bottom: 0;
+	text-decoration: none !important;
+	z-index: 1000000;
+	position: relative;
+	margin: 0 1px 0 3px;
+}
+
+.SortableList {
+	clear: both;
+}
+
+.SortableList, .SortableList li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.SortableList li li {
+	margin-left: 50px;
+}
+
+.SortableRowHelper, .SortableRowHelper td, .SortableList .RowDown td {
+	background: #D5E0F1 !important;
+}
+
+.sort-handle {
+	cursor: move;
+}
+
+.ui-sortable-helper td {
+	background: #D5E0F1 !important;
+}
+
+.SortableRowDivider {
+	display: none;
+}
+
+#dragHelper .SortableRow td {
+	background: transparent;
+	border: 0;
+}
+
+#dragHelper .SortableRow .HideOnDrag, .ui-sortable-helper .HideOnDrag {
+	display: none;
+}
+
+#AjaxLoading {
+	display: none;
+	text-align: center;
+	background: #FCF5AA;
+	width: 180px;
+	z-index: 10000000000;
+	padding: 5px 10px;
+}
+
+#AjaxLoading img {
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+
+.LetterSort {
+	margin: 0 auto;
+}
+
+.LetterSort a {
+	color: #676767;
+	display: block;
+	padding: 3px;
+}
+
+.LoginError {
+	color: red;
+}
+
+h2 {
+	margin-top: 14px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+#ProductSelect #ButtonRow {
+	padding-top: 5px;
+	text-align: right;
+}
+
+#ProductSelect .BigError {
+	font-size: 11px;
+	color: #444;
+	border: 1px solid #7F9DB9;
+	height: 140px;
+	padding: 5px;
+}
+
+#ProductSelect .CategorySelect {
+	background-color: #FFF;
+	list-style: none;
+	height: 90px;
+	overflow: auto;
+	border: 1px solid #777;
+	margin: 0;
+	padding: 0;
+}
+
+#ProductSelect .CategorySelect li {
+	list-style: none;
+	cursor: pointer;
+	margin: 0;
+	padding: 3px;
+}
+
+#ProductSelect .CategorySelect .active {
+	background: #316AC5;
+	color: #fff;
+}
+
+#ProductSelect .ResultList {
+	margin-top: 10px;
+	height: 140px;
+}
+
+.MessageBox {
+	background-repeat: no-repeat;
+	background-position: 7px 5px;
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #333;
+	background-color: #F4F4F4;
+	margin: 5px 0;
+	padding: 8px 8px 8px 30px;
+}
+
+.MessageBoxError {
+	background-image: url('../images/error.gif');
+	background-color: #FFECEC;
+}
+
+.MessageBoxSuccess {
+	background-image: url('../images/success.gif');
+}
+
+.MessageBoxInfo {
+	background-image: url('../images/info.gif');
+	background-color: #FFF1A8;
+}
+
+.MessageBoxWarning {
+	background-image: url('../images/warning.gif');
+	background-color: #FDFCBD;
+}
+
+.MessageBoxTrash {
+	background-image: url('../images/trash.png');
+	background-position: 8px 6px;
+}
+
+.FloatLeft {
+	float: left;
+}
+
+.FloatRight {
+	float: right;
+}
+
+.ClearLeft {
+	clear: left;
+}
+
+.ClearRight {
+	clear: right;
+}
+
+.Refunded {
+	color: maroon;
+}
+
+.QuickView h5 {
+	margin-top: 0;
+	margin-bottom: 4px;
+	font-size: 10px;
+}
+
+.QuickView h5 a {
+	font-weight: 700;
+	color: #4E4F4F;
+	font-size: 10px;
+}
+
+tr td.SortHighlight {
+	background: #F4F3F3;
+}
+
+tr.GridRowSel td {
+	background-color: #FFA;
+}
+
+tr.GridRowSel td.SortHighlight {
+	background-color: #FFFF97;
+}
+
+tr .GridRowSelOver td {
+	background-color: #FF6;
+}
+
+tr.GridRowSelOver td.SortHighlight {
+	background-color: #FFFF50;
+}
+
+.StockLevelIndicator {
+	width: 79px;
+	height: 18px;
+	background: url('../images/stockLevel.gif') no-repeat;
+	padding: 6px 2px;
+}
+
+.StockLevelIndicator span {
+	display: block;
+	height: 7px;
+}
+
+.StockLevelIndicator span.LowStock {
+	background: red;
+}
+
+.StockLevelIndicator span.InStock {
+	background: green;
+}
+
+.StockLevelIndicator span.StockWarning {
+	background: orange;
+}
+
+.InfoTip {
+	background: #E5F0FF url('../images/help.gif') no-repeat 10px;
+	margin: 10px !important;
+	padding: 7px 10px 7px 35px;
+}
+
+#NewDownloadFile {
+	margin-left: 24px;
+}
+
+tr.GridRow td.Suspicious, tr.GridRowOver td.Suspicious {
+	background-color: #F4B5B5;
+}
+
+label.Disabled {
+	border-bottom: 0;
+	text-decoration: none;
+}
+
+#ConfirmSetAsDefaultPopup {
+	z-index: 10000;
+	position: absolute;
+	width: 500px;
+	border: 1px solid #DDD;
+	border-top: 0;
+	background-color: #fff;
+	color: #333;
+	padding: 0;
+}
+
+#ConfirmSetAsDefaultPopup h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+#ConfirmSetAsDefaultPopup span {
+	cursor: pointer;
+}
+
+#ConfirmSetAsDefaultPopup div.topBar {
+	color: #000;
+	background: #fff url(../images/table_bg.gif) top left repeat;
+	border-bottom: 1px solid #DDD;
+	padding: 4px 10px;
+}
+
+#ConfirmSetAsDefaultPopup div.topBar span {
+	width: 1em;
+	border: 1px solid #000;
+	text-align: center;
+	display: block;
+	margin-left: 98%;
+}
+
+#ConfirmSetAsDefaultPopup div.mainText {
+	padding: 0 10px 10px;
+}
+
+.Popup {
+	z-index: 10000;
+	position: absolute;
+	width: 500px;
+	vertical-align: top;
+}
+
+.Popup .PopupToolbar {
+	height: 24px;
+	vertical-align: top;
+}
+
+.Popup .PopupToolbarLeftCorner, .Popup .PopupToolbarRightCorner {
+	width: 6px;
+	height: 24px;
+}
+
+.Popup .PopupToolbarLeftCorner {
+	float: left;
+	background: url('../images/popuptopleftcorner.gif') top left no-repeat;
+}
+
+.Popup .PopupToolbarRightCorner {
+	float: right;
+	background: url('../images/popuptoprightcorner.gif') top left no-repeat;
+}
+
+.Popup .PopupToolbarTools {
+	background: url('../images/popuptopslice.gif') top left repeat;
+	height: 24px;
+	text-align: right;
+	margin: 0 6px;
+}
+
+.Popup .PopupToolbarTools ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.Popup .PopupToolbarTools li {
+	list-style: none;
+	float: right;
+	margin: 5px 0 0;
+	padding: 0;
+}
+
+.Popup .PopupToolbarTools li img {
+	display: block;
+	margin-left: 6px;
+}
+
+.Popup .PopupDocument {
+	background-color: #EEE;
+	border: 1px solid #6D6D6D;
+	border-top: 0;
+	vertical-align: top;
+	color: #000;
+	padding: 1px 15px;
+}
+
+.Popup .PopupDocumentImg {
+	float: left;
+}
+
+.Popup .PopupDocument h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+.HelpInfo, p.HelpInfo {
+	background: #FFF1A8;
+	margin: 5px;
+	padding: 10px 10px 10px 10px;
+	color: #000;
+}
+
+.ListItem {
+	list-style-type: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.ListItem li {
+	list-style-type: none;
+	float: left;
+	width: 70px;
+	height: 2em;
+	text-align: center;
+	border: 1px solid #EAEAEA;
+	background: #fff;
+	padding: 2px;
+}
+
+.ListItem li.Header {
+	text-align: left;
+	font-weight: 700;
+	background: #EEE;
+	cursor: pointer;
+}
+
+.ListItem li input {
+	margin: 0 0 0 2px;
+	padding: 0;
+}
+
+.ControlPanelSearchBar {
+	float: right;
+	margin-top: 3px;
+}
+
+.ControlPanelSearchBar input {
+	border: 1px solid #ccc;
+	color: #bbb;
+	width: 180px;
+	padding: 3px;
+}
+
+.ControlPanelSearchBar .QuickSearchFocused {
+	color: #000;
+	border: 1px solid #aaa;
+}
+
+a.HasNotes, a.HasCustomFields {
+	font-weight: bold;
+}
+
+.QuickGiftWrapping div {
+	padding: 2px 5px;
+	margin-left: 14px;
+}
+
+table tr.QuickViewExpanded td {
+	background: #dbf3d1;
+}
+
+.CartGrid thead td {
+	border-top: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	padding-left: 10px;
+	font-style: italic;
+	background-color: #F5F4F4;
+}
+
+.CartGrid .Right {
+	text-align: right;
+}
+
+.CartGrid img {
+	cursor: pointer;
+}
+
+.CartGrid tbody td {
+	padding-left: 10px;
+}
+
+.WarningNotice {
+	width: 100%;
+	overflow: hidden;
+	background: #FFFAE0 url(../images/warning_bar.png) repeat-x scroll left bottom;
+	border-bottom: 1px solid #DFB853;
+	margin: 0;
+	padding: 7px 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Product Variations Start */
+
+dl#ProductVariationHeaders {
+	margin: 0px;
+	clear: both;
+}
+
+dl#ProductVariationHeaders dt, dl#ProductVariationHeaders dd {
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 5px;
+	vertical-align: top;
+	display: inline;
+}
+
+dl#ProductVariationHeaders dt {
+	width: 240px;
+	float: left;
+}
+
+dl#ProductVariationHeaders dd {
+	float: left;
+}
+
+ul#ProductVariationBox {
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+}
+
+ul#ProductVariationBox ul, ul#ProductVariationBox li {
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+}
+
+ul#ProductVariationBox li {
+	list-style-type: none;
+}
+
+/* Product Variations Row Start */
+
+ul#ProductVariationBox li.VariationRow {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Product Variations Row End */
+
+/* Product Variations Column Start */
+
+ul#ProductVariationBox div.VariationColumn {
+	float: left;
+	width: 160px;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul#ProductVariationBox li.VariationRow div.VariationValueDrag {
+	float: left;
+	width: 10px;
+	height: 20px;
+	margin-top: 3px;
+	margin-right: 5px;
+	background: url('../images/grid.gif') repeat-y top left;
+	cursor: move;
+}
+
+ul#ProductVariationBox li.VariationRow input.VariationOptionName {
+	color: #333;
+	margin-top: 3px;
+	margin-right: 5px;
+	width: 90px;
+}
+
+/* Product Variations Column End */
+
+/* Product Variations Values Start */
+
+ul#ProductVariationBox ul.VariationValues {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 170px;
+	padding-left: 10px;
+}
+
+/* Product Variations Values End */
+
+/* Product Variations Value Start */
+
+ul#ProductVariationBox li.VariationValue {
+	float: left;
+	width: 155px;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 10px;
+}
+
+ul#ProductVariationBox li.VariationValue div.VariationValueDrag {
+	float: left;
+	width: 10px;
+	height: 20px;
+	margin-top: 3px;
+	margin-right: 5px;
+	background: url('../images/grid.gif') repeat-y top left;
+	cursor: move;
+}
+
+ul#ProductVariationBox li.VariationValue input.VariationValueName {
+	color: #333;
+	margin-top: 3px;
+	margin-right: 5px;
+	width: 90px;
+}
+
+/* Product Variations Value End */
+
+.Clear {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+}
+
+/* Affected Products List for Variations Start */
+
+#VariationAffectedProductList {
+	margin: 20px 10px;
+	height: 300px;
+	overflow: auto;
+}
+
+#VariationAffectedProductList dt {
+	clear: both;
+	font-weight: bold;
+}
+
+#VariationAffectedProductList dt a {
+	font-weight: bold;
+}
+
+#VariationAffectedProductList dd {
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+
+/* Affected Products List for Variations End */
+
+dl.OrderProductConfigurableFields {
+	margin: 0;
+	padding: 0;
+	margin-left: 40px;
+}
+
+dl.OrderProductEventDate {
+	margin: 0;
+	padding: 0;
+	margin-left: 40px;
+}
+
+.OrderProductEventDate dd {
+	margin-left: 30px;
+	margin-bottom: 6px;
+	font-style: italic;
+}
+
+.OrderProductConfigurableFields dd {
+	margin-left: 30px;
+	margin-bottom: 6px;
+	font-style: italic;
+}
+
+.OrderManager #PaymentMethodList .PaymentMethod {
+	display: block;
+	margin-bottom: 5px;
+	clear: both;
+}
+
+.OrderManager #PaymentMethodList .PaymentMethod input {
+	vertical-align: bottom;
+}
+
+.OrderManager dl.PaymentMethodForm {
+	margin: 0;
+	padding: 0;
+	padding-left: 27px;
+	background: url('../images/nodejoin.gif') no-repeat top left;
+	margin-bottom: 10px;
+}
+
+.OrderManager .PaymentMethodForm dt {
+	width: 150px;
+	float: left;
+	clear: left;
+	padding-top: 5px;
+}
+
+.OrderManager .PaymentMethodForm dd {
+	margin-bottom: 6px;
+}
+
+.OrderDefaultField {
+	color: gray;
+	font-style: italic;
+}
+
+.OrderManagerShippingMethods, .OrderManagerShippingMethods li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.OrderManagerShippingMethods li {
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+.OrderManagerShippingMethods li label input {
+	vertical-align: middle;
+}
+
+.Shipped {
+	color: green;
+}
+
+.FieldHelp,
+.FieldHelp a {
+	color: gray;
+}
+
+#ProductFieldsContainer {
+	width: 830px;
+}
+
+#OrderCustomFieldsList dt, #OrderCustomFieldsList dd {
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 5px;
+	vertical-align: top;
+}
+
+#OrderCustomFieldsList dt {
+	width: 240px;
+	float: left;
+	font-weight: bold;
+}
+
+.FormFieldsMenuButton {
+	width: auto;
+}
+
+/** Start Form Field setup popup **/
+#FormFieldSetupWorkSpace {
+	padding-top: 10px;
+}
+
+#FormFieldSetupWorkSpace dt, #FormFieldSetupWorkSpace dd {
+	padding: 0px;
+	margin: 5px 0px;
+	vertical-align: top;
+}
+
+#FormFieldSetupWorkSpace dt {
+	width: 130px;
+	float: left;
+	padding-left: 15px;
+	white-space: nowrap;
+	text-align: left;
+}
+
+#FormFieldSetupWorkSpace dd {
+	margin-left: 140px;
+}
+
+#FormFieldSelectOptionsSort {
+	color: #999999;
+	vertical-align: middle;
+	padding-left: 4px;
+}
+
+#FormFieldSelectOptionsSort a {
+	color: #333333;
+}
+
+#FormFieldSelectOptionsSort img {
+	border: 0;
+}
+
+#FormFieldSetupWorkSpace *[readonly] {
+	border: 1px solid #e0e0e0;
+}
+
+/** End Form Field setup popup **/
+.FormFieldBackend {
+	padding: 0px;
+	margin: 0px;
+}
+
+.FormFieldBackend dt, .FormFieldBackend dd {
+	padding: 0px;
+	margin: 0px;
+	padding-top: 6px;
+}
+
+.FormFieldBackend dt {
+	float: left;
+	width: 180px;
+	padding-left: 10px;
+}
+
+.FormFieldBackend dd {
+	margin-left: 190px;
+	clear: right;
+}
+
+.HorizontalFormContainer dt, .HorizontalFormContainer dd {
+	padding: 0px;
+	margin: 5px 0px;
+}
+
+.HorizontalFormContainer dt {
+	margin-bottom: 0;
+}
+
+.HorizontalFormContainer dd {
+	margin-top: 0;
+	margin-left: 30px;
+	margin-bottom: 6px;
+	font-style: italic;
+}
+
+.FormFieldBackend div br, .HorizontalFormContainer div br {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.FieldDisabled {
+	color: grey;
+}
+
+.FieldLabelDisabled {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.PaymentAuthorized, .PaymentAuthorized a {
+	margin: 5px 0 5px 2px;
+	color: #FF6633;
+}
+
+.PaymentCaptured {
+	margin: 5px 0 5px 2px;
+	color: green;
+}
+
+.PaymentRefunded {
+	margin: 5px 0 5px 2px;
+	color: gray;
+}
+
+/* Order Statuses */
+.OrderStatus {
+	border-color: #000;
+	background-color: #000;
+}
+
+.OrderStatus1 {
+	border-color: #c09;
+	background-color: #c09;
+}
+
+.OrderStatus2 {
+	border-color: #94c500;
+	background-color: #94c500;
+}
+
+.OrderStatus3 {
+	border-color: #075bf5;
+	background-color: #075bf5;
+}
+
+.OrderStatus4 {
+	border-color: #8d2400;
+	background-color: #8d2400;
+}
+
+.OrderStatus5 {
+	border-color: #b16c00;
+	background-color: #b16c00;
+}
+
+.OrderStatus6 {
+	border-color: #694825;
+	background-color: #694825;
+}
+
+.OrderStatus7 {
+	border-color: #f6970f;
+	background-color: #f6970f;
+}
+
+.OrderStatus8 {
+	border-color: #a407f5;
+	background-color: #a407f5;
+}
+
+.OrderStatus9 {
+	border-color: #cd3000;
+	background-color: #cd3000;
+}
+
+.OrderStatus10 {
+	border-color: #94c500;
+	background-color: #94c500;
+}
+
+.OrderStatus11 {
+	border-color: #008ccd;
+	background-color: #008ccd;
+}
+
+.ManageImageBox {
+	color: #333333;
+	font: normal 11px Tahoma;
+	margin-top: 5px;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	display: inline;
+	height: 250px;
+	border: 5px solid transparent;
+	position: relative;
+}
+
+.BuiltInGatewayForm {
+	margin-left: 25px;
+	width: 550px;
+}
+
+.BuiltInCheckoutIntro {
+	background: #e0ecff;
+	padding: 10px;
+	padding-bottom: 5px;
+	line-height: 1.4;
+}
+
+.BuiltInCheckoutIntro p {
+	margin: 0 0 10px 0;
+}
+
+.CheckoutProviderListIndent {
+	margin-left: 5px;
+}
+
+#SeeMoreDiscountBox {
+	text-align: center;
+	padding-top: 5px;
+}
+
+.OptimizerTable a.inactive {
+	color: #676767;
+	text-decoration: none;
+}
+
+.OptimizerTable a.active {
+	cursor: pointer;
+}
+
+#OptimizerConfigForm dl {
+	margin-left: 25px;
+}
+
+#OptimizerConfigForm dt {
+	float: left;
+	padding-left: 15px;
+	text-align: left;
+	white-space: nowrap;
+	width: 130px;
+}
+
+#OptimizerConfigForm dt,
+#OptimizerConfigForm dd {
+	padding: 5px;
+	vertical-align: top;
+}
+
+#OptimizerConfigForm dd {
+	margin-left: 150px;
+}
+
+#OptimizerConfigForm #CustomConversionHelp {
+	margin-top: 5px;
+	width: 320px;
+	color: #676767;
+}
+
+#OptimizerConfigForm #CustomConversionHelp div {
+	margin-top: 5px;
+}
+
+#OptimizerConfigForm #CustomConversionHelp input {
+	margin-left: 3px;
+	width: 255px;
+	float: left;
+}
+
+#OptimizerConfigForm select {
+	width: 310px;
+}
+
+#frmNews #OptimizerConfigForm select,
+#frmProduct #OptimizerConfigForm select,
+#frmAddCategory #OptimizerConfigForm select {
+	width: 410px;
+}
+
+#frmNews #OptimizerConfigForm #CustomConversionHelp input,
+#frmProduct #OptimizerConfigForm #CustomConversionHelp input,
+#frmAddCategory #OptimizerConfigForm #CustomConversionHelp input {
+	width: 355px;
+}
+
+#frmNews #OptimizerConfigForm #CustomConversionHelp,
+#frmProduct #OptimizerConfigForm #CustomConversionHelp,
+#frmAddCategory #OptimizerConfigForm #CustomConversionHelp {
+	width: 420px;
+}
+
+.GrayHelpText {
+	color: Gray;
+	font-size: 10px;
+	font-style: italic;
+}
+
+#currentHeaderImage {
+	overflow: auto;
+	max-width: 700px;
+}
+
+#SearchSectionOrderFrontEnd {
+	width: 200px;
+	background: #ffffff;
+	border: 2px inset #000000;
+	padding: 0;
+	margin: 0;
+}
+
+#SearchSectionOrderFrontEnd ul {
+	padding: 1px 0px;
+	margin: 0;
+}
+
+#SearchSectionOrderFrontEnd ul li, #SearchSectionOrderFrontEnd ul li.over {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	padding: 1px 0px;
+	padding-left: 5px;
+	cursor: pointer;
+	width: 195px;
+}
+
+#SearchSectionOrderFrontEnd ul li.over {
+	background-color: #316AC5;
+	color: #ffffff;
+}
+
+.TemplateList {
+	display: block;
+	margin: auto;
+}
+
+.TemplateListContainer {
+	overflow: auto;
+	max-height: 550px;
+}
+
+.TemplateList .Installable .TemplateHeading {
+	color: #666;
+}
+
+.TemplateList .TplPreviewImage {
+	display: block;
+	margin-top: 10px;
+}
+
+.MultiUploadDialogButtons .Submit {
+	width: 140px;
+}
+
+#ModalContentContainer .GrowingUploader {
+	margin: 10px 0;
+}
+
+#ModalContentContainer .ProgressIndicator {
+	padding-bottom: 16px;
+}
+
+#ModalContentContainer .ProgressIndicator .ProgressBar {
+	border: 1px solid #ccc;
+	width: 300px;
+	height: 20px;
+	padding: 0;
+	margin: 0 auto;
+	position: relative;
+}
+
+#ModalContentContainer .ProgressIndicator .ProgressMessage {
+	text-align: center;
+}
+
+#ModalContentContainer .ProgressIndicator .ProgressBarColour {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 20px;
+	background: url('../images/progressbar.gif') no-repeat;
+}
+
+#ModalContentContainer .ProgressIndicator .ProgressBarText {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	line-height: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #333333;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+#PaymentDetails {
+	overflow: hidden;
+}
+
+#PaymentDetails dt, #PaymentDetails dd {
+	float: left;
+}
+
+#PaymentDetails dt {
+	width: 100px;
+	clear: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#variationCombinationsList fieldset {
+	height: 210px;
+	padding-bottom: 20px;
+	border: 1px solid #CFCFCF;
+}
+
+#optionList {
+	overflow: auto;
+	height: 100%;
+}
+
+#variationCombinationsList fieldset label {
+	float: left;
+	width: 100px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+#variationCombinationsList fieldset input, #variationCombinationsList fieldset select {
+	margin-bottom: 5px;
+	margin-top: 0;
+	width: 200px;
+}
+
+#variationCombinationsList fieldset .NumberField {
+	width: 40px;
+}
+
+#variationCombinationsList fieldset .SubmitButton {
+	width: 100px;
+}
+
+.NewsIcon {
+	background-position: -96px -48px;
+	background-image: url('../images/MenuIcons.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	padding: 0;
+}
+
+/*-- Breadcrumb Styles --*/
+
+.Breadcrumb ul, .Breadcrumb li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.Breadcrumb li a, .Breadcrumb li span {
+	display: block;
+	padding: 3px 10px 4px;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.Breadcrumb {
+	clear: left;
+	height: 24px;
+	background: #fff;
+	border-bottom: 1px solid #dcdcdc;
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin-right: 10pt;
+	margin-left: 10pt;
+	width: 97%;
+}
+
+.Breadcrumb ul {
+	float: left;
+	height: 24px;
+}
+
+.Breadcrumb li {
+	height: 24px;
+	float: left;
+	background: #fff url('../images/breadcrumb_grid.png') no-repeat right -50px;
+}
+
+.Breadcrumb li.SecondLast {
+	background: url('../images/breadcrumb_grid.png') no-repeat right -19px;
+}
+
+.Breadcrumb li.Last {
+	background: #f4f5f7 url('../images/breadcrumb_grid.png') no-repeat right -50px;
+}
+
+.Breadcrumb li.Home a .HomeIcon {
+	background: url('../images/breadcrumb_grid.png') no-repeat 0 0;
+	width: 16px;
+	height: 16px;
+	float: left;
+	padding-left: 8px;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+.Breadcrumb li.Home a {
+	padding-left: 0;
+	text-decoration: none;
+}
+
+.Breadcrumb li.Last a, .Breadcrumb li.Last span {
+	text-decoration: none;
+	color: #444;
+}
+
+.inPlaceImageBoxDefault {
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: #676767;
+	padding: 3px;
+	text-align: left;
+	width: 180px;
+}
+
+.inPlaceFieldDefault {
+	background-color: transparent;
+	border: 1px solid transparent;
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #676767;
+	padding: 3px;
+	width: 70%;
+}
+
+.inPlaceFieldHover {
+	background-color: #FFFFDD !important;
+	border-color: #666666 rgb(221, 221, 221) rgb(221, 221, 221) rgb(102, 102, 102) !important;
+	border-style: solid;
+	border-width: 1px;
+	padding: 3px;
+}
+
+.inPlaceImageBoxFieldHover {
+	background-color: #FFFFDD !important;
+	border-color: #666666 rgb(221, 221, 221) rgb(221, 221, 221) rgb(102, 102, 102) !important;
+	border-style: solid;
+	border-width: 1px;
+	padding: 3px;
+}
+
+.inPlaceFieldFocus {
+	background-color: #FFF;
+	border: 1px solid #809DB9;
+	padding: 3px;
+}
+
+/*
+ * Tabs styles for jQuery UI tabs
+ */
+
+.ui-tabs-hide {
+	display: none;
+}
+
+#tabs .ui-tabs-selected a,
+#tabnav .ui-tabs-selected a,
+.tabnav .ui-tabs-selected a {
+	background: #fff none;
+	border-bottom: 1px solid #fff;
+}
+
+.ExportMachine_ButtonRow button
+{
+	width: 60px;
+	margin-left: 5px;
+}
+
+.ExportMachine_State_ConfigureFields .emailIntegrationFieldSyncModalIntro
+{
+	display: none;
+}
+
+.emailIntegrationFieldSyncForm tr.duplicate .mapProvider,
+.emailIntegrationFieldSyncForm .incomplete
+{
+	color: red;
+}
+
+.ExportMachine_StateContainer
+{
+	height: 200px;
+}
+
+.ExportMachine_ConfigureFields
+{
+	height: 175px;
+	overflow-y: auto;
+}
+
+.ExportMachine_ConfigureFields img
+{
+	border: none;
+}
+
+.ExportMachine_GuessFields
+{
+	height: 20px;
+	padding-top: 10px;
+}
+
+.ExportMachine_Note
+{
+	font-size: 10px;
+	color: gray;
+}
+
+#commentSystemList {
+	width: 200px;
+	height: 100px;
+}
+
+#commentSystemList label {
+	display: block;
+	padding-left: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#RedirectsTable .GridRow td {
+	vertical-align: middle;
+}
+
+#RedirectsTable .GridRowOver td {
+	vertical-align: middle;
+}
+
+.OrangeHelpText {
+	color: orange;
+	font-weight: bold;
+	cursor: help;
+	border-bottom: 1px dotted #28609B;
+}
+
+/* Password Strength Meter */
+.PasswordStrengthMeter {
+	display: none;
+	float: left;
+	font-size: 0.8em;
+}
+.PasswordStrengthMeter .pswMeterTag {
+	margin-top: 2px;
+}
+.PasswordStrengthMeter .pswMeterTag div {
+	border: 1px solid #ccc;
+	float: left;
+	height: 5px;
+	margin-right: 3px;
+	width: 1.5em;
+}
+.PasswordStrengthTip {
+	clear: left;
+	float: left;
+	display: none;
+}
+
+.nodeJoin {
+	background-image: url(../images/nodejoin.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}
+
+.accesskey {
+	text-decoration: underline;
+}
+
+tr.orderGridDeletedNotice td {
+	background-image: url('../images/trash.png');
+	background-repeat: no-repeat;
+	background-position: 8px 6px;
+	padding-left: 33px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+}
+
+.quickSearchNumber {
+	font-size: 20px;
+}
+
+.quickSearchDeletedOrders {
+	font-size: 11px;
+	padding-top: 10px;
+	padding-left: 18px;
+	margin-left: -18px;
+	list-style-type: none;
+	background-image: url('../images/trash.png');
+	background-repeat: no-repeat;
+	background-position: -1px 11px;
+}
+
+.quickSearchDeletedOrders .quickSearchNumber {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.light {
+	color: gray;
+}

@@ -1,0 +1,61 @@
+				<tr>
+					<td class="FieldLabel" style="width: auto;">
+						<span class="Required">{{ Required|safe }}</span>&nbsp;{{ FieldName|safe }}:
+					</td>
+					<td width="350">
+						<div>
+							<label><input type="radio" name="categoryType" value="single" onclick="$('#categoryTypeSingle').show(); $('#categoryTypeMultiple').hide();" checked="checked" /> {% lang 'ImportProductCategories1' %}</label>
+							<img onmouseout="HideHelp('{{ HelpId|safe }}')" onmouseover="ShowHelp('{{ HelpId|safe }}', '{{ FieldNameHelpTitle|safe }}', '{{ FieldNameHelp|safe }}')" src="images/help.gif" width="24" height="16" border="0">
+							<div style="display:none" id="{{ HelpId|safe }}"></div>
+							<div id="categoryTypeSingle">
+								<img src="images/nodejoin.gif" style="vertical-align: middle;" />
+								<select name="{{ OptionName|safe }}" id="{{ FieldId|safe }}" class="Field250">
+									<option value="-1">Ignore</option>
+									{{ OptionList|safe }}
+								</select>
+							</div>
+						</div>
+						<div>
+						<label><input type="radio" name="categoryType" value="multiple" onclick="$('#categoryTypeSingle').hide(); $('#categoryTypeMultiple').show();" /> {% lang 'ImportProductCategories2' %}</label>
+							<table id="categoryTypeMultiple" style="display: none;">
+								<tr>
+									<td style="vertical-align: top;">
+										<img src="images/nodejoin.gif" style="vertical-align: middle;" />
+									</td>
+									<td>
+										<table>
+											<tr>
+												<td>{% lang 'ImportCategoriesRoot' %}:</td>
+												<td>
+													<select name="LinkField[category1]" id="category1" class="Field250">
+														<option value="-1">Ignore</option>
+														{{ OptionList|safe }}
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td>{% lang 'ImportCategoriesChild' %}:</td>
+												<td>
+													<select name="LinkField[category2]" class="Field250">
+														<option value="-1">Ignore</option>
+														{{ OptionList|safe }}
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td>{% lang 'ImportCategoriesGrandChild' %}:</td>
+												<td>
+													<select name="LinkField[category3]" class="Field250">
+														<option value="-1">Ignore</option>
+														{{ OptionList|safe }}
+													</select>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						{{ Extra|safe }}
+					</td>
+				</tr>

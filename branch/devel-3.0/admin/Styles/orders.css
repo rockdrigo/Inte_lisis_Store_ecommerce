@@ -1,0 +1,46 @@
+.orderQuickViewShippingBlock {
+	border-bottom: 3px solid #B8E6A6;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.orderQuickViewShippingBlockDetails {
+	float: left;
+	width: 48%;
+}
+
+.orderQuickViewShippingBlockItems {
+	float: right;
+	width: 48%;
+}
+
+.orderQuickViewShippingBlockLast {
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+
+.orderQuickViewPriceColumn {
+	width: 100px;
+}
+
+.orderQuickViewTotalTotal td {
+	background-color: #b8e6a6;
+	font-weight: bold;
+}
+
+.orderQuickViewShipItemsLink {
+	float: right;
+}
+
+.orderShipmentsModal {
+	max-height: 400px;
+	overflow: auto;
+}
+
+.orderGridDeleted .orderGridOrderId .orderIdText {
+	text-decoration: line-through;
+}
+
+.orderGridDeleted .orderDeletedText {
+	color: gray;
+}

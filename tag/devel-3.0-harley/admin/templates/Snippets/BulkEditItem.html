@@ -1,0 +1,16 @@
+<input type="hidden" name="existing_categories_{{ ProductId|safe }}" id="existing_categories_{{ ProductId|safe }}" value="{{ ProductExistingCategories|safe }}" />
+<input type="hidden" name="existing_brand_{{ ProductId|safe }}" id="existing_brand_{{ ProductId|safe }}" value="{{ ProductExistingBrand|safe }}" />
+<input type="hidden" name="existing_brand_id_{{ ProductId|safe }}" id="existing_brand_id_{{ ProductId|safe }}" value="{{ ProductExistingBrandId|safe }}" />
+<tr onmouseout="this.className='GridRow'" onmouseover="this.className='GridRowOver'" class="GridRow" style="height:25px">
+	<td valign="top" align="center" style="width: 18px;"><img width="16" height="16" src="images/product.gif"/></td>
+	<td valign="top"><input type="text" class="Field150" value="{{ ProductName|safe }}" name="prodname_{{ ProductId|safe }}" id="prodname_{{ ProductId|safe }}" style="width:95%" /></td>
+	<td valign="top">{{ CurrencyTokenLeft|safe }} <input type="text" class="Field50" value="{{ ProductPrice|safe }}" name="prodprice_{{ ProductId|safe }}" id="prodprice_{{ ProductId|safe }}" /> {{ CurrencyTokenRight|safe }}</td>
+	<td valign="top">
+		<select size="5" id="category_{{ ProductId|safe }}" name="category_{{ ProductId|safe }}[]" class="Field150 ISSelectReplacement" multiple="multiple" style="width:180px; height:23px">{{ ProductCategories|safe }}</select>
+		<a title="{% lang 'ClickToExpandCategories' %}" href="#" onclick="ExpandCategories({{ ProductId|safe }}); return false;" class="ExpandCategoryLink" id="ExpandCategoryLink-{{ ProductId|safe }}"><img id="catdrop_{{ ProductId|safe }}" src="images/droparrow.gif" width="10" height="5" style="padding-top:8px" border="0" /></a>
+	</td>
+	<td valign="top"><input type="text" class="Field50" value="{{ ProductBrand|safe }}" name="prodbrand_{{ ProductId|safe }}" id="prodbrand_{{ ProductId|safe }}" /></td>
+	<td valign="top"><input type="checkbox" {{ ProductVisible|safe }} value="ON" name="prodvisible_{{ ProductId|safe }}" id="prodvisible_{{ ProductId|safe }}" /></td>
+	<td valign="top"><input type="checkbox" {{ ProductFeatured|safe }} value="ON" name="prodfeatured_{{ ProductId|safe }}" id="prodfeatured_{{ ProductId|safe }}" /></td>
+	<td valign="top"><input type="checkbox" {{ ProductFreeShipping|safe }} value="ON" name="prodfreeshipping_{{ ProductId|safe }}" id="prodfreeshipping_{{ ProductId|safe }}" /></td>
+</tr>

@@ -1,0 +1,1 @@
+<input class="Text" style="width:170px" type="button" value="{% lang 'ViewCompleteOrderDetails' %}" onclick="document.location.href='index.php?ToDo=viewOrders&customerId={{ CustomerId|safe }}'" />

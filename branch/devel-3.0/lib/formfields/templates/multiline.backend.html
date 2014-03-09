@@ -1,0 +1,49 @@
+
+<div id="div0" class="FormFieldTabs">
+	<dl>
+		<dt><span class="Required">*</span> {% lang 'FormFieldSetupName' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldName" name="name" value="{{ FormFieldName|safe }}" class="Field200" />
+		</dd>
+
+		<dt>&nbsp;&nbsp; {% lang 'FormFieldSetupDefaultValue' %}:</dt>
+		<dd>
+			<textarea id="FormFieldDefaultValue" name="defaultvalue" class="extraInfo Field200" style="width:200px; height: 50px;">{{ FormFieldDefaultValue|safe }}</textarea>
+		</dd>
+
+		<dt>&nbsp;&nbsp; {% lang 'FormFieldSetupIsRequired' %}:</dt>
+		<dd>
+			<label for="FormFieldIsRequired"><input type="checkbox" id="FormFieldIsRequired" name="isRequired" {{ FormFieldIsRequiredChecked|safe }} {{ FormFieldImmutableFlag|safe }} /> {% lang 'FormFieldSetupIsRequiredYes' %}</label>
+		</dd>
+	</dl>
+</div>
+
+<div id="div1" class="FormFieldTabs">
+	<dl>
+		<dt><span class="Required">*</span> {% lang 'FormFieldSetupRows' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldRows" name="rows" value="{{ FormFieldRows|safe }}" class="extraInfo Field200" />
+		</dd>
+
+		<dt>&nbsp;&nbsp; {% lang 'FormFieldSetupSize' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldCols" name="cols" value="{{ FormFieldCols|safe }}" class="extraInfo Field200" />
+			<img onmouseout="HideHelp('dcols');" onmouseover="ShowHelp('dcols', '{% lang 'FormFieldSetupSize' %}', '{% lang 'FormFieldSetupSizeHelp' %}')" src="images/help.gif" width="24" height="16" border="0" />
+			<div style="display:none" id="dcols"></div>
+		</dd>
+
+		<dt>&nbsp;&nbsp; {% lang 'FormFieldSetupClass' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldClass" name="class" value="{{ FormFieldClass|safe }}" class="extraInfo Field200" />
+			<img onmouseout="HideHelp('dclass');" onmouseover="ShowHelp('dclass', '{% lang 'FormFieldSetupClass' %}', '{% lang 'FormFieldSetupClassHelp' %}')" src="images/help.gif" width="24" height="16" border="0" />
+			<div style="display:none" id="dclass"></div>
+		</dd>
+
+		<dt>&nbsp;&nbsp; {% lang 'FormFieldSetupStyle' %}:</dt>
+		<dd>
+			<input type="text" id="FormFieldStyle" name="style" value="{{ FormFieldStyle|safe }}" class="extraInfo Field200" />
+			<img onmouseout="HideHelp('dstyle');" onmouseover="ShowHelp('dstyle', '{% lang 'FormFieldSetupStyle' %}', '{% lang 'FormFieldSetupStyleHelp' %}')" src="images/help.gif" width="24" height="16" border="0" />
+			<div style="display:none" id="dstyle"></div>
+		</dd>
+	</dl>
+</div>

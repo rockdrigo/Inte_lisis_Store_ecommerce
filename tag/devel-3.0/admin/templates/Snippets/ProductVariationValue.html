@@ -1,0 +1,7 @@
+									<li class="VariationValue">
+										<div class="VariationValueDrag">&nbsp;</div>
+										<input type="hidden" id="variationOptionValueId_{{ VariationOptionRankId|safe }}_{{ VariationValueRankId|safe }}" name="variationOptionValueId[{{ VariationOptionRankId|safe }}][{{ VariationValueRankId|safe }}]" value="{{ VariationValueId|safe }}" class="VariationValueId" />
+										<input type="textbox" id="variationOptionValue_{{ VariationOptionRankId|safe }}_{{ VariationValueRankId|safe }}" name="variationOptionValue[{{ VariationOptionRankId|safe }}][{{ VariationValueRankId|safe }}]" value="{{ VariationValue|safe }}" class="VariationValueName" />
+										<a href="#" onclick="AddVariationValue(this);" class="VariationAdd" title="Click here to add a new option"><img src="images/addicon.gif" alt="Add" border="0" /></a>
+										<a href="#" onclick="DelVariationValue(this);" class="VariationDel" style="display: {{ HideOptionDelete|safe }};"><img src="images/delicon.gif" alt="Del" border="0" /></a>
+									</li>

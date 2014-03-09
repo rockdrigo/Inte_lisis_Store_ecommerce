@@ -1,0 +1,327 @@
+/**
+ * New Control Panel Styles
+ *
+ * A major project is underway to rewrite the control panel HTML/CSS to bring
+ * it up to spec with coding standards, remove unused styles and generally
+ * make it more awesome. This file contains the styles for the reformatted
+ * HTML.
+ *
+ * To use on a page, ensure that the top of your page contains
+ * <div id="content"> instead of the usual <div class="BodyContainer">. This
+ * will allow you to use the new styles.
+ *
+ * Please keep this file organized!
+ */
+
+#content {
+	margin: 13px 13px 13px 17px;
+	color: #333333;
+}
+
+#content #tabnav, #content ul.tabnav,
+#ModalContentContainer ul.tabnav {
+	margin-bottom: 15px;
+}
+
+#content p {
+	margin: 10px 0 10px 2px;
+}
+
+#content h1 {
+	color: #000;
+	font-family: Verdana;
+	font-size: 18px;
+	letter-spacing: -1px;
+	margin: 0 0 4px 0;
+}
+
+#content .note {
+	color: #444;
+	margin-top: 6px;
+}
+
+/**
+ * Forms
+ */
+div.formContainer,
+div.horizontalFormContainer,
+div.verticalFormContainer {
+	background: #F9F9F9;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+div.formContainer .header,
+div.horizontalFormContainer .header,
+div.verticalFormContainer .header {
+	background: url(../images/table_bg.gif) repeat-x;
+	color: #000;
+	font-weight: bold;
+	padding: 5px 4px;
+	margin-bottom: 5px;
+}
+
+div.formContainer .header > img,
+div.horizontalFormContainer .header > img,
+div.verticalFormContainer .header > img {
+	vertical-align: bottom;
+}
+
+div.formContainer div.intro,
+div.horizontalFormContainer div.intro,
+div.verticalFormContainer div.intro {
+	margin-left: 10px;
+}
+
+div.horizontalFormContainer div.formRow,
+div.verticalFormContainer div.formRow {
+	margin-top: 4px;
+	padding-right: 10px;
+	clear: left;
+}
+
+div.horizontalFormContainer div.formRow {
+	padding-left: 190px;
+}
+
+div.horizontalFormContainer div.formRow > label {
+	display: inline;
+	float: left;
+	margin: 5px 0 4px -180px;
+	position: relative;
+	width: 180px;
+}
+
+div.verticalFormContainer div.formRow > label,
+div.verticalFormContainer div.formRow > div {
+	margin: 5px 0 4px 10px;
+}
+
+div.horizontalFormContainer div.formRow > div {
+	display: inline;
+}
+
+div.horizontalFormContainer div.formRowUnlabeled {
+	padding-left: 10px;
+}
+
+div.horizontalFormContainer p.buttonRow,
+div.verticalFormContainer p.buttonRow {
+	clear: left;
+	margin-top: 6px;
+	margin-bottom: 0;
+}
+
+div.verticalFormContainer p.buttonRow {
+	/* important for now, to override #content p on new pages */
+	margin-left: 5px !important;
+}
+
+div.horizontalFormContainer p.buttonRow {
+	/* important for now, to override #content p on new pages */
+	margin-left: 190px !important;
+}
+
+div.horizontalFormContainer div.formRowIndent1 {
+	padding-left: 215px;
+}
+
+div.horizontalFormContainer div.formRowIndent1 > label {
+	width: 205px;
+	margin-left: -205px;
+}
+
+div.horizontalFormContainer div.formRowIndent2 {
+	padding-left: 240px;
+}
+
+div.horizontalFormContainer div.formRowIndent2 > label {
+	width: 205px;
+	margin-left: -230px;
+}
+
+div.horizontalFormContainer div.formRowLast > label,
+div.horizontalFormContainer div.formRowLast > div.value {
+	padding-bottom: 4px;
+}
+
+#content input.button {
+	width: 80px;
+}
+
+input.saveButton {
+	width: 80px;
+}
+
+#content input.cancelButton {
+	width: 80px;
+}
+
+#content input.chromeless {
+	border: none;
+	background: transparent;
+}
+
+label.row {
+	display: block;
+}
+
+/**
+ * Tables
+ */
+
+#content p.paging {
+	text-align: right;
+}
+
+.gridTable {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+.gridTable thead th,
+.gridTable tbody.gridTableHead th
+{
+	background: #e4e4e4 url('../images/table_bg.gif') repeat-x top;
+	font-weight: bold;
+	color: #000;
+	padding: 5px 4px;
+	text-align: left;
+}
+
+.gridTable > tbody > tr > td {
+	padding: 5px;
+	vertical-align: top;
+	background: #F9F9F9;
+	border-bottom: 1px solid #edecec;
+}
+
+.gridTable th.check,
+.gridTable th.icon {
+	width: 16px;
+}
+
+.gridTable > tbody > tr.over > td {
+	background: #F3F3F3;
+}
+
+/**
+* Tool Tips
+*/
+.tooltip {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../images/help.gif') no-repeat;
+	position: relative;
+	color: #000;
+}
+
+.tooltip .tooltipContent {
+	display: none;
+	position: absolute;
+	left: 20px;
+	width: 275px;
+	border: 1px solid #e7e3be;
+	background: #fefcd5;
+	padding: 10px;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltipContent {
+	display: block;
+}
+
+.tooltip .tooltipContent .title {
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.tooltip .tooltipContent p {
+	margin-bottom: 5px;
+}
+
+#content .gridTable > tbody > tr.highlight > td {
+	background-color: #FFA;
+}
+
+#content .gridTable > tbody > tr.highlight.over > td {
+	background-color: #FF6;
+}
+
+/**
+ * Tool Tips
+ */
+.tooltip {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../images/help.gif') no-repeat;
+	position: relative;
+	color: #000;
+}
+
+#content div.formContainer .header > .tooltip,
+#content div.horizontalFormContainer .header > .tooltip,
+#content div.verticalFormContainer .header > .tooltip {
+	top: 3px;
+	left: 4px;
+}
+
+.tooltip .tooltipContent {
+	display: none;
+	position: absolute;
+	left: 20px;
+	width: 275px;
+	border: 1px solid #e7e3be;
+	background: #fefcd5;
+	padding: 10px;
+	z-index: 2;
+}
+
+.tooltip:hover .tooltipContent {
+	display: block;
+}
+
+.tooltip .tooltipContent p.title {
+	font-weight: bold;
+	margin-top: 0 !important;
+}
+
+.tooltip .tooltipContent p {
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+a.statusToggle1,
+a.statusToggle0,
+a.statusToggleLoading {
+	background: url('../images/tick.gif') no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	text-indent: -9000em;
+	outline: 0;
+}
+
+a.statusToggle1 {
+	background: url('../images/tick.gif') no-repeat;
+}
+
+a.statusToggle0 {
+	background: url('../images/cross.gif') no-repeat;
+}
+
+a.statusToggleLoading {
+	background: url('../images/loading.gif') no-repeat;
+}
+
+/**
+ * Modal form
+ */
+#ModalContentContainer div.formContainer,
+#ModalContentContainer div.horizontalFormContainer,
+#ModalContentContainer div.verticalFormContainer {
+	background-color: transparent;
+}

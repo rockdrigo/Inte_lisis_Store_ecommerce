@@ -1,0 +1,16 @@
+<div class="Block Moveable Panel" id="ChooseShippingAddress">
+	<h2>%%GLOBAL_CheckoutShippingTitle%%</h2>
+	%%Discount.FreeShippingEligibility%%
+	<div class="BlockContent">
+		<div class="TabContainer">
+			<div class="TabContent" id="TabContentAddressSingle" style="%%GLOBAL_HideTabSingle%%">
+				<ul class="ShippingAddressList">
+					%%SNIPPET_ShippingAddressList%%
+				</ul>
+				...%%LNG_Or%% <a href="account.php?action=add_shipping_address&amp;from=account.php?action=add_shipping_address&amp;from=checkout.php?action=choose_shipping_address">%%LNG_LowerCreateNewAddress%%</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+%%Panel.ChooseShippingAddressJavaScript%%

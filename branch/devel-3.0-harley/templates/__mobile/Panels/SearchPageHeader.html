@@ -1,0 +1,75 @@
+<div class="Block Moveable Panel" id="SearchPageHeader">
+	<script language="javascript" type="text/javascript">//<![CDATA[
+	$('.ToggleSearchFormLink').css('visibility', 'visible');
+	//]]></script>
+
+	<h2>%%GLOBAL_SearchTitleShort%%</h2>
+
+	<div class="BlockContent">
+		<div style="display:%%GLOBAL_HideAdvancedOptions%%">
+			<div class="AdvancedSearch">
+				<form id="AdvancedSearchForm" action="%%GLOBAL_ShopPath%%/search.php" method="get" onsubmit="return CheckAdvancedSearchForm()">
+					<input type="hidden" name="mode" value="1" />
+
+					<div class="FormContainer VerticalFormContainer">
+						<dl>
+							<dt>%%LNG_SearchKeyword%%:</dt>
+							<dd><input type="text" class="Field250" name="search_query_adv" id="search_query_adv" value="%%GLOBAL_FormattedSearchQuery%%" /></dd>
+
+							<dt>%%LNG_BrandName%%:</dt>
+							<dd>
+								<select class="Field250" name="brand" id="brand">
+									<option value="">%%LNG_NoPreference%%</option>
+									%%GLOBAL_BrandNameOptions%%
+								</select>
+							</dd>
+
+							<dt>%%LNG_Category%%:</dt>
+							<dd>
+								<select size="10" class="Field250" name="category[]" id="category">
+									<option value="">%%LNG_NoPreference%%</option>
+									%%GLOBAL_CategoryOptions%%
+								</select>
+								<input type="hidden" name="searchsubs" value="ON" />
+							</dd>
+
+							<dt style="display: %%GLOBAL_HideProductSearchOptions%%">%%LNG_OnlyProductsWithFreeShipping%%?</dt>
+							<dd style="display: %%GLOBAL_HideProductSearchOptions%%">
+								<select class="Field250" name="shipping" id="shipping">
+									<option value="">%%LNG_NoPreference%%</option>
+									<option value="1">%%LNG_OnlyFreeShipping%%</option>
+									<option value="2">%%LNG_OnlyPaidShipping%%</option>
+								</select>
+							</dd>
+
+							<dt  style="display: %%GLOBAL_HideProductSearchOptions%%">%%LNG_SearchByPrice%%:</dt>
+							<dd  style="display: %%GLOBAL_HideProductSearchOptions%%">
+								<input type="text" class="Textbox" name="price_from" id="price_from" size="4" style="width: 40px;" value="%%GLOBAL_PriceFrom%%" />&nbsp;
+								%%LNG_To%%
+								<input type="text" class="Textbox" size="4" name="price_to" id="price_to" style="width: 40px;" value="%%GLOBAL_PriceTo%%" />
+							</dd>
+						</dl>
+					</div>
+
+					<div class="FormContainer VerticalFormContainer">
+						<p class="Submit">
+							<input type="submit" value="%%LNG_Search%%" class="Button" />
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<a name="results"></a>
+
+	<p class="InfoMessage RelatedSearches" style="display:%%GLOBAL_HideRelatedSearches%%">
+		<strong>%%LNG_RelatedSearches%%:</strong> %%SNIPPET_RelatedSearches%%
+	</p>
+
+	<p class="SearchSuggest" style="display: %%GLOBAL_ShowSearchSuggestion%%">
+		<strong>%%LNG_DidYouMean%%:</strong> <a href="%%GLOBAL_ShopPath%%/search.php?search_query=%%GLOBAL_SuggestQueryEscaped%%&amp;correction=%%GLOBAL_SearchId%%">%%GLOBAL_SuggestQuery%%</a>
+	</p>
+
+	%%Panel.SearchJavaScript%%
+</div>

@@ -1,0 +1,10 @@
+<li>
+	<a id="{{ SubMenuId|safe }}" href="{{ SubMenuURL|safe }}" class="{{ ExtraClass|safe }}">
+		<span class="SubMenuImage {{ SubMenuId|safe }}" {% if menuItem.icon %}style="background-image: url('{{ menuItem.icon }}')"{% endif %}></span>
+		<span class="SubMenuText">
+
+			<strong>{{ SubMenuName|safe }}</strong>
+			<span>{{ SubMenuText|safe }}</span>
+		</span>
+	</a>
+</li>

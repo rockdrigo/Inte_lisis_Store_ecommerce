@@ -1,0 +1,1 @@
+<div>{{ ItemRowText|safe }}</div>

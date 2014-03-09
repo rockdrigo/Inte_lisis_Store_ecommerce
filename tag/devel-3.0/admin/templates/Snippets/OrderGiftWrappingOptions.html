@@ -1,0 +1,25 @@
+<div style="margin-top: 10px;">
+	<div style="margin-left: 25px; margin-bottom: 6px; {{ HideWrappingTitle|safe }}"><strong>{% lang 'Item' %}: 1 x {{ ProductName|safe }}</strong></div>
+	<div class="{{ ExtraClass|safe }} WrappingOption">
+		<table class="Panel" width="100%">
+			<tr>
+				<td class="FieldLabel">{% lang 'GiftWrapping' %}:</td>
+				<td>
+					<select class="Field300" name="giftwrapping[{{ GiftWrappingId|safe }}]" id="giftwrapping_{{ GiftWrappingId|safe }}" onchange="OrderManager.ToggleGiftWrappingType(this.options[this.selectedIndex])">
+						<option value="">{% lang 'ChooseGiftWrappingOption' %}</option>
+						{{ WrappingOptions|safe }}
+					</select>
+					<small>&nbsp;{{ GiftWrapPreviewLinks|safe }}</small>
+				</td>
+			</tr>
+
+			<tr class="WrapComments" style="{{ HideGiftWrapMessage|safe }}">
+				<td class="FieldLabel">{% lang 'GiftMessage' %}:</td>
+				<td>
+					<textarea class="Field300" rows="5" name="giftmessage[{{ GiftWrappingId|safe }}]" id="giftmessage_{{ GiftWrappingId|safe }}">{{ GiftWrapMessage|safe }}</textarea>
+				</td>
+			</tr>
+		</table>
+		<hr style="width: 475px; {{ HideWrappingSeparator|safe }}"/>
+	</div>
+</div>

@@ -1,0 +1,7 @@
+<li>
+	<span class="OrderStatus OrderStatus{{ OrderStatusId|safe }}">{{ OrderStatus|safe }}</span>
+	<span class="OrderDetails">
+		<a href="index.php?ToDo=viewOrders&amp;orderId={{ OrderId|safe }}">Order #{{ OrderId|safe }} - {{ CustomerName|safe }}</a>
+		<small>{{ OrderSummary|safe }}</small>
+	</span>
+</li>

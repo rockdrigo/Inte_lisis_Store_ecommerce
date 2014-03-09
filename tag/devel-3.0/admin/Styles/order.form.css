@@ -1,0 +1,450 @@
+.orderForToggleCustomer, #shipItemsToBillingAddress {
+	padding-left: 25px;
+	background: url('../images/nodejoin.gif') no-repeat;
+}
+
+#shipItemsToBillingAddress {
+	padding-top: 5px;
+}
+
+.orderMachineStateCustomerDetails,
+.orderMachineStateItems,
+.orderMachineStateShipping {
+	display: none;
+}
+
+#content .quoteItemsGrid thead th,
+#content .quoteItemsGrid tbody.gridTableHead th,
+#content .shippingItemsGrid thead th,
+#content .shippingItemsGrid tbody.gridTableHead th {
+	border-bottom: solid 1px #ccc;
+	padding-left: 10px;
+	background: #F5F4F4;
+	border-right: 1px solid #ccc;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.quoteItemsGrid,
+.shippingItemsGrid {
+	max-height: 500px;
+	overflow: auto;
+}
+
+#content .quoteItemsGrid table,
+#content .shippingItemsGrid table {
+	border: 1px solid #ccc;
+	margin-bottom: 0;
+	border-spacing: 0;
+}
+
+#content .quoteItemsGrid table tbody.itemRows > tr > td,
+#content .shippingItemsGrid table tbody > tr > td {
+	border-color: #ccc;
+	border-right: 1px solid #ccc;
+}
+
+#content #itemSubtotal {
+	background: #ccc;
+	padding: 5px;
+	float: right;
+	text-align: right;
+	font-weight: bold;
+	width: 156px;
+}
+
+#content .quoteItemsGrid .quoteItemQuantity {
+	width: 80px;
+	text-align: center;
+}
+
+#content .quoteItemsGrid .quoteItemPrice {
+	width: 80px;
+	text-align: center;
+}
+
+#content .quoteItemsGrid .quoteItemTotal {
+	width: 80px;
+	text-align: right;
+}
+
+.quoteItemAction {
+	width: 140px;
+}
+
+#content .quoteItemsGrid .quoteItemImage {
+	width: 120px;
+	text-align: center;
+	border-right: 0;
+	padding-right: 10px;
+}
+
+#content .quoteItemsGridNonInteractive .quoteItemQuantity,
+#content .quoteItemsGridNonInteractive .quoteItemPrice {
+	text-align: right;
+}
+
+.quoteItemName {
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.quoteItemSku {
+	color: #444;
+}
+
+.quoteItemSearch {
+	margin-right: 30px;
+}
+
+.quoteItemSearch input {
+	width: 100%;
+}
+
+.quoteItemSearchIcon {
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: right;
+	position: relative;
+	top: 2px;
+	background: url('../images/find.gif') no-repeat;
+	text-decoration: none;
+}
+
+.quoteItemSearchResults,
+.orderCustomerSearchResults {
+	overflow: hidden;
+	z-index: 99999;
+	border: 1px solid #ccc;
+	border-top: 0;
+	color: #333;
+}
+
+.quoteItemSearchResults ul,
+.orderCustomerSearchResults ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.quoteItemSearchResults li,
+.orderCustomerSearchResults li {
+	list-style: none;
+	line-height: 16px;
+	overflow: hidden;
+	cursor: pointer;
+	background: #fff;
+}
+
+.quoteItemSearchResults li .recordContent {
+	background: url('../images/product.gif') no-repeat 4px 5px;
+	padding: 5px 5px 5px 25px;
+}
+
+.orderCustomerSearchResults li .recordContent {
+	background: url('../images/customer.gif') no-repeat 4px 5px;
+	padding: 5px 5px 5px 25px;
+}
+
+.quoteItemSearchResults li .recordNoResults,
+.orderCustomerSearchResults li .recordNoResults {
+	padding: 5px;
+}
+
+.quoteItemSearchResults li .recordContentManual {
+	background-image: url('../images/addicon.png');
+	border-top: 1px solid #ccc;
+}
+
+.addVirtualItemLink {
+	display: block;
+	padding: 6px 28px 2px 20px;
+	background: url('../images/addicon.png') no-repeat 0 5px;
+	float: right;
+}
+
+.addVirtualItemLinkAfter {
+	clear: right;
+}
+
+.quoteItemSearchResults .ac_over,
+.orderCustomerSearchResults .ac_over {
+	background-color: #f0f0f0;
+	color: #333;
+}
+
+.quoteItemSearchResults .viewItemLink,
+.orderCustomerSearchResults .viewItemLink {
+	float: right;
+	padding-right: 3px;
+}
+
+.quoteItemSearchResults .viewItemLink a,
+.orderCustomerSearchResults .viewItemLink a {
+	color: gray;
+}
+
+.quoteItemSearchResults .productDetails,
+.orderCustomerSearchResults .customerDetails {
+	color: gray;
+}
+
+.orderCustomizeItemModal {
+	max-height: 500px;
+	overflow: auto;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+#orderCustomizeItem {
+	margin-right: 14px;
+	margin-left: 14px;
+	margin-top: 8px;
+}
+
+.existingAddressList {
+	position: absolute;
+	left: 480px;
+	margin-top: 4px;
+	background: #fff;
+	width: 320px;
+	border: 1px solid #ccc;
+	padding: 0;
+	display: none;
+}
+
+.existingAddressList legend {
+	margin-left: 4px;
+}
+
+.existingAddressList ul {
+	max-height: 250px;
+	overflow: auto;
+}
+
+.existingAddressList ul,
+.existingAddressList li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.existingAddressList li {
+	border-bottom: 1px solid #ccc;
+	padding-top: 3px;
+	padding: 5px;
+	padding-left: 0;
+}
+
+.existingAddressList li .addressDetails {
+	padding-left: 25px;
+	background-repeat: no-repeat;
+	background-position: 4px 3px;
+}
+
+.existingAddressList li:last-child {
+	border-bottom: 0;
+}
+.existingAddressList li:hover {
+	background-color: #f0f0f0;
+}
+
+.existingAddressList li .useExistingAddress {
+	float: right;
+}
+
+.orderCustomerSearchDefaultValue,
+.quoteItemSearchDefaultValue {
+	color: #666;
+}
+
+.quoteItemConfiguration {
+	clear: left;
+	padding-top: 1px;
+}
+
+.quoteItemConfigurationRow {
+	padding-left: 140px;
+}
+
+.quoteItemConfigurationRow > .name {
+	display: inline;
+	float: left;
+	margin: 0 0 0 -140px;
+	padding-left: 3px;
+	position: relative;
+	width: 130px;
+	overflow: hidden;
+}
+
+.quoteItemConfigurationRow > .value {
+	margin: 5px 0 4px 0;
+}
+
+.shippingItemsGrid .gridTable thead th.shippingItemsCheck,
+.shippingItemsCheck {
+	width: 16px;
+	text-align: center;
+	padding-left: 5px !important; /* don't like to use !important but there are too many css rules being applied here to cancel them out easily using a specifics-order -ge */
+}
+
+.shippingItemsQuantity {
+	width: 120px;
+	text-align: center;
+}
+
+.shippingItemsAction {
+	width: 120px;
+}
+
+.shippingItemsGridControls {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.orderFormRightColumn {
+	float: right;
+}
+
+.orderFormColumnsEnd {
+	clear: both;
+}
+
+.orderMachineStateSummary .orderFormLeftColumn {
+	margin-right: 240px;
+}
+
+.orderMachineStateSummary .orderFormRightColumn {
+	width: 230px;
+}
+
+div.greenFormContainer {
+	background: #DBF3D1;
+}
+
+div.greenFormContainer .header {
+	background: #B8E6A6 url(../images/table_bg_green.png) top left repeat-x;
+}
+
+.orderFormSummaryTable {
+	width: 100%;
+	padding-top: 4px;
+}
+
+.orderFormSummaryTable th, td {
+	padding: 0 0 8px 0;
+	margin: 0;
+}
+
+.orderFormSummaryTable th {
+	font-weight: normal;
+	text-align: left;
+}
+
+.orderFormSummaryTable td {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.orderFormSummaryTable-total th,
+.orderFormSummaryTable-total td {
+	border-top: 1px solid #666;
+	padding-top: 7px;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.orderFormLeftColumn .quoteItemsGrid,
+.orderFormLeftColumn .detailsHeading {
+	margin-top: 10px;
+}
+
+.orderFormLeftColumn .detailsAddress,
+.orderFormLeftColumn .detailsShippingMethod {
+	margin-top: 6px;
+}
+
+.orderFormLeftColumn .detailsHeading {
+	font-weight: bold;
+}
+
+.orderFormLeftColumn .detailsHeading a {
+	font-weight: normal;
+}
+
+.paymentMethodForm {
+	display: none;
+}
+
+div.customShippingContainer div.horizontalFormContainer {
+	margin-bottom: 0;
+}
+
+div.customShippingContainer div.formRow {
+	padding-left: 105px;
+}
+
+div.customShippingContainer div.formRow > label {
+	margin-left: -100px;
+	width: 100px;
+}
+
+.shippingQuoteList {
+	vertical-align: top;
+}
+
+.orderFormPaymentDetailsTable {
+	width: 100%;
+	padding-top: 4px;
+}
+
+.orderFormPaymentDetailsTable th, td {
+	padding: 0 0 8px 0;
+	margin: 0;
+}
+
+.orderFormPaymentDetailsTable th {
+	font-weight: normal;
+	text-align: left;
+}
+
+.orderFormPaymentDetailsTable td {
+	text-align: left;
+	white-space: nowrap;
+}
+
+.shippingDestinationItemList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: url('../images/nodejoin.gif') no-repeat 0 1px;
+}
+
+.shippingDestinationItemList li
+{
+	line-height: normal;
+	list-style-type: none;
+	padding: 4px 0 0 24px;
+	margin: 0;
+}
+
+.splitShippingFrameAllocateButton {
+	float: right;
+}
+
+.splitShippingFrameCancelButton {
+	float: left;
+}
+
+.shippingDestinationAddressLine {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.billingEmailAddressContainer {
+	padding: 4px 0 2px 22px
+}

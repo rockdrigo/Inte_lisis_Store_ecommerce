@@ -1,0 +1,27 @@
+<div id="categoryRule{{ CategoryId|safe }}" class="catRules">
+	{% lang 'ForProductsInThisCategory' %}
+	<select id="categoryRuleValue{{ CategoryId|safe }}" class="catRulesProductId" onchange="$('#categoryRuleDiscount{{ CategoryId|safe }}').focus(); remapHiddenDiscounts('category', {{ CategoryId|safe }});">
+		<option>-- Choose a Category --</option>
+		{{ CategoryOptions|safe }}
+	</select>
+	{% lang 'CustomersReceiveA' %}
+
+	<span id="categoryDiscountRulesAmountPrefix{{ CategoryId|safe }}">{{ AmountPrefix|safe }}</span>
+	<input class="catRulesDiscount Field50" id="categoryRuleDiscount{{ CategoryId|safe }}" type="text" value="{{ DiscountAmount|safe }}" class="Field50" style="width:30px" onchange="remapHiddenDiscounts('category', {{ CategoryId|safe }});" />
+	<span id="categoryDiscountRulesAmountPostfix{{ CategoryId|safe }}">{{ AmountPostfix|safe }}</span>
+
+	<select id="categoryDiscountMethod{{ CategoryId|safe }}" class="Field120" onchange="ToggleDiscountRateValueType({{ CategoryId|safe }}, 'category');">
+		<option value="price" {{ DiscountMethodPrice|safe }}>{% lang 'PriceDiscount' %}</option>
+		<option value="percent" {{ DiscountMethodPercent|safe }}>{% lang 'PercentageDiscount' %}</option>
+		<option value="fixed" {{ DiscountMethodFixed|safe }}>{% lang 'FixedPrice' %}</option>
+	</select>
+
+	<span id="categoryDiscountRulesLineEnding{{ CategoryId|safe }}"> {% lang 'For' %} </span>
+	<select id="categoryRuleAppliesTo{{ CategoryId|safe }}" onchange="remapHiddenDiscounts('category', {{ CategoryId|safe }});">
+		<option value="CATEGORY_ONLY" {{ DiscountCatTypeCat|safe }}>{% lang 'ProductsInThisCategory' %}</option>
+		<option value="CATEGORY_AND_SUBCATS" {{ DiscountCatTypeCatAndSub|safe }}>{% lang 'ProductsInThisCategory2' %}</option>
+	</select>
+
+	<img title="{% lang 'AddAnotherCategoryDiscount' %}" style="cursor:pointer" src="images/addicon.gif" width="16" height="16" onclick="addDiscountRule('category');" />
+	<img title="{% lang 'RemoveThisCategoryDiscount' %}" style="cursor:pointer" src="images/delicon.gif" width="16" height="16" onclick="removeDiscountRule('category', {{ CategoryId|safe }})" />
+</div>

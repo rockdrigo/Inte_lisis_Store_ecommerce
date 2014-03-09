@@ -1,0 +1,29 @@
+<li>
+	<fieldset>
+		<legend>%%LNG_Order%% #%%GLOBAL_OrderId%%</legend>
+
+		<dl class="HorizontalFormContainer">
+			<dt>%%LNG_OrderDate%%:</dt>
+			<dd>%%GLOBAL_OrderDate%%</dd>
+
+			<dt>%%LNG_OrderStatus%%:</dt>
+			<dd>%%GLOBAL_OrderStatus%%</dd>
+
+			<dt style="display:%%GLOBAL_HidePaymentInstructions%%">%%LNG_AmountOwing%%:</dt>
+			<dd style="display:%%GLOBAL_HidePaymentInstructions%%"><em class="ProductPrice">%%GLOBAL_OrderTotal%%</em></dd>
+		</dl>
+		<br />
+		<div style="display:%%GLOBAL_HidePaymentInstructions%%">
+			<p><strong>%%LNG_HeresHowToPayForYourOrder%%:</strong></p>
+
+			<p>
+				<span style="display:%%GLOBAL_HidePaymentInstructions%%">%%GLOBAL_OrderInstructions%%</span>
+			</p>
+		</div>
+		<form action="%%GLOBAL_ShopPath%%/account.php" method="get">
+			<input type="hidden" name="action" value="view_order" />
+			<input type="hidden" name="order_id" value="%%GLOBAL_OrderId%%" />
+			<input type="submit" value="%%LNG_OrderDetails%%" />
+		</form>
+	</fieldset>
+</li>

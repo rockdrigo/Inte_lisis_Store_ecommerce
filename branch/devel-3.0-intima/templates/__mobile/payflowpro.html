@@ -1,0 +1,44 @@
+<p class="ErrorMessage" style="display:%%GLOBAL_HidePayflowProError%%">
+	%%LNG_PayflowProProcessingError%%<br />
+	<strong>%%GLOBAL_PayflowProErrorMessage%%</strong>
+</p>
+<form action="%%GLOBAL_ShopPathSSL%%/checkout.php?action=process_payment" method="post" onsubmit="return check_payflowpro_payment_form()">
+	<div class="FormContainer VerticalFormContainer">
+		<dl>
+			<dt>%%LNG_PayflowProCardHoldersName%%:</dt>
+			<dd><input type="text" name="PayflowPro_name" id="PayflowPro_name" value="%%GLOBAL_PayflowProName%%" size="30" /></dd>
+
+			<dt>%%LNG_PayflowProCreditCardNo%%:</dt>
+			<dd>
+				<input type="text" name="PayflowPro_ccno" id="PayflowPro_ccno" value="%%GLOBAL_PayflowProNum%%" size="30" />
+				<br />
+				<small>%%LNG_PayflowProCreditCardNoHelp%%</small>
+			</dd>
+
+			<dt>%%LNG_PayflowProExpirationDate%%:</dt>
+			<dd>
+				<select name="PayflowPro_ccexpm" id="PayflowPro_ccexpm">
+					<option value=""></option>
+					%%GLOBAL_PayflowProMonths%%
+				</select>
+				<select name="PayflowPro_ccexpy" id="PayflowPro_ccexpy">
+					<option value=""></option>
+					%%GLOBAL_PayflowProYears%%
+				</select>
+			</dd>
+
+			<dt style="display: %%GLOBAL_PayflowProHideCVV2%%">%%LNG_PayflowProCreditCardCCV2%%: (<a href="#" id="CVV2Help">%%LNG_WhatsThis%%</a>)</dt>
+			<dd id="CVV2Input" style="display: %%GLOBAL_PayflowProHideCVV2%%">
+				<input type="text" class="Textbox" name="PayflowPro_cccode" id="PayflowPro_cccode" value="%%GLOBAL_PayflowProCCV2%%" size="4" />
+			</dd>
+
+			<dd class="CheckoutPaymentTotal">
+				<em class="ProductPrice">%%LNG_OrderTotal%%: %%GLOBAL_OrderAmount%%</em>
+			</dd>
+		</dl>
+		<p class="Submit">
+			<input type="submit" value="%%LNG_PayflowProPayForOrder%%" />
+		</p>
+	</div>
+</form>
+%%Panel.PayflowProPaymentJavaScript%%

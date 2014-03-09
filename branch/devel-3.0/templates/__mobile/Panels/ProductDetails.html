@@ -1,0 +1,31 @@
+
+<script type="text/javascript">//<![CDATA[
+var ThumbURLs = new Array();
+var ProductImageDescriptions = new Array();
+var CurrentProdThumbImage = %%GLOBAL_CurrentProdThumbImage%%;
+var ShowVariationThumb =false;
+var ProductThumbWidth = %%GLOBAL_ProductThumbWidth%%;
+var ProductThumbHeight =  %%GLOBAL_ProductThumbHeight%%;
+var ProductMaxZoomWidth = %%GLOBAL_ProductMaxZoomWidth%%;
+var ProductMaxZoomHeight =  %%GLOBAL_ProductMaxZoomHeight%%;
+
+var ShowImageZoomer = 0;
+
+%%GLOBAL_ProdImageJavascript%%
+
+var productId = %%GLOBAL_ProductId%%;
+//]]></script>
+%%Discount.FreeShippingEligibility%%
+<div class="Block Moveable Panel PrimaryProductDetails" id="ProductDetails">
+	<div class="BlockContent">
+		%%GLOBAL_ProductDetailFlashMessages%%
+
+		<h2>%%GLOBAL_ProductName%%</h2>
+
+		<div class="ProductThumbImage MobileProductThumb" style="%%GLOBAL_HideProductThumb%%">
+			%%SNIPPET_ProductThumbImage%%
+		</div>
+
+		%%SNIPPET_ProductAddToCart%%
+	</div>
+</div>

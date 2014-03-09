@@ -1,0 +1,32 @@
+<div class="Block Moveable Panel" id="ChooseShippingProvider">
+	<div style="display:%%GLOBAL_HideShippingProviderList%%">
+		<h2>%%LNG_ChooseShippingProvider%%</h2>
+		%%Discount.FreeShippingEligibility%%
+		<div class="BlockContent">
+			<form action="%%GLOBAL_ShopPath%%/checkout.php?action=save_shipper" method="post" onsubmit="return Checkout.ChooseShippingProvider()">
+				%%GLOBAL_ShippingQuotes%%
+
+				<div class="ML20">
+					<input type="submit" value="%%LNG_Continue%%" />
+				</div>
+				%%GLOBAL_DeliveryDisclaimer%%
+			</form>
+		</div>
+	</div>
+
+	<div style="display:%%GLOBAL_HideNoShippingProviders%%">
+		<h2>%%LNG_Oops%%</h2>
+		<div class="BlockContent">
+			<p class="ErrorMessage">
+				%%GLOBAL_ShippingError%% <a href="javascript:history.go(-1)">%%LNG_TryAgain%%</a>
+			</p>
+			<p>%%LNG_CouldNotShipFollowingItems%%</p>
+			<ul>
+				%%GLOBAL_ItemList%%
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	lang.PleaseChooseShippingProvider = "%%LNG_PleaseChooseShippingProvider%%";
+</script>

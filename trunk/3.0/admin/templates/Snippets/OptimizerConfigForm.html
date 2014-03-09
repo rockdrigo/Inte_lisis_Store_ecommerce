@@ -1,0 +1,114 @@
+<script type="text/javascript" src="script/optimizer.js?{{ JSCacheToken }}"></script>
+
+<table  id="OptimizerConfigForm" style ="margin-top:0px; {{ HideOptimizerConfigForm|safe }}" width="100%" class="Panel">
+	<tr>
+		<td class="FieldLabel"  style="padding-top:12px;">
+			&nbsp;&nbsp;&nbsp;{% lang 'TestType' %}:</dt>
+		</td>
+		<td style="padding-top:8px;">
+			<img src="images/nodejoin.gif" style="float: left;"/>
+			<div style='float:left;margin-top:5px;margin-left:7px;'>{{ OptimizerTestType|safe }}</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="FieldLabel" style="padding-top: 8px;">
+			&nbsp;&nbsp;&nbsp;{% lang 'TestPageUrl' %}:
+		</td>
+		<td style="padding:5px 0 0 27px;">
+			<input readonly onclick="this.select();" class="Field400" value="{{ ValidateTestPageUrl|safe }}" />
+			
+		</td>
+	</tr>
+	<tr>
+		<td class="FieldLabel" style="padding-top:8px;">
+			&nbsp;&nbsp;&nbsp;{% lang 'ConversionPageUrl' %}:
+		</td>
+		<td style="padding:5px 0 0 27px;">
+			<input readonly class="Field400" onclick="this.select();" value="{{ ValidateConversionPageUrl|safe }}" />
+		</td>
+	</tr>
+	<tr>
+		<td class="FieldLabel">
+			&nbsp;&nbsp;&nbsp;{% lang 'ScriptInstallURL' %}:
+		</td>
+		<td style="padding-left:27px;">
+			<input name="InstallUrl" style="width:312px;" value="{{ ScriptInstallURL|safe }}" />
+			 &nbsp;
+			<input name="SaveManual" type="button" onclick="Optimizer.InstallAutoScripts();" value="{% lang 'InstallScript' %}">
+			&nbsp; <img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('gwo1', '{% lang 'ScriptInstallURL' %}', '{% lang 'InstallUrlHelp' %}')" onmouseout="HideHelp('gwo1');"/>
+			<div id="gwo1" style="display: none;"></div>
+
+			<div class="GrayHelpText">{% lang 'InstallUrlIntro' %}</div>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="FieldLabel">
+			<span class='Required'>*</span> {% lang 'ConversionPage' %}:
+		</td>
+		<td style="padding-left:27px;">
+			<select id="ConversionPage" name="ConversionPage" onchange="Optimizer.ChangeConversionPage('{{ ModuleId|safe }}');">
+				<option value=''>{% lang 'ChooseAnOption' %}</option>
+				{{ ConversionPageOptions|safe }}
+			</select>
+			&nbsp; <img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('gwo2', '{% lang 'ConversionPage' %}', '{% lang 'ConversionPageHelp' %}')" onmouseout="HideHelp('gwo2');"/>
+			<div id="gwo2" style="display: none;"></div>
+
+			<div id="CustomConversionHelp" style="{{ HideCustomConversionHelp|safe }}">
+
+				<img class="FloatLeft" alt="" src="images/nodejoin.gif"/>
+				
+				<input name='ConversionPageUrl' id='ConversionPageUrl' class='Field350' value='{{ ConversionPageURL|safe }}' />
+				
+				<img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('gwo3', '{% lang 'CustomConversionPage' %}', '{% lang 'CustomConversionHelp' %}')" onmouseout="HideHelp('gwo3');"/>
+				<div id="gwo3" style="display: none;"></div>
+
+			</div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="FieldLabel">
+			<span class='Required'>*</span> {% lang 'ControlScript' %}:
+		</td>
+		<td style="padding-left:27px;">
+			<textarea class="Field400" rows="5" id="ControlScript" name="ControlScript">{{ ControlScript|safe }}</textarea>
+			<img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('gwo4', '{% lang 'ControlScript' %}', '{% lang 'ControlScriptHelp' %}')" onmouseout="HideHelp('gwo4');"/>
+			<div id="gwo4" style="display: none;"></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="FieldLabel">
+			<span class='Required'>*</span> {% lang 'TrackingScript' %}:
+		</td>
+		<td style="padding-left:27px;">
+			<textarea class="Field400" rows="5" id="TrackingScript" name="TrackingScript">{{ TrackingScript|safe }}</textarea>
+			<img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('gwo5', '{% lang 'TrackingScript' %}', '{% lang 'TrackingScriptHelp' %}')" onmouseout="HideHelp('gwo5');"/>
+			<div id="gwo5" style="display: none;"></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="FieldLabel">
+			<span class='Required'>*</span> {% lang 'ConversionScript' %}:
+		</td>
+		<td style="padding-left:27px;">
+			<textarea class="Field400" rows="5" id="ConversionScript" name="ConversionScript">{{ ConversionScript|safe }}</textarea>				
+			<img height="16" width="24" border="0" style="margin-top: 5px;" src="images/help.gif" onmouseover="ShowHelp('gwo6', '{% lang 'ConversionScript' %}', '{% lang 'ConversionScriptHelp' %}')" onmouseout="HideHelp('gwo6');"/>
+			<div id="gwo6" style="display: none;"></div>
+		</td>
+	</tr>
+
+</table>
+
+<script type="text/javascript">
+lang.ChooseConvertionpage = "{% lang 'ChooseConvertionpage' %}";
+lang.EnterInstallUrl = "{% lang 'EnterInstallUrl' %}";
+lang.EnterConversionScript = "{% lang 'EnterConversionScript' %}";
+lang.EnterControlScript = "{% lang 'EnterControlScript' %}";
+lang.EnterTrackingScript = "{% lang 'EnterTrackingScript' %}";
+lang.ProblemDuringRequest = "{% lang 'ProblemDuringRequest' %}";
+lang.ConfirmEnableProductOptimizer = "{% lang 'ConfirmEnableProductOptimizer' %}";
+lang.ConfirmEnableCategoryOptimizer = "{% lang 'ConfirmEnableCategoryOptimizer' %}";
+lang.ConfirmEnablePageOptimizer = "{% lang 'ConfirmEnablePageOptimizer' %}";
+lang.EnterValidConversionUrl = "{% lang 'EnterValidConversionUrl' %}";
+</script>

@@ -1,0 +1,27 @@
+		<script language="javascript" type="text/javascript">//<![CDATA[
+			lang.CompareSelectMessage = '%%LNG_CompareSelectMessage%%';
+			lang.PleaseSelectAProduct = '%%LNG_PleaseSelectAProduct%%';
+			config.CompareLink = '%%GLOBAL_CompareLink%%';
+		//]]></script>
+		%%GLOBAL_ListJS%%
+		<form name="frmCompare" id="frmCompare" action="%%GLOBAL_CompareLink%%" method="get" %%GLOBAL_CompareOnSubmit%%>
+			<div class="CompareButtonContainer" style="visibility: hidden;">
+				%%GLOBAL_CompareButtonTop%%
+			</div>
+
+			<div class="SearchContainer">
+				%%GLOBAL_SectionSearchResults%%
+			</div>
+
+			<br class="Clear" />
+
+			<div class="CompareButtonContainer" style="visibility: hidden;">
+				%%GLOBAL_CompareButton%%
+			</div>
+
+			<script language="javascript" type="text/javascript">//<![CDATA[
+			$('.CompareButtonContainer, .ProductCompareButton, .ProductQty').css('visibility', 'visible');
+			//]]></script>
+		</form>
+
+		<br class="Clear" />

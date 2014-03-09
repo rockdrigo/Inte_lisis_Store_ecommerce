@@ -1,0 +1,11 @@
+					<tr>
+						<td class="FieldLabel">
+							&nbsp;&nbsp;&nbsp;{{ CustomFieldLabel|safe }}:
+						</td>
+						<td>
+							<input type="text" id="customFieldName[{{ CustomFieldKey|safe }}]" name="customFieldName[{{ CustomFieldKey|safe }}]" class="Field200" value="{{ CustomFieldName|safe }}">
+							<input type="text" id="customFieldValue[{{ CustomFieldKey|safe }}]" name="customFieldValue[{{ CustomFieldKey|safe }}]" class="Field200" value="{{ CustomFieldValue|safe }}">
+							<a href="#" onclick="return AddCustomField()"><img src="images/addicon.gif" alt="Add" border="0" /></a>
+							<a href="#" onclick="return DelCustomField(this.parentNode.parentNode)" style="display: {{ HideCustomFieldDelete|safe }};"><img src="images/delicon.gif" alt="Del" border="0" /></a>
+						</td>
+					</tr>

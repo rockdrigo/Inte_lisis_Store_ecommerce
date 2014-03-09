@@ -1,0 +1,97 @@
+<script type="text/javascript" src="script/formfield.admin.js?{{ JSCacheToken|safe }}"></script>
+<script type="text/javascript"><!--
+
+	lang.FormFieldSetupSaving = "{% lang 'FormFieldSetupSaving' %}";
+	lang.FormFieldSetupInvalidName = "{% lang 'FormFieldSetupInvalidName' %}";
+	lang.FormFieldSetupInvalidSize = "{% lang 'FormFieldSetupInvalidSize' %}";
+	lang.FormFieldSetupInvalidMaxLength = "{% lang 'FormFieldSetupInvalidMaxLength' %}";
+	lang.FormFieldSetupInvalidRows = "{% lang 'FormFieldSetupInvalidRows' %}";
+	lang.FormFieldSetupSelectOptionsAddError = "{% lang 'FormFieldSetupSelectOptionsAddError' %}";
+	lang.FormFieldSetupSelectOptionsAddDuplicate = "{% lang 'FormFieldSetupSelectOptionsAddDuplicate' %}";
+	lang.FormFieldSetupInvalidChoosePrefix = "{% lang 'FormFieldSetupInvalidChoosePrefix' %}";
+	lang.FormFieldSetupInvalidSelectOptions = "{% lang 'FormFieldSetupInvalidSelectOptions' %}";
+	lang.FormFieldSetupInvalidSelectOptionsSort = "{% lang 'FormFieldSetupInvalidSelectOptionsSort' %}";
+	lang.FormFieldSetupChooseOption = "{% lang 'FormFieldSetupChooseOption' %}";
+	lang.FormFieldSetupInvalidLimitForm = "{% lang 'FormFieldSetupInvalidLimitFrom' %}";
+	lang.FormFieldSetupInvalidLimitTo = "{% lang 'FormFieldSetupInvalidLimitTo' %}";
+	lang.FormFieldSetupInvalidLimitRange = "{% lang 'FormFieldSetupInvalidLimitRange' %}";
+	lang.FormFieldSetupInvalidLimitDefault = "{% lang 'FormFieldSetupInvalidLimitDefault' %}";
+	lang.FormFieldSetupInvalidNumberDefaultValue = "{% lang 'FormFieldSetupInvalidNumberDefaultValue' %}";
+	lang.FormFieldSetupInvalidDateLimitFrom = "{% lang 'FormFieldSetupInvalidDateLimitFrom' %}";
+	lang.FormFieldSetupInvalidDateLimitTo = "{% lang 'FormFieldSetupInvalidDateLimitTo' %}";
+	lang.FormFieldSetupInvalidDateLimitRange = "{% lang 'FormFieldSetupInvalidDateLimitRange' %}";
+	lang.FormFieldSetupInvalidDateDefaultValue = "{% lang 'FormFieldSetupInvalidDateDefaultValue' %}";
+	lang.FormFieldSetupInvalidDateDefaultRange = "{% lang 'FormFieldSetupInvalidDateDefaultRange' %}";
+
+	function InitFormFieldPopup()
+	{
+		ShowTab({{ CurrentTab|safe }});
+		InitImmutableFieldHandlers();
+
+		$('#FormFieldName').focus();
+		$('#FormFieldName').select();
+	}
+
+	function ShowTab(T)
+	{
+		i = 0;
+		while (document.getElementById('tab' + i) != null) {
+			document.getElementById('div' + i).style.display = 'none';
+			document.getElementById('tab' + i).className = '';
+			i++;
+		}
+
+		if (isNaN(T)) {
+			T = 0;
+		}
+
+		document.getElementById('div' + T).style.display = '';
+		document.getElementById('tab' + T).className = 'active';
+		document.getElementById('currentTab').value = T;
+	}
+
+	function InitImmutableFieldHandlers()
+	{
+		$('#FormFieldSetupWorkSpace *[readonly]').each(
+			function()
+			{
+				$(this).click(
+					function()
+					{
+						alert('{% lang 'FormFieldSetupImmutableWarning' %}');
+						this.blur();
+						return false;
+					}
+				);
+			}
+		);
+	}
+
+//-->
+</script>
+<form action="" id="FormFieldSetup" onsubmit="FormFieldAdmin.Save(); return false;">
+	<input type="hidden" id="currentTab" name="currentTab" value="0">
+	<input type="hidden" id="FormFieldID" name="fieldId" value="{{ FormFieldID|safe }}" />
+	<input type="hidden" id="FormFieldFormID" name="formId" value="{{ FormFieldFormID|safe }}" />
+	<input type="hidden" id="FormFieldType" name="fieldType" value="{{ FormFieldType|safe }}" />
+	<div class="ModalTitle">
+		{{ FormFieldSetupPopupHeading|safe }}
+	</div>
+	<div class="ModalContent">
+		<ul id="tabnav">
+			<li><a href="#" class="active" id="tab0" onclick="ShowTab(0); return false;">{% lang 'FormFieldTabGeneral' %}</a></li>
+			<li><a href="#" class="active" id="tab1" onclick="ShowTab(1); return false;">{% lang 'FormFieldTabAdvanced' %}</a></li>
+		</ul>
+
+		<div id="FormFieldSetupWorkSpace">
+			{{ FormFieldTabWorkSpace|safe }}
+		</div>
+	</div>
+	<div class="ModalButtonRow">
+		<div class="FloatLeft">
+			<img src="images/loading.gif" alt="" style="vertical-align: middle; display: none;" class="LoadingIndicator" />
+			<input type="button" class="CloseButton FormButton" value="{% lang 'Cancel' %}" onclick="$.modal.close();" />
+		</div>
+		<input type="submit" class="Submit" value="{% lang 'Save' %}" />
+	</div>
+</form>

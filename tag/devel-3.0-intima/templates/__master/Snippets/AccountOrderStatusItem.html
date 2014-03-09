@@ -1,0 +1,36 @@
+<li>
+	<form action="%%GLOBAL_ShopPath%%/account.php" method="get" class="FloatRight" style="Clear:right;">
+		<input type="hidden" name="action" value="view_order" />
+		<input type="hidden" name="order_id" value="%%GLOBAL_OrderId%%" />
+		<input type="image" src="%%GLOBAL_IMG_PATH%%/%%GLOBAL_SiteColor%%/OrderDetailsButton.gif" alt="%%LNG_ViewOrder%%" />
+	</form>
+
+	<form action="%%GLOBAL_ShopPath%%/account.php" method="get" class="FloatRight" style="Clear:right;">
+		<input type="hidden" name="action" value="reorder" />
+		<input type="hidden" name="order_id" value="%%GLOBAL_OrderId%%" />
+		<input type="image" src="%%GLOBAL_IMG_PATH%%/%%GLOBAL_SiteColor%%/ReorderButton.gif" alt="%%LNG_Reorder%%" />
+	</form>
+
+	<h3>%%LNG_Order%% #%%GLOBAL_OrderId%%</h3>
+	<p class="Meta">
+		%%LNG_OrderDate%%: %%GLOBAL_OrderDate%%
+	</p>
+
+	<p>%%LNG_ThisOrderIsMarkedAs%% <strong><em>%%GLOBAL_OrderStatus%%</em></strong></p>
+
+	<div style="display:%%GLOBAL_HidePaymentInstructions%%">
+		<p>%%LNG_YourOrderTotalIs%% <strong><em class="ProductPrice">%%GLOBAL_OrderTotal%%</em></strong></p>
+
+		<p><strong>%%LNG_HeresHowToPayForYourOrder%%:</strong></p>
+
+		<blockquote class="HowToPay">
+			<span style="display:%%GLOBAL_HidePaymentInstructions%%">%%GLOBAL_OrderInstructions%%</span>
+		</blockquote>
+	</div>
+
+	<strong>%%LNG_YourOrderContainsTheFollowingItems2%%</strong>
+	<ul class="OrderItemList">
+		%%GLOBAL_AccountOrderItemList%%
+	</ul>
+	<hr />
+</li>

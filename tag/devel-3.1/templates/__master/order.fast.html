@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%%Panel.HTMLHead%%
+<body>
+	<script type="text/javascript" src="%%GLOBAL_AppPath%%/javascript/product.functions.js?%%GLOBAL_JSCacheToken%%"></script>
+	<div id="Container">
+	%%Panel.Header%%
+
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%
+		<div class="Content Wide" id="LayoutColumn1">
+			<form name="OrderFastForm" method="POST" action="%%GLOBAL_ShopPath%%/orderfast.php?ToDo=SendForm">
+				<table id="orderfastTable" class="Stylize General" cellspacing="0" cellpadding="0" width=100%>
+				<thead>
+					<tr class="First Last Odd Even">
+						<th style="width: 8%;">&nbsp;</th>
+						<th style="width: 15%;">Clave</th>
+						<th style="width: 8%;">Cantidad</th>
+						<th style="white-space: nowrap;">Nombre</th>
+						<th style="width: 5%;">Precio unitario</th>
+						<th style="width: 5%;">Descuento</th>
+						<th style="width: 5%;">Precio total</th>
+						<th style="width: 5%;">Moneda</th>
+						<th style="width: 5%;">Almacen</th>
+					</tr>
+				</thead>
+				%%GLOBAL_orderfastForm%%
+				</table>
+			<input type="submit" name="SubmitVerifyForm" value="Verificar" />
+			%%GLOBAL_orderfastAddToCartButton%%
+			</form>
+		</div>
+		<br class="Clear" />
+	</div>
+	%%Panel.Footer%%
+</div>
+</body>
+</html>

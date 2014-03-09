@@ -1,0 +1,49 @@
+%%GLOBAL_AddToCartButtonControlScript%%
+<form method="post" action="%%GLOBAL_CartLink%%" onsubmit="return check_add_to_cart(this, %%GLOBAL_ProductOptionRequired%%) %%GLOBAL_FastCartButtonJs%%"  enctype="multipart/form-data" id="productDetailsAddToCartForm">
+	<input type="hidden" name="action" value="add" />
+	<input type="hidden" name="product_id" value="%%GLOBAL_ProductId%%" />
+	<input type="hidden" name="variation_id" class="CartVariationId" value="" />
+	<input type="hidden" name="currency_id" value="" />
+	<div class="ProductDetailsGrid ProductAddToCart">
+		%%SNIPPET_ProductFieldsList%%
+		<div class="ProductOptionList">
+			%%SNIPPET_VariationList%%
+		</div>
+		%%SNIPPET_EventDate%%
+		<div class="DetailRow" style="display: %%GLOBAL_DisplayAdd%%">
+			<div class="Label QuantityInput" style="display: %%GLOBAL_DisplayAddQty%%">%%LNG_QuantityFull%%:</div>
+			<div class="Value AddCartButton">
+				<span class="FloatLeft" style="display: %%GLOBAL_DisplayAddQty%%;">
+					%%GLOBAL_AddToCartQty%%
+				</span>
+				<div class="BulkDiscount">
+					%%GLOBAL_AddToCartButtonOptimizerScriptTag%%
+						<input type="image" src="%%GLOBAL_IMG_PATH%%/%%GLOBAL_SiteColor%%/AddCartButton.gif" alt="" />
+					%%GLOBAL_AddToCartButtonOptimizerNoScriptTag%%
+					<div class="BulkDiscountLink" style="display: %%GLOBAL_HideBulkDiscountLink%%;">
+						<a href="#" onclick="$.iModal({data: $('#ProductDetailsBulkDiscountThickBox').html(), width: 600}); return false;">
+							%%LNG_BulkDiscountLink%%
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+<div class="OutOfStockMessage">
+	%%SNIPPET_SideAddItemSoldOut%%
+</div>
+
+%%GLOBAL_ProductBulkDiscountThickBox%%
+
+<script language="javascript" type="text/javascript">//<![CDATA[
+lang.OptionMessage = "%%GLOBAL_OptionMessage%%";
+lang.VariationSoldOutMessage = "%%LNG_VariationSoldOutMessage%%";
+lang.InvalidQuantity = "%%LNG_InvalidQuantity%%";
+lang.EnterRequiredField = "%%LNG_EnterRequiredField%%";
+lang.InvalidFileTypeJS = "%%LNG_InvalidFileTypeJS%%";
+var ShowAddToCartQtyBox = "%%GLOBAL_ShowAddToCartQtyBox%%";
+%%GLOBAL_ProductMinMaxQtyJavascript%%
+//]]></script>
+%%GLOBAL_EventDateJavascript%%

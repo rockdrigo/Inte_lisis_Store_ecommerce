@@ -1,0 +1,29 @@
+
+	<li>
+		<div class="ProductImage">
+			%%GLOBAL_ProductImage%%
+		</div>
+		<div class="ProductDetails">
+			<strong><a href="%%GLOBAL_ProductLink%%">%%GLOBAL_ProductName%%</a></strong>%%GLOBAL_ProductOptions%%
+			<br />
+			%%GLOBAL_EventDate%%
+			<div style="%%GLOBAL_HideWrappingOptions%%" class="WrappingOptions">
+				%%LNG_GiftWrapping%%:
+				%%GLOBAL_GiftWrappingName%%
+				<span style="%%GLOBAL_HideGiftWrappingEdit%%">
+					(<a href="cart.php?action=remove_giftwrapping&amp;item_id=%%GLOBAL_CartItemId%%" onclick="return Cart.RemoveGiftWrapping();">%%LNG_Remove%%</a>)
+				</span>
+				<br />
+				<span style="%%GLOBAL_HideGiftMessagePreview%%">
+					%%LNG_GiftMessage%%:
+					%%GLOBAL_GiftMessagePreview%%
+				</span>
+			</div>
+			<div class="CartItemPrice">
+				%%LNG_ItemPrice%%: <em class="ProductPrice">%%GLOBAL_ProductPrice%%</em>
+			</div>
+			<div class="CartQuantity">
+				%%LNG_Qty%%: %%GLOBAL_CartItemQty%% <a href="cart.php?action=remove&amp;item=%%GLOBAL_CartItemId%%" onclick="Cart.RemoveItem('%%GLOBAL_CartItemId%%'); return false;" class="CartRemoveLink">%%LNG_Remove%%</a>
+			</div>
+		</div>
+	</li>

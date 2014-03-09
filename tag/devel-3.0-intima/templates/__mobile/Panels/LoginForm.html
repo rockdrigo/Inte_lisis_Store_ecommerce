@@ -1,0 +1,44 @@
+<div class="Block Moveable Panel LoginForm" id="LoginForm">
+	<div class="BlockContent">
+		<p style="display: %%GLOBAL_HideLoginMessage%%" class="%%GLOBAL_MessageClass%%">
+			%%GLOBAL_LoginMessage%%
+		</p>
+
+		<fieldset class="AccountLogin">
+			<legend>%%GLOBAL_ExistingUserHeading%%</legend>
+
+			<form action="%%GLOBAL_ShopPath%%/login.php?action=check_login" method="post" onsubmit="return check_login_form()">
+				<div class="FormContainer VerticalFormContainer">
+					<dl>
+						<dt>%%LNG_EmailAddress%%:</dt>
+						<dd><input type="email" class="Textbox Field150 InitialFocus" name="login_email" id="login_email" /></dd>
+
+						<dt>%%LNG_Password%%:</dt>
+						<dd><input type="password" autocomplete="off" class="Textbox Field150" name="login_pass" id="login_pass" /></dd>
+					</dl>
+					<p  class="Submit">
+						<input id="LoginButton" type="submit" value="%%LNG_LoginWord%%" style="padding:2px 10px 2px 10px" />
+						<br />
+						<a href="%%GLOBAL_ShopPath%%/login.php?action=reset_password">%%LNG_ForgotYourPassword%%</a>
+					</p>
+				</div>
+			</form>
+		</fieldset>
+
+		<fieldset class="CreateAccount">
+			<legend>%%GLOBAL_NewAccountHeading%%</legend>
+			<div style="display:%%GLOBAL_HideNewCustomerButton%%">
+				<p>%%LNG_NewCustomerIntro1%% %%GLOBAL_StoreName%% %%LNG_NewCustomerIntro2%%</p>
+				<form action="%%GLOBAL_ShopPath%%/login.php" method="get">
+					<input type="hidden" name="action" value="create_account" />
+					<input type="hidden" name="checking_out" value="yes" />
+					<input type="submit" value="%%LNG_ContinueRaquo%%" style="padding:2px 10px 2px 10px" />
+				</form>
+			</div>
+			<div style="display: %%GLOBAL_HideLoginNewAccountIntro%%">
+				%%LNG_CreateAccountLoginIntro%% <a href="%%GLOBAL_ShopPath%%/login.php?action=create_account" class="Button">%%LNG_CreateAnAccount%%</a>
+			</div>
+		</fieldset>
+	</div>
+</div>
+%%Panel.LoginJavaScript%%

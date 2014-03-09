@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#mediaservice_dlg.title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../../jquery.js"></script>
+	<script type='text/javascript' src="../../../jquery/plugins/htmlEncode/jquery.htmlEncode.js"></script>
+	<script type='text/javascript' src="../../../jquery/plugins/observe/jquery.observe.js"></script>
+	<script type='text/javascript' src="js/mediaservice.js"></script>
+	<link href="css/mediaservice.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<form onsubmit="insertMediaService();return false;" action="#">
+
+	<fieldset>
+		<legend>{#mediaservice_dlg.general}</legend>
+
+		<table class="properties">
+			<tr>
+				<td class="column1" valign="top">
+					<label for="mediaservice_url">{#mediaservice_dlg.videourl}</label>
+				</td>
+				<td>
+					<input type="text" id="mediaservice_url" name="mediaservice_url" class="mceFocus" /><br />
+					<div id="mediaservice_url_note">{#mediaservice_dlg.videourlnote}</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="column1" valign="top" style="padding-top:6px;">
+					{#mediaservice_dlg.supported}
+				</td>
+				<td style="padding-top:6px;">
+					<div id="mediaservice_intro_servicelist"></div>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+
+	<br />
+
+	<fieldset>
+		<legend>{#mediaservice_dlg.preview}</legend>
+
+		<div id="mediaservice_intro" style="display:none;">
+			{#mediaservice_dlg.introduction}
+		</div>
+
+		<div id="mediaservice_previewcontainer">
+			<div id="mediaservice_preview" style="display:none;"></div>
+		</div>
+	</fieldset>
+
+	<div class="mceActionPanel">
+		<div style="float: left">
+			<input type="submit" id="insert" name="insert" value="{#insert}" />
+		</div>
+
+		<div style="float: right">
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+	</div>
+</form>
+
+</body>
+</html>

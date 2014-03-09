@@ -1,0 +1,185 @@
+.CartExpectedReleaseDate {
+	font-style: italic;
+	font-size: 11px;
+}
+
+.OrderItemList .ExpectedReleaseDate {
+	display: block;
+	font-size: 11px;
+}
+
+.CartContents .ExpectedReleaseDate {
+	font-size: 11px;
+	padding-left: 20px;
+}
+
+.ProductMain table.ExpectedReleaseDate {
+	clear: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6px
+}
+
+.ProductMain table.ExpectedReleaseDate td {
+	padding: 6px;
+	border: solid 1px;
+
+	/* default colours to be overridden, as needed, by templates */
+	background-color: #FFF1A8;
+	border-color: #E8B541;
+	color: #353535;
+}
+
+.BrandCloud {
+	overflow-x: hidden;
+}
+
+.CartProductFields dt {
+	font-weight: bold;
+	clear: left;
+}
+
+.CartProductFields dd {
+	margin-left: 50px;
+}
+
+.ProductPrice .CatalogPriceExTax,
+.ProductList em .CatalogPriceExTax,
+.ProductPrice .ProductDetailsPriceExTax,
+.ProductList em .ProductDetailsPriceExTax {
+	display: block;
+	color: #777;
+}
+
+.CartContents .ItemShipping th.ItemShippingDescription {
+	text-align: left;
+}
+
+.CartContents .ItemShipping th {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 6px 10px;
+}
+
+.CartContents .ItemShipping:first-child th {
+	border-top: none;
+}
+
+.CartContents tbody td,
+.CartContents tfoot td {
+	padding: 6px 10px;
+	vertical-align: top;
+}
+
+.CartContents tfoot .SubTotal td {
+	border-top: 1px solid;
+	text-align: right;
+	font-weight: bold;
+}
+
+.OrderShipments .DateShipped {
+	white-space: nowrap;
+	width: 20%;
+}
+
+.OrderShipments .ShippingMethod {
+	width: 55%;
+}
+
+.OrderShipments .TrackingNumber {
+	white-space: nowrap;
+	width: 25%;
+}
+
+div.FacebookLikeButtonContainer {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.FacebookLikeButtonContainer iframe {
+	width: 100%;
+	height: 65px;
+	border: none;
+	overflow: hidden;
+}
+
+.HorizontalFormContainer p.Submit {
+	margin-top: 10px;
+}
+
+#fastCartContainer {
+	margin: 0 auto;
+}
+#fastCartWrapper {
+	clear: both;
+	padding: 5px;
+}
+#fastCartContainer .ProductList {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+#fastCartContainer .ProductList li {
+	margin: 3px;
+	overflow: hidden;
+	padding: 3px;
+	float:left;
+	width:122px;
+}
+#fastCartContainer .ProductList .ProductImage {
+	width: 120px;
+	height: 120px;
+}
+.fastCartContent {
+	min-height: 235px;
+	width: 625px;
+}
+.fastCartContent h2 {
+	font-size: 25px;
+}
+.fastCartTop {
+	padding: 15px 5px;
+}
+.fastCartBottom {
+	padding: 0px 5px;
+}
+.fastCartItemBox {
+	padding: 10px 2px;
+	margin-left: 10px;
+	max-width: 230px;
+}
+.fastCartItemBox a {
+	text-decoration: none;
+}
+.fastCartThumb, .fastCartItemBox {
+	float: left;
+}
+.fastCartQuantity {
+	margin-top: 15px;
+}
+.fastCartSummaryBox {
+	text-align: right;
+	float: right;
+	padding: 10px;
+	max-width: 200px;
+}
+.fastCartSummaryBox .subtotal {
+	margin-top: 15px;
+	font-size: 13px;
+	font-weight: bold;
+	clear:both;
+}
+.fastCartSummaryBox .actionLink {
+	margin-top:10px;
+}
+
+/* Start: SpecificInfoMessage */
+
+.SpecificInfoMessage {
+	padding: 8px 6px 8px 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* End: SpecificInfoMessage */
